@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finals</title>
+	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="../styles/download.css">
+	<link rel="stylesheet" href="../styles/accordion.css" type="text/css" media="all">
+	<link rel = "icon" type = "img/png" href = "../images/Logo.png">
+	<script type="text/javascript" href="../js/accordion.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+	<div class="header">
+	<div class="headerWrapper">
+		<div class = "headerLogo">
+			<img src="../images/Logo.png" alt="Logo">
+		</div>
+		<div class="headerName">
+			<b> WEB SYSTEMS AND TECHNOLOGIES </b>	
+		</div>
+		<br>
+		<div class="navigations">
+			<nav>
+					<li class="dropdown">
+							<button class="dropbtn3" id = "quit">Log Out</a></button>
+						</li>
+				<li class="dropdown">
+						<button class="dropbtn2"><a href = "../quiz_app/quiz.html">Take Quiz</a></button>
+				</li>
+				<li class="dropdown">
+					<button class="dropbtn2">Video Tutorials</button>
+				</li>
+
+				<li class="dropdown">
+					<button class="dropbtn2">Lessons</button>
+						<div class="dropdown-content">
+							<nav>
+								<a href="Prelims.html">Prelims</a>
+								<a href="Midterms.html">Midterms</a>
+								<a href="Finals.html">Finals</a>
+							</nav>
+						</div>
+				</li>
+					<li class="dropdown">
+						<button class="dropbtn"><a href="../index.html">Home</a></button>
+					</li>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br><br>
+	<h1 id = "title"> PHP </h1>
+    <button class="accordion"><h5>PHP Fundamentals</h5></button>
+    <div class="panel">
+        
+		<section>
+            <h3>PHP Basic Syntax</h3>
+		</section>
+		<section>
+			<p>
+             <b>Data Types</b><br>
+                String<br>
+				Integer<br>
+				Float (floating point numbers - also called double)<br>
+				Boolean<br>
+				Array<br>
+				Object<br>
+				NULL<br>
+				Resource<br>
+            </p>
+		</section>
+		<section>
+            <b>PHP variable scope</b>
+			<p>
+					<b>local scope</b> example: $x = 10;<br>
+					<b>global scope</b> example: global $x = 5;<br>
+					<b>static scope</b> example: static $x = 5;<br>
+			</p>
+		</section>
+		<section>
+            <p>
+             <b>Declaring Variables</b>
+             <br>
+                $variable name = value;
+            </p>
+         </section>
+
+		<section>
+            <p>
+             <b>Outputing Data</b>
+             <br>
+                $echo "Hello World";
+                <br>
+                print "World, Hello";
+                <br>
+                echo $variable;
+                <br>
+                print $number1 + $number2;
+            </p>
+         </section>
+
+         <section>
+            <p>
+             <b>Comments</b>
+             <br>
+                // one line PHP comment
+                <br>
+                /* multi-line PHP comment */
+                <br>
+                # one line shell style comment
+            </p>
+         </section>
+    </div>
+	<h1 id = "title">Server side Script</h1>
+    <button class="accordion"><h5>Common Terms</h5></button>
+	<div class="panel">
+		<ul>
+			<h3>Server-Side Scripts</h3>
+			<li>are languages, codes or script that builds your websites that are not seen, providing good interaction between the website and the user/ client.</li>
+			<h3>Server-Side Scripting</h3>
+			<li>is a method of creating a script that allows a client to make request to the server.</li>
+			<h3>Frameworks</h3>
+			<li>a layered structure that provides a standard guideline that provides functionality that can be edited by the coder.</li>
+			<h3>Server-side web frameworks (a.k.a. "web application frameworks")</h3>
+			<li>are software frameworks that makes the work of the developer of a website easier. It provides tools and libraries that simplifies common web development tasks.</li>
+			<h3>Popular Server-Side Frameworks:</h3>
+			<ol>
+				<li>Django(Python) a Python framework</li>
+				<li>Flask (Python) a Python framework</li>
+				<li>Express (Node.js/JavaScript) a front-end script</li>
+				<li>Ruby on Rails (Ruby) a Ruby framework</li>
+				<li>ASP.NET	a Microsoft framework</li>
+			</ol>
+			<h3>Java Platforms</h3>
+			<ul>
+				<h4>Java EE	(Java Enterprise Edition)</h4>
+				<li>is the standard used in community-driven enterprise software that is contributed by organization or individuals in the commercial, in the industry.</li>
+				Sample API:
+				<ul>
+					<li>servlet</li>
+					<li>websocket</li>
+				</ul>
+				<h4>Java SE (Java Standard Edition)</h4>
+				<li>lets you develop and deploy Java applications on desktops and servers.</li>
+				Sample API:
+				<ul>
+					<li>applet</li>
+					<li>awt</li>
+					<li>rmi</li>
+					<li>jdbc</li>
+					<li>swing</li>
+					<li>collections</li>
+				</ul>
+			</ul>
+			<h3>Java Servlets</h3>
+				<li>java objects that are intended to play the role of server components in Client-Server communications.</li>
+				<li>java program that give capabilities or functionalities to run a server.</li>
+				<li>handles clients request by generating responses to such request.</li>
+			<h3>Servlet LifeCycle</h3>
+				<li>Instantiation  => constructor call..</li>
+				<ul>
+					<li>creates an instance of the servlet to service client requests.</li>
+				</ul>
+				<li>Initialization  => init() method..</li>
+				<ul>
+					<li>invoked only once and is intended for any startup initialization code for the servlet.</li>
+				</ul>
+				<li>Request Handling  => service()method..</li>
+				<ul>
+					<li>the term service method is used for any method in a servlet class that provides a service to a client.</li>
+					Methods:
+					<ul>
+						<li>doGet()</li>
+						<li>doDelete()</li>
+						<li>doOptions()</li>
+						<li>doPost()</li>
+						<li>doPut()</li>
+						<li>doTrace()</li>
+					</ul>
+				</ul>
+				<li>Destruction  => destroy() method..</li>
+				<ul>
+					<li>invoked before the servlet instance is 'unloaded' and is intended for any 'housekeeping'</li>
+				</ul>
+			<h3>HTTP Servlet</h3>
+				<li>Java servlet used to handle HTTP request and HTTP response.</li>
+				<li>Java servlet used to handle HTTP requests and generate HTTP responses.</li>
+				<li>Hosted in a 'web container', which is a component in a Java 'application server' (eg. Apache Tomcat, Oracle Glassfish, Red Hat JBoss/Wildfly etc.)</li>
+			<h3>Web Container </h3>
+				<li>a part of web server that manages the components like servlets.</li>
+			<h3>HTTP Servlet Request</h3>
+				<li>object representation of HTTP request</li>
+				<li>A request contains data passed between a client and the servlet.</li>
+				<li>HTTP servlets are passed an HTTP request object, HttpServletRequest, which contains the request URL, HTTP headers, query string, and so on.</li>
+			<h3>HTTP Servlet Response</h3>
+				<li>object representation of HTTP response</li>
+				<li>HTTP response objects, HttpServletResponse, have fields representing HTTP headers</li>
+		</ul>
+	</div>
+	<h1 id = "title">Node</h1>
+    <button class="accordion"><h5>Node.js</h5></button>
+	<div class="panel">
+		<ul>
+			<h3>Mean Stack</h3> - Fullstack Javascript Framework
+			<li>M - MongoDB (The Leading NOSQL database)</li>
+			<li>E - express (nodejs framework)</li>
+			<li>A - AngularJS (html vocabulary extension)</li>
+			<li>N - Node (platform build on Chrome's JavaScript)</li>
+			<h3>Node JavaScript</h3>
+			<li>Asynchronous and open source</li>
+			<li>It is great to use in Server-Side because it is well suited for the job like sending messages from one person to another.</li> 
+		</ul>
+	</div>
+	<h1 id = "title">JSP</h1>
+    <button class="accordion"><h5>Java Server Page</h5></button>
+	<div class="panel">
+		<ul>
+		<h3>Scriptlets</h3>
+			<li> Java Declarations inside the html </li>
+		<h3>Scriptlets Declarations</h3>
+			<li> <%! int num = 50; %> </li>
+		</ul>
+	</div>
+	<h1 id = "title">OWASP</h1>
+    <button class="accordion"><h5>Open Web Application Security Project</h5></button>
+	<div class="panel">
+		<ul>
+		<h3>Sensitive Data Exposure</h3>
+		<h3>Broken Authentication</h3>
+		<h3>Security Misconfiguration</h3>
+		</ul>
+	</div>
+	<br><br><br><br><br>
+	
+
+    <script src="../js/accordion.js"></script>
+</body>
+</html>

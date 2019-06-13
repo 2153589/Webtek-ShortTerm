@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prelims</title>
+	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+	<link rel="stylesheet" href="../styles/accordion.css" type="text/css" media="all">
+	<link rel = "icon" type = "img/png" href = "../images/Logo.png">
+	<script type="text/javascript" href="../js/accordion.js"></script>
+    <meta charset="utf-8">
+</head>
+<body>
+	<div class="header">
+		<div class="headerWrapper">
+			<div class = "headerLogo">
+				<img src="../images/Logo.png" alt="Logo">
+			</div>
+			<div class="headerName">
+				<b> WEB SYSTEMS AND TECHNOLOGIES </b>	
+			</div>
+		<br>
+			<div class="navigations">
+				<nav>
+                        <li class="dropdown">
+                                <button class="dropbtn3" id = "quit">Log Out</a></button>
+                            </li>
+                            <li class="dropdown">
+                                    <button class="dropbtn2">Video Tutorials</button>
+                                </li>   
+					<li class="dropdown">
+						<button class="dropbtn2">Lessons</button>
+						<div class="dropdown-content">
+							<nav>
+								<a href="Prelims.html">Prelims</a>
+								<a href="Midterms.html">Midterms</a>
+								<a href="Finals.html">Finals</a>
+							</nav>
+						</div>
+					</li>
+						<li class="dropdown">
+						<button class="dropbtn"><a href="../index.html">Home</a></button>
+						</li>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br><br>
+
+    <h1 id = "title"> World Wide Web </h1>
+    <button class="accordion"><h5>How the Web Works</h5></button>
+    <div class="panel">
+        <p>Web is a service that operates over the Internet, as e-mail does. Information system on the internet that allows documents and other web resources are identified by UNIFORM RESOURCE LOCATOR (URL), interlinked by hypertext links, and can be accessed via the internet.  
+        </p>
+    </div>
+
+    <button class="accordion"><h5> Webpage, Website, Web Server, Search Engine</h5></button>
+    <div class="panel">
+        <section>
+            <h3>Webpage</h3>
+            <p>
+                A webpage is a document which is displayed in a web browser like Google Chrome, Firefox, Opera or Edge. A webpage is written in a markup language called HTML. Web pages can be access using addresses which you can place in your web browsers address bar
+            </p>
+         </section>
+
+        <section>
+            <h3>Website</h3>
+            <p>
+                This is simply a page which contains webpages. These webpages are then linked to each other using hyperlinks which allows users to move from one page to another.
+            </p>
+         </section>
+
+        <section>
+            <h3>Web Servers</h3>
+            <p>
+                A web server is a node or a computer that can host multiple websites. A web server sends web pages to users who access its website. All files that contains the content of a website is inside a webserver.
+            </p>
+         </section>
+
+         <section>
+            <h3>Search Engine</h3>
+            <p>
+               A search engine is a website used to browse and search for webpages and other websites. Some examples are Bing, Yahoo, Google and DuckDuckGo. These search engines enable users to query in the search engine and able to look contents in the web.
+            </p>
+         </section>        
+
+    </div> 
+    <button class="accordion"><h5>Uniform Resource Locator (URL)</h5></button>
+    <div class="panel">
+        <p>URL contains unique name and it is also a unique content on the web. It can contain an html document, css document, videos, audio or even images, etc.
+        </p>
+        <p>
+            A URL has different parts:
+            <nav>
+                <ul>
+                    <li>Protocol</a></li>
+                    <li>Domain Name</a></li>
+                    <li>Port</li>
+                    <li>Path of the file</li>
+                    <li>Parameters</li>
+                    <li>Anchor</li>
+                </ul>
+            </nav>
+        </p>
+        <section id="Protocol">
+            <h3>Protocol</h3>
+            <p>
+                The protocol tells what kind of protocol must the browser use. It can be the secured version of HTTP which is HTTPS or other protocols like ftp and others.
+
+                <img src="../images/Protocol.png" alt="protocol">
+            </p>
+        </section>
+
+        <section id="Domain_Name">
+            <h3>Domain Name</h3>
+            <p>
+                The Domain name is the address in which a web server is located. You can also use the IP address of a web server to locate a website in the web.
+                
+                <img src="../images/Domain.png" alt="Domain_Name">
+            </p>
+        </section>
+
+        <section id="Port">
+            <h3>Port</h3>
+            <p>
+                A port is used to access a resource on a web server. It is like a gateway where you can know where to find a certain resource.
+
+                <img src="../images/Port.png" alt="Port">
+            </p>
+        </section>
+
+        <section id="Path">
+            <h3>Path of the File</h3>
+            <p>
+                This path is where you locate contents of a web server just like in windows explorer where path can be directories and inside the directory are sub directories. This can be used to point to a specific resource in a web server.
+                <br>
+
+                <img src="../images/Path.png" alt="Path">
+            </p>
+        </section>
+
+        <section id="Parameters">
+            <h3>Parameters</h3>
+            <p>
+                This values are parameters that are given to a web server where these parameters can do other thing before it can deliver a resource to a user.
+
+                <img src="../images/Param.png" alt="Param">
+            </p>
+        </section>
+
+        <section id="Anchor">
+            <h3>Anchor</h3>
+            <p>
+                An anchor represents a bookmark in a resource on a webpage. This serves as a linked to a location that is bookmarked in a resource. When a bookmark is selected in a webpage it will scroll through the webpage that contains the anchor. Another example is a video where you can click or point to a certain point of the video or audio.
+
+                <img src="../images/Anchor.png" alt="Anchor">
+            </p>
+        </section>
+
+    </div>
+
+    <button class="accordion">
+        <h5> Absolute URL and Relative URL</h5>
+    </button>
+    <div class="panel">
+        <p>
+           To differentiate and understand what and absolute and relative URL is examples will be provided. 
+        </p>
+
+        <section>
+            <h3>Absolute URL</h3>
+            <p>
+             <pre>
+            Full URL
+            https://example.org/docs/topics
+            https://example.org/docs/topics/topic1
+            Implicit protocol
+            //example.org/docs/topics
+            Implicit domain name
+            //docs/topics
+             </pre>
+                 <br>   
+                This shows that absolute protocol fetches its resource from the root directory. Where you must specify the location of a resource which you want to access. You can also easily identify an absolute URL if it uses the “ / ” character.
+            </p>
+        </section>
+        <section>
+            <h3>
+                Relative URL
+            </h3>
+            <p>
+                <b>Example if this URL is entered https://example.org/docs/topics.</b>
+                <br>
+                Assuming you wanted to access a sub-resource located in /topic1/part1. You will not need to type in every directory to point to that resource. Using relative URL and because the URL does not start with the “ / ” character the browser will attempt to find the resource. So what we really wanted to locate is the address http://example.org/docs/topics/topic1/part1
+                
+            </p>
+        </section>
+    </div>
+    <button class="accordion">
+        <h5> Domain Names</h5>
+    </button>
+    <div class="panel">
+        <section>
+            <h3> What are Domain Names?</h3>
+            <p>
+                Domain names are human readable addresses in the web and domain names uses semantic URL in which users can easily remember a resource in the web. Users can access any website using IP address of a website but this will be hard for people to remember a lot IP addresses because IP a single IP address contains 32 bits for IPv4. (eg. 192.168.1.1)
+            </p>
+        </section>
+
+        <section>
+            <h3> Domain Name Structure</h3>
+            <img src="../images/Domain.png" alt="Domain_Name">
+        </section>
+
+        <section>
+            <h4>TLD (Top-Level Domain)</h4>
+            <p>TLD provides user information about what service does a website server (eg. .com, .org, .net, .ph, .us etc)</p>
+        </section>
+        <section>
+            <h4>Label (Component)</h4>
+            <p>This contains any letter or word and can be referred to as a Secondary-Level Domain</p>
+        </section>        
+    </div>
+
+    <h1 id = "title"> Internet</h1>
+    <button class="accordion"><h5>History of the Internet</h5></button>
+    <div class="panel">
+        <p>
+            Birth of the Internet in 1972 vint cert and bob Kahn, of both of whom were part of the core ARPANET group, collaborated on what they called the internetting project. They wanted to link different networks together so that a host on one network could communicate with a host on a second. Different network. There were many problems to overcome: diverse packet size. Diverse interface, and diverse transmission rates. As well as differing reliability requirements. Cerf and Kahn devised the intermediary hardware to transfer data from one network to another.
+        </p>
+        <br>
+        <section>
+            <h3> Who was the first to use the Internet?</h3>
+            <p>The Internet was designed to provide a communications network that would work even if some of the major sites were down. If the most direct route was not available, routers would direct traffic around the network via alternate routes.
+
+              <br>  
+
+            The early Internet was used by computer experts, engineers, scientists, and librarians. There was nothing friendly about it. There were no home or office personal computers in those days, and anyone who used it, whether a computer professional or an engineer or scientist or librarian.
+                
+            </p>
+        </section>
+        <br>
+        <br>
+        <section>
+            <h3>ARPANET</h3>
+            <p>
+                1969, the first ARPANET communications were sent between Kleinrock's lab at UCLA and the Stanford Research Institute (SRI) under the direction of Elizabeth Feinler. (Feinler later led the development of the domain names .gov, .com, .edu, .mil and others.) By the end of 1969, ARPANET had two more nodes at the University of California, Santa Barbara.
+            </p>
+        </section>
+        <br>
+        <br>
+        <section>
+            <h3>MILNET</h3>
+            <p>
+                1983, ARPANET split into two networks: MILNET is for military users And ARPANET for nonmilitary users
+            </p>
+        </section>
+        <br>
+        <br>
+        <section>
+            <h3>NSFNET</h3>
+            <p>
+                1986, a backbone that connected five supercomputer centers located throughout the United States. Community networks were allowed access to this backbone.
+
+                1990 ARPANET was officially retired and replaced by NSFNET.
+
+                1995 NSFET reverted back to its original concept of a research network.
+            </p> 
+         </section> 
+        <br>
+        <br>
+        <section>
+            <h3>ANSNET</h3>
+            <p>
+                1991 The United State government decided that NSFNET was not capable of supporting the rapidly increasing internet traffic.
+            </p> 
+         </section>   
+        <br>
+        <br>
+        <section>
+            <h3>Email</h3>
+            <p>
+                1989 E-mail was adapted for ARPANET by the late Ray Tomlinson. He picked the @ symbol from the available symbols on his teletype to link the username and address. The telnet protocol, enabling logging on to a remote computer, was published as a Request for Comments (RFC) in 1972. RFC's are a means of sharing developmental work throughout community. The ftp protocol, enabling file transfers between Internet sites, was published as an RFC in 1973, and from then on RFC's were available electronically to anyone who had use of the ftp protocol.
+            </p> 
+         </section>                
+    </div>
+
+    <button class="accordion">
+        <h5>How does the Internet work?</h5>
+    </button>
+    <div class="panel">
+        <p>
+            As we know the Internet is the backbone of the Web and it is a large network where computers are connected and able to communicate. In the history of the Internet, it started in 1960s were in it was used in the US army and in the 1980s it was also available to be used in public infrastructures.
+        </p>
+    </div>
+    <button class="accordion">
+         <h5>Internet:"A Network of Networks"</h5>
+     </button>    
+    <div class="panel">
+       <p>
+          If you wanted to connect your computer to another computer you must first link them, either physically or wirelessly. A network is not just limited to two computers that are connected instead a network consists of other networks. This means that you can be able to connect multiple computers using cables.
+
+          <br>
+          <br>
+           It will be cumbersome to connect and wire let say 10 computers, this will produce more than 40 cables. But what if you connect a computer to a device which can connect other computers. This device is called a router, its job is to make sure that messages within the network is being sent correctly and delivered at proper destination. When you have a router that has 10 pots it will be easily for you to setup your network because you will only need a single cable for each node or computer.
+       </p>
+    </div>       
+    <button class="accordion">
+         <h5>Is the Internet and the Web the same?</h5>
+     </button>    
+    <div class="panel">
+       <p>
+            We now know that the Internet is a large network and it is an infrastructure while the web is a service that users can use to connect and communicate to other users that are also connected in the web.
+       </p>
+    </div>     
+	<h1 id = "title"> Hypertext Transfer Protocol </h1>
+	<button class="accordion"><h5>HTTP Versions</h5></button>
+	<div class="panel">
+        <ol>
+	 		<li> HTTP 0.9 - 1991 only 3 methods (get, head, post) </li>
+	 		<li> HTTP 1.0 (RFC 1945, May 1996) all 8 methods </li>
+	 		<li> HTTP 1.1 (RFC 2068 Jan 1997, RFC 2616 June 1999) </li>
+        </ol>
+    </div>
+    
+
+    <button class="accordion"><h5>HTTP Fundamentals</h5></button>
+    <div class="panel">
+        <ul style="list-style-type:disc">
+	 		<li><p>HTTP runs on top of TCP/IP using TCP port 80 by default or TCP port 443 for HTTPS (HTTP over SSL/TLS) </p></li>
+            <li><p>HTTP is based on a client server architecture</p></li>
+            <p> > Client (aka User Agents) i.e., web browsers, web crawlers, and other end user tools and applications</p>
+            <p> > Servers i.e., origin servers, proxy servers, gateway</p>
+            <li><p>HTTP uses a request-response standard protocol </p></li>
+            <li><p>HTTP is a stateless communication protocol </p></li>
+            <li><p>HTTP provides support for other functionalities </p></li>
+            <li><p>HTTP resource addressing </p></li>
+        </ul>
+    </div>
+
+    <button class="accordion"><h5>HTTP Request Message</h5></button>
+    <div class="panel">
+        <ul>
+    		<li><p> Request line </p></li>
+    		<li><p> Message headers </p></li>
+    		<li><p> Empty line </p></li>
+    		<li><p> Message body </p></li>
+        </ul>
+    </div>
+    <button class="accordion"><h5>HTTP Response Message</h5></button>
+    <div class="panel">
+	           <h3>Status Line </h3>
+                <ol>
+    		      <li><p> Protocol Version </p></li>
+    		      <li><p> Status Code </p></li>
+    		      <li><p> Reason Phase</p></li>
+                </ol>
+    		      <h3>Status Code</h3>
+
+                <h4>Information(1xx)</h4>
+                <p><b>100</b> Continue</p>
+                <p><b>101</b> Switiching Protocol</p>
+
+                <h4>Success(2xx)</h4>
+                <p><b>200</b> OK</p>
+                <p><b>201</b> Created</p>
+                <p><b>202</b> Accepted</p>
+                <p><b>203</b> Non-Authorized</p>               
+                <p><b>204</b> No Content</p>
+                <p><b>205</b> Reset Content</p>      
+                <p><b>206</b> Partial Content</p>
+
+                <h4>Redirection(3xx)</h4>
+                <p><b>300</b> Multiple Choice</p>
+                <p><b>301</b> Moved Permanently</p>
+                <p><b>302</b> Found</p>
+                <p><b>303</b> See Other</p>               
+                <p><b>304</b> Not Modified/p>
+                <p><b>305</b> Use Proxy</p>               
+                <p><b>306</b> (Unused)</p>
+                <p><b>307</b> Temporary Redirect</p> 
+
+                <h4>Client Error (4xx)</h4>
+                <p><b>400</b> Bad Request</p>
+                <p><b>401</b> Unauthorized</p>
+                <p><b>402</b> Payment Required</p>
+                <p><b>403</b> Forbidden</p>               
+                <p><b>404</b> Not Found</p>
+                <p><b>405</b> Method Not Allowed</p>               
+                <p><b>406</b> not acceptable for url</p>
+                <p><b>407</b> Proxy Authentication</p>
+                <p><b>408</b> Request Timeout</p>
+                <p><b>409</b> Conflict</p>               
+                <p><b>410</b> Gone</p>
+                <p><b>411</b> Lenght Required</p>               
+                <p><b>412</b> Precondition Failed</p>
+                <p><b>413</b> Request Entity To Large</p> 
+                <p><b>414</b> Connection Terminate</p>
+
+                <h4>Server Error(5xx)</h4>
+                <p><b>500</b> Internal Server Eror</p>
+                <p><b>501</b> Not Implanted</p>
+                <p><b>502</b> Bad Gateway</p>
+                <p><b>503</b> Server Unavailable</p>               
+                <p><b>504</b> Gateway Timeout</p>
+                <p><b>505</b> Http Version Not Supported</p>
+	</div>
+    <button class="accordion"><h5>HTTP Request Methods</h5></button>
+    <div class="panel">
+            <p><h4>Get</h4> - used to request from the server the retrieval of the resource id by the request uri; the retrieved response is returned in the message body of the response as an entity. </p>
+            <p><h4>Head</h4> - identical to get, except that the entity is not included in the response. Also used to retrieve meta info about the entity implied by the request without transferring the entity itself. Like get, it must be supported by all general - pupose servers. </p>
+            <p><h4>Post</h4> - used to request the server accept data entities enclosing in the message body for processing by the response identified by the request uri. Typically used in submitting html form data. </p>
+            <p><h4>Post</h4> - used to request the server to store the enclosed entity in the message body under the specified request uri. </p>
+            <p><h4>Delete</h4> - used to request the server to delete the resource identified by the request uri. </p>
+            <p><h4>Options</h4> - used to request from the server information about the communication options available for the response identified by the required uri. </p>
+            <p><h4>Trace</h4> - used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain. </p>
+            <p><h4>Connect</h4> - reserved for the tunneling proxy servers. </p>
+
+            <h4><strong>Idemponent Methods</strong></h4> 
+            <ul>
+                <li>The methods GET, HEAD, PUT, DELETE, TRACE, and OPTION are element of a set that is <strong>unchanged in value</strong> when multiplied or otherwise operated on by itself.</li>
+            </ul>
+            <h4><strong>Safe Methods</strong></h4>
+            <ul>
+                <li>The methods POST, PUT, and DELETE are element of a set that has <strong>a change in value</strong> when multiplied or otherwise operated on by itself.</li>
+            </ul>
+            <h4><strong>Unsafe Methods</strong></h4>
+            <ul>
+                <li>The methods GET, HEAD, TRACE, and OPTION are element of a set that has <strong>no change in value</strong> when multiplied or otherwise operated on by itself.</li>
+            </ul>
+    </div>
+<button class="accordion"><h5>HTTP Message Headers</h5></button>
+    <div class="panel">
+	    <h3>General Header Fields</h3>
+	    <p><h4>Cache-control</h4> - Use for collecting and storing valuable data for both request and response and to be used later for realoding a certain file or site. </p>
+	    <p><h4>Connection</h4> - Use to control network connection.Example of this is "Keep-Alive" this will keep the connection until you close the browser.    </p>	
+	    <p><h4>Date</h4> - Use to know the date and time the message is send.</p>
+	    <p><h4>Pragma</h4> - Use to implement specific header that may effect the responds and request chain.</p> 
+	    <p><h4>Trailer</h4> - Allows user to send a other field to supply metada that could be generate  while being sent. such as a message integrity check, digital signature, or post-processing status.  </p>
+	    <p><h4>Transfer Encoding</h4> - Form of encoding used to safely transfer the entity to the user.</p>
+	    <p><h4>Upgrade</h4> - Allows simple mechanical transition of http1.1 to other protocol in the same connection.</p>
+	    <p><h4>Via</h4> - Indicates the presence of protol and recepients between server and user. </p>
+	    <p><h4>Warning</h4> - Information that has possible problem to the status of the message.</p>
+
+        <h3>Request Header Fields</h3>
+        <p><h4>Accept</h4> - Informs the server about the types of data that can be sent back. </p>
+        <p><h4>Accept-charset</h4> - Informs the server about which character set the client is able to understand. </p>   
+        <p><h4>Accept-encoding</h4> - Informs the server about the encoding algorithm, usually a compression algorithm, that can be used on the resource sent back. </p>
+        <p><h4>Accept-language</h4> - Informs the server about the language the server is expected to send back. </p> 
+        <p><h4>Authorization</h4> - Contains the credentials to authenticate a user agent with a server. </p>
+        <p><h4>Expect</h4> - Indicates expectations that need to be fulfilled by the server in order to properly handle the request. </p>
+        <p><h4>From</h4> - Contains an Internet email address for a human user who controls the requesting user agent. </p>
+        <p><h4>Host</h4> - Specifies the domain name of the server (for virtual hosting), and the TCP port number on which the server is listening. </p>
+        <p><h4>If-match</h4> - Makes the request conditional and applies the method only if the stored resource matches one of the given ETags. </p>
+        <p><h4>If-modified-since</h4> - Makes the request conditional and expects the entity to be transmitted only if it has been modified after the given date. </p>
+        <p><h4>If-none-match</h4> - Makes the request conditional and applies the method only if the stored resource doesn't match any of the given ETags. This is used to update caches (for safe requests), or to prevent to upload a new resource when one is already existing. </p>
+	    <p><h4>If-Range</h4> - Is a special condition request that is similar to If-match and If-Unmodified-Since but it ignores the range of header field if the specific range did not match resulting to a 412 error.</p>
+	    <p><h4>If-Unmodified-since</h4> - Makes the request is conditional on the last modified date early than or equl to the date provided. </p>
+	    <p><h4>Max-Forward</h4> - Method to limit the number of a proxies that can forward to the server. It is also associated with Trace and Option.</p>
+	    <p><h4>Proxy-Authorization</h4> - Allows client to indentify it's self to a server that requires a password and username to enter  .</p>
+	    <p><h4>Range</h4> - Allows user to set a specific range of HTTP message / document from the client. </p>
+	    <p><h4>Referer</h4> - Allows a server to generate a list of link to the resources for logging and caching. </p>
+	    <p><h4>User-Agent</h4> - A header field contains where a user agent request came from.</p>
+
+	    <h3>Response Header fields</h3>
+	    <p><h4>Accept-Ranges</h4> - Allows the server to indicate it's acceptance of range on the resource.</p>
+	    <p><h4>Age</h4> - The amount of time since a responce was made from the server.</p>
+	    <p><h4>Etag</h4> - The current value of the entity tag for requested variant.</p>
+	    <p><h4>Location</h4> - Redirecting the user to other location other than the requested Url of the new resource or site and the user must have a 3xx reponse.</p>
+	    <p><h4>Proxy-Authenticate</h4> - Indicates the authentication scheme and parameter to the proxy.</p>
+	    <p><h4>Retry-After</h4> - Indicates how long the service to unavailable to the user. 503 Service Unavailble.</p>
+	    <p><h4>Server</h4> - Contains the details of what software is being used to the origin server to handle the requst.</p>
+	    <p><h4>Vary</h4> - Indicates the set of request-header fields that fully determines, while the response is fresh, whether a cache i permitted to use the response to reply to a subsequent request without revalidation.</p>
+	    <p><h4>WWW-Authenticate</h4> - It is use in the 401-Unauthorized response message. Idicates the authentication and paramters of the request-URI. </p>
+
+        <h3>Entity Header fields</h3>
+        <p><h4>Allow</h4> - Lists all the methods that are supported for a particular resource. This header may be provided in a server response as a guide to the client regarding what methods it may use on the resource in the future. </p>
+        <p><h4>Content encoding</h4> - Describes any optional method that may have been used to encode the entity. This header is most often used when transferring entities that have been compressed; it tells the recipient what algorithm has been used so the entity can be uncompressed. </p>
+        <p><h4>Content language</h4> - Specifies the natural (human) language intended for using the entity. This is an optional header, and may not be appropriate for all resource types. Multiple languages may be specified, if needed. </p>
+        <p><h4>Content length</h4> - Indicates the size of the entity in octets. This header is important, as it is used by the recipient to determine the end of a message. However, it may only be included in cases where the length of a message can be fully determined prior to transmitting the entity. </p>
+        <p><h4>Content location</h4> - Specifies the resource location of the entity, in the form of an absolute or relative uniform resource locator (URL). This is an optional header, and is normally included only in cases where the entity has been supplied from a location different from the one specified in the request. </p>
+        <p><h4>Content MD5</h4> - Contains an MD5 digest for the entity, used for message integrity checking. </p>
+        <p><h4>Content range</h4> - Sent when a message contains an entity that is only part of a complete resource; for example, a fragment of a file sent in response to an HTTP GET request containing the Range header. The Content-Range header Indicates what portion of the overall file this message contains, as well as the total size of the resource. </p>
+        <p><h4>Content type</h4> - Indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent had the request been a GET. </p>
+        <p><h4>Expires</h4> - Specifies a date and time after which the entity in the message should be considered “stale”. This may be used to identify certain entities that should be held in HTTP caches for longer or shorter periods of time than usual. </p>
+        <p><h4>Last Modified</h4> - Indicates the date and time when the server believes the entity was last changed. This header is often used to determine if a resource has been modified since it was last retrieved. </p>
+</div>
+<button class="accordion"><h5>HTTP Functionality</h5></button>
+    <div class="panel">
+       <ul>
+           <li>Cache Control</li>
+           <li>Content Media Type</li>
+           <li>Language and Character Set</li>
+           <li>Content/Transfer Coding</li>
+           <li>Content Negotiation</li>
+           <li>Client-Server Protocol Negotiation</li>
+           <li>Persistent Connections</li>
+           <li>Request Pipelining</li>
+           <li>Authentication/Authorization</li>
+        </ul>
+    </div>
+    <h1 id = "title"> Hypertext Markup Language </h1>
+    <button class="accordion"><h5>HTML</h5></button>
+    <div class="panel">
+    	<p>
+    		<b>HTML</b> (<b>HyperText Markup Language</b>) is the most basic building block of the Web. It describes and defines the content of a webpage. Other technologies besides HTML are generally used to describe a webpage's appearance/presentation (CSS) or functionality (JavaScript). 
+
+    		<br>
+
+			"HyperText" refers to links that connect webpages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
+
+			<br> 
+
+			HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup includes special "elements" such as &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;, &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, and many others.
+    	</p>
+    </div>
+    <button class="accordion">
+            <h5>HTML History</h5>
+        </button>
+    <div class="panel">
+        <p>
+            The founder of HTML was <b>Tim Berners-Lee</b> and his product was made attractive to the general public by Mosaic browser which was evolved at NCSA. It has become extremely popular and well-known in the 1990’s when the Internet had been developing rapidly. During this period, HTML was broadened and presented in different modifications. The Internet strongly depends on vendors and page creators who share the joint conventions for HTML. The understanding that success of Web development is based on integration of the rules has helped the Web community to create united specifications for HTML. 
+
+            <br>
+                    
+            Most users and developers understand that HTML documents must work in the same way on different platforms and browsers. Compatibility of HTML is its key benefit and it saves time for developers who don’t have to create several versions of a document for different users. Otherwise the Internet wouldn’t be able to be so easy-to-access and the ‘battle of formats’ would be a serious obstacle for the Web evolution. 
+
+            <br>
+
+            The vision of the HTML developers is that all devices must be able to reach the data on the Internet: computers with different platforms, browsers and characteristics, pocket devices, cell phones, devices for speech, and many others.
+        </p>    
+    </div>
+        <button class="accordion"><h5>HTML Versions</h5></button>
+        <div class="panel">
+            <ol>
+                <li><p> HTML - 1991 </p></li>
+                <li><p> HTML 2.0 - 1995 </p></li>
+                <li><p> HTML 3.2 (W3C Recommendation, Jan 1997) </p></li>
+                <li><p> HTML 4.0 (W3C Recommendation, Dec 1997) </p></li>
+                <li><p> HTML 4.01 (W3C Recommendation, Dec 1999) </p></li>
+                <li><p> XHTML 1.0 (W3C Recommendation, Jan 2000) </p></li>
+                <li><p> XHTML 1.1 Module-Based XHTML (W3C Recommendation, May 2001) </p></li>
+                <li><p> HTML5 (W3C Recommendation, Oct 2014) </p></li>
+                <li><p> HTML5.1 (W3C Recommendation, Nov 2016) </p></li>
+                <li><p> HTML5.2 (W3C Recommendation, Dec 2017) </p></li>
+            </ol>
+    </div>
+<button class="accordion"><h5>Void Elements</h5></button>
+        <div class="panel">
+		<p><h4>Voidl Elements</h4> - is a element in html that has an starting tag and ending tag, it can not have any child nodes</p>
+		  <ol>
+			<li><p> area - Hotspot area on a image, usually it is associated by image </p></li>
+			<li><p> base - The base URL to use for all relative URLs that are inside the document. Only one element is present in a document </p></li>
+			<li><p> br - Line break in a paragraph or it is use to divide lines</p></li>
+			<li><p> col - Defines a column inside the table and used for defining commin semantic of common cells,found inside a <colgroup> element</p></li>
+			<li><p> embed - Embeds external content to the document, gives a external application or browser plug-in </p></li>
+			<li><p> hr - Break between paragraph-level elements and presents a horizontal rule or line.</p></li>
+			<li><p> img -  Allows user to put an image to the document</p></li>
+			<li><p> input - Create a controls for web-base palat forms to accept data  </p></li>
+			<li><p> link -  Relation between the current document and external data or resource, use for relational framework for navigation.</p></li>
+			<li><p> meta - Represent metada that cannot represent by other Html meta-related elements. </p></li>
+			<li><p> param - parameter for an object elements.</p></li>
+			<li><p> source - specifies all media resources for audio, picture and video. its an emptey elements </p></li>
+			<li><p> track - child of media elements and allows you to specify text tracks.</p></li>
+			<li><p> wbr - (word break opportunity) - position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location. </p></li>
+			</ol>
+        </div>
+	<script src="../js/accordion.js"></script>
+</body>
+</html>
+ 
