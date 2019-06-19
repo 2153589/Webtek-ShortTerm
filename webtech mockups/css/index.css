@@ -1,0 +1,143 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html, body {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+
+
+
+header {
+	display: grid;
+	width: 100%;
+	/* background-image: linear-gradient(162deg, black 25%, #1fc8db 50%, black 75%);*/
+	height: 100%;
+}
+
+
+
+<!---->
+#logo-name{
+	font-size: 30px;
+	letter-spacing: 5px;
+	text-align: left;
+	color: white;
+	position: relative;
+	top: 200px;
+}
+
+.navigation{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 10px;
+}
+.navigation div a{
+    list-style-type: none;
+    display: inline;
+}
+.navigation a{
+    color: black;
+    position: relative;
+    top: 30px;
+    margin-right: 35px;
+    letter-spacing: 1px;
+	padding: 20px;
+}
+
+.nav-divider{
+    height: 100%;
+}
+
+.nav-bar{
+  display: grid;
+  grid-template-columns: 100% 50%;
+  margin-right: 40px;
+}
+
+.navigation a:hover {
+    color: black;
+	background-color: yellow;
+}
+
+
+/* Website title and intro */
+#coursename{
+  text-align: center;
+  font-size: 75px;
+  color: Yellow;
+  padding-top: 2.5%;
+  padding-bottom: 2%;
+}
+
+div #coursename {
+	position: relative;
+}
+
+.yellowbg {
+	background-color: black;
+	margin-top: 5%;
+	margin-left: 8%;
+	margin-right: 8%;
+
+}
+
+#intro {
+  text-align: center;
+  margin: 15px auto;
+  color: #ecf0f1;
+  font-size: 19px;
+  max-width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Home main topic tabs... eg WWW, HTTP, HTML, CSS, JS */
+.topic-border a {
+	border-style: solid;
+	border-color: yellow;
+	margin-left: 8.5%;
+}
+
+.tabs div a {
+    float: left;
+    color: black;
+    font-size: 30px;
+	padding-right: 8%;
+	padding-left: 8%;
+}
+
+.tabs {
+	margin-top: 7%;
+}
+
+.learn-border a {
+	border-style: solid;
+	border-color: gray;
+	margin-left: 16%;
+	margin-bottom: 10%;
+}
+
+.tabs .learn-border1 {
+    float: left;
+    color: black;
+    font-size: 25px;
+	padding-right: 0%;
+	padding-left: 0%;
+	margin-top: -2%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.tabs a:hovera {
+    color: white;
+    box-shadow: inset 0 4px black;
+    border-bottom: 4px solid black;
+}
