@@ -1,25 +1,24 @@
 *{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style-type: none;
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-html, body {
+/*html, body {
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-}
+}*/
 
 
 
-
+/*
 header {
 	display: grid;
 	width: 100%;
-	/* background-image: linear-gradient(162deg, black 25%, #1fc8db 50%, black 75%);*/
+	/* background-image: linear-gradient(162deg, black 25%, #1fc8db 50%, black 75%);
 	height: 100%;
 }
 
@@ -51,7 +50,7 @@ header {
     top: 30px;
     margin-right: 35px;
     letter-spacing: 1px;
-	padding: 20px;
+	  padding: 20px;
 }
 
 .nav-divider{
@@ -62,6 +61,8 @@ header {
   display: grid;
   grid-template-columns: 100% 50%;
   margin-right: 40px;
+  border: 1px;
+  border-color: aqua;
 }
 
 .navigation a:hover {
@@ -70,7 +71,7 @@ header {
 }
 
 
-/* Website title and intro */
+/* Website title and intro 
 #coursename{
   text-align: center;
   font-size: 75px;
@@ -99,7 +100,7 @@ div #coursename {
   max-width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
-/* Home main topic tabs... eg WWW, HTTP, HTML, CSS, JS */
+ Home main topic tabs... eg WWW, HTTP, HTML, CSS, JS 
 .topic-border a {
 	border-style: solid;
 	border-color: yellow;
@@ -140,4 +141,170 @@ div #coursename {
     color: white;
     box-shadow: inset 0 4px black;
     border-bottom: 4px solid black;
+}*/
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding:0;
+  margin: 0;
+  background-color: #f4f4f4;
 }
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+}
+
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #title{
+  float: left;
+}
+
+header #title h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top:10px;
+}
+
+header .active a{
+  color: #e8491d;
+}
+
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+.highlighted{
+  color:#e8491d;
+}
+
+/*showcase area*/
+
+#showcase{
+  margin-top: 20px;
+  min-height: 400px;
+  
+
+}
+
+/*main topics*/
+
+.box{
+  float: left;
+  width: 30%;
+  text-align:center;
+  padding:20px;
+}
+
+.box h3{
+  font-size: 30px;
+}
+
+.box a{
+  border: 2px #e8491d solid;
+  padding: 2px;
+  background-color: #e8491d;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#35424a;
+  text-align:center;
+}
+
+/*slider image */
+@keyframes slider{
+			
+  0%{
+    left: 0;
+  }
+  
+  20%{
+    left: 0;
+  }
+  
+  25%{
+    left: -100%;
+  }
+  
+  45%{
+    left : -100%;
+  }
+  
+  50%{
+    left: -200%;
+  }
+  
+  70%{
+    left: -200%;
+  }
+  
+  75%{
+    left: -300%;
+  }
+  
+  95%{
+    left: -300%;
+  }
+  
+  100%{
+    left: -400%;
+  }
+  
+  }
+  
+  #slider{
+    overflow: hidden;
+    height: 400px;
+    width: 1060px;
+    
+  }
+  
+  #slider figure img{
+    width: 20%;
+    float: left;
+  }
+  
+  #slider figure{
+    position: relative;
+    z-index: -1;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+  }
