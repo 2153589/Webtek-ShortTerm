@@ -1,54 +1,51 @@
-*{
+* {
 	margin:0;
 	padding:0;
 	text-decoration: none;
 	list-style-type: none;
 }
 
-
 header {
 	position: fixed;
 	display: grid;
 	width: 100%;
-	background-image: linear-gradient(90deg, black 25%, #1fc8db 49%, black 75%);
-	padding: 1%;
+	background-image: linear-gradient(90deg, black 32%, #1fc8db 50%, black 68%);
+	border-bottom: solid;
+	height: 10.4%;
 }
-
-nava {
-	display: grid;
-	width: 200px;
-	background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 50%, #2cb5e8 75%);
-	height: 100%;
-}
-
 
 #first-sec {
 	display: grid;
 	width: 100%;
-	background-image: linear-gradient(90deg, black 25%, #1fc8db 50%, black 75%);
-}
-
-#first-sec {
+	background-image: linear-gradient(90deg, black 32%, #1fc8db 50%, black 68%);
 	margin-top: 1%;
+	border-top: solid;
 }
 
+/* footer */
 footer {
 	display: grid;
 	width: 100%;
-	background-image: linear-gradient(90deg, black 25%, #1fc8db 50%, black 75%);
+	background-image: linear-gradient(90deg, black 32%, #1fc8db 50%, black 68%);
+	border-top: solid;
 }
 
+#foot {
+	color: white;
+	text-align: center;
+	padding: 2%;
+	font-size: 20px;
+}
 
 /* nav */
-#hello ul {
+#upright-nav ul {
 	margin:0;
 	padding:0;
 	float: right;
-	margin-right: 2%;
+	margin-right: 0%;
 }
 
-#hello ul a
-{
+#upright-nav ul a {
 
 	display: block;
 	color: white; 
@@ -56,92 +53,87 @@ footer {
 	letter-spacing: 4px;
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
       -webkit-transition: all 150ms linear;
--moz-transition: all 150ms linear;
--ms-transition: all 150ms linear;
--o-transition: all 150ms linear;
-transition: all 150ms linear;
+	-moz-transition: all 150ms linear;
+	-ms-transition: all 150ms linear;
+	-o-transition: all 150ms linear;
+	transition: all 150ms linear;
 }
 
-#hello ul a:hover
-{
+#upright-nav ul a:hover {
 
 	color: white;
-text-shadow: 0 0 2px white;
--webkit-text-shadow: 0 0 2px white;
--moz-text-shadow: 0 0 2px white;
--o-text-shadow: 0 0 2px white;
--ms-text-shadow: 0 0 2px white;
-  -webkit-transition: all 150ms linear;
--moz-transition: all 150ms linear;
--ms-transition: all 150ms linear;
--o-transition: all 150ms linear;
-transition: all 150ms linear;
+	text-shadow: 0 0 2px white;
+	-webkit-text-shadow: 0 0 2px white;
+	-moz-text-shadow: 0 0 2px white;
+	-o-text-shadow: 0 0 2px white;
+	-ms-text-shadow: 0 0 2px white;
+	-webkit-transition: all 150ms linear;
+	-moz-transition: all 150ms linear;
+	-ms-transition: all 150ms linear;
+	-o-transition: all 150ms linear;
+	transition: all 150ms linear;
 }
 
-
-
-#hello ul li {
+#upright-nav ul li {
 	position:relative;
 	float:left;
 	margin:0;
-	padding:;
+	padding:10px;
 }
 
-
-
-#hello ul ul li:hover {
-	background: gray;
+#upright-nav ul li:hover {
+	background: skyblue;
 }
 
-#hello ul ul
-{
+#upright-nav ul ul {
 	display:none;
 	position:absolute;
 	top:100%;
 	left:0;
 	background: black;
 	padding:0;
-
 }
 
-#hello ul ul li {
+#upright-nav ul ul li {
 	float:none;
-	width:7em;   
+	width:7.05em;   
 }
 
-#hello ul ul a
-{
+#upright-nav ul ul ul li {
+	float:none;
+	width:9em;   
+}
+
+#upright-nav ul ul a {
 	line-height:120%;
 	padding:10px 15px
-	background: #121314; 
-  
 }
 
-
-#hello ul ul ul
-{
+#upright-nav ul ul ul {
 	top:0;
-	left:100%
+	left:100%;
 
 }
 
-#hello ul li:hover > ul
-{
-	display:block
+#upright-nav ul ul ul li {
 
+}
+
+#upright-nav ul li:hover > ul {
+	display:block
 }
 
 /* Website title and intro */
 #coursename{
-  text-align: center;
-  margin: 10px auto;
-  font-size: 30px;
-  color: white;
-  float: left;
+	text-align: center;
+	margin: 10px auto;
+	font-size: 30px;
+	color: white;
+	float: left;
 }
 
 .highlighted{
-  color: #1fc8db;
+	color: skyblue;
 }
 
 #coursename {
@@ -150,16 +142,16 @@ transition: all 150ms linear;
 	background:;
 }
 
-#intro {
-  text-align: center;
-  margin: 15px auto;
-  color: #ecf0f1;
-  font-size: 18px;
-  max-width: 100%;
-  font-family: 'Montserrat', sans-serif;
-}
+/*#intro {
+	text-align: center;
+	margin: 15px auto;
+	color: #ecf0f1;
+	font-size: 18px;
+	max-width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}*/
 
-/* Home main topic tabs... eg HTTP, HTML, CSS, */
+/* Home main topic tabs... eg Introduction, Front-End, Back-End */
 .tabs a {
     display: block;
     float: left;
@@ -175,7 +167,7 @@ transition: all 150ms linear;
     border-bottom: 4px solid #ccc;
     -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
     transition: all 0.5s;
-	margin-top: 2%;
+	margin-top: 1%;
 }
 
 .tabs a:hover {
@@ -208,65 +200,64 @@ transition: all 150ms linear;
 }
 
 .description-course{
-  padding-top: 20px;
+	padding-top: 20px;
 
 }
 
 .course-description{
-  letter-spacing: 2px;
-  text-align: justify;
-  color: #333;
-  padding-left: 50px;
-  padding-right: 50px;
-  font-family: 'Mukta Malar', sans-serif;
+	letter-spacing: 2px;
+	text-align: justify;
+	color: #333;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: 'Mukta Malar', sans-serif;
 }
 
 /*slider image */
 @keyframes slider{
 			
-  0%{
-    left: 0;
-  }
+	0%{
+		left: 0;
+	}
   
-  20%{
-    left: 0;
-  }
+	20%{
+		left: 0;
+	}
   
-  25%{
-    left: -100%;
-  }
+	25%{
+		left: -100%;
+	}
   
-  45%{
-    left : -100%;
-  }
+	45%{
+		left : -100%;
+	}
   
-  50%{
-    left: -200%;
-  }
+	50%{
+		left: -200%;
+	}
   
-  70%{
-    left: -200%;
-  }
+	70%{
+		left: -200%;
+	}
+	
+	75%{
+		left: -300%;
+	}
   
-  75%{
-    left: -300%;
-  }
+	95%{
+		left: -300%;
+	}
   
-  95%{
-    left: -300%;
-  }
-  
-  100%{
+	100%{
     left: -400%;
-  }
+	}
   
-  }
+}
   
   #slider{
     overflow: hidden;
     height: 400px;
     width: 1060px;
-    
   }
   
   #slider figure img{
@@ -283,11 +274,8 @@ transition: all 150ms linear;
     animation: 15s slider infinite;
   }
   
-  #showcase{
+#showcase {
   margin-top: 5%;
-
-  
-
 }
 
 .container {
@@ -296,8 +284,3 @@ transition: all 150ms linear;
   overflow: hidden;
 }
 
-#foot {
-	color: white;
-	text-align: center;
-	padding: 2%;
-}
