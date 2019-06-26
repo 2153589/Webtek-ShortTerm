@@ -1,0 +1,33 @@
+#side-nav{
+  height: auto;
+  width: 280px;
+  background: #35424a;
+}
+
+#side-nav h1{
+  color:#ffffff;
+
+}
+
+.topic-box h3{
+  color: #cccccc;
+  border-bottom: 2px solid #e8491d;
+  font-size: 30px;
+}
+
+.topic-box li{
+  list-style: none;
+}
+
+.topic-box a{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  padding: 2px;
+  font-size: 20px;
+}
+
+.topic-box a:hover{
+  color:#e8491d;
+}
+
