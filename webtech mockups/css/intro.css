@@ -14,7 +14,7 @@
 .topic-box h3{
   color: #cccccc;
   border-bottom: 2px solid #e8491d;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .topic-box li{
@@ -31,6 +31,10 @@
 
 .topic-box a:hover{
   color:#e8491d;
+}
+
+.topic-box .active a{
+  color: #e8491d;
 }
 
 /*#side-nav {
@@ -56,8 +60,26 @@
 #contents {
   margin-left: 300px; /* Same as the width of the sidenav */
   margin-right: 30px;
-  font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
   margin-top: 60px;
 }
 
+#contents img{
+  height: 150px;
+  width: 600px;
+  margin-top: 20px;
+  display: block;
+}
+
+#contents p{
+  font-size: 22px;
+}
+
+#contents li{
+  font-size: 20px;
+  margin-left: 35px;
+}
+
+#contents h3{
+  font-size: 25px;
+}

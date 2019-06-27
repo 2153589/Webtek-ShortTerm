@@ -7,7 +7,6 @@
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 15px;
-  line-height: 1.5;
   padding:0;
   margin: 0;
   background-color: #f4f4f4;
@@ -22,9 +21,13 @@ body{
 header{
   background:#35424a;
   color:#ffffff;
-  padding-top: 30px;
   min-height: 70px;
+  padding-top: 15px;
   border-bottom: #e8491d 3px solid;
+  /*position: fixed;
+  width:100%;
+  overflow: hidden;*/
+  
 }
 
 header a{
@@ -56,6 +59,7 @@ header #title h1{
 header nav{
   float: right;
   margin-top:10px;
+  display: flex;
 }
 
 header .active a{
@@ -75,7 +79,7 @@ header a:hover{
 #showcase{
   margin-top: 20px;
   min-height: 400px;
-  
+  position: relative;
 
 }
 
