@@ -10,7 +10,7 @@
 	<link rel = "icon" type = "img/png" href = "images/Logo.png">
 	<link rel="stylesheet" type="text/css" href="../css/intro.css" />
 	<link rel="stylesheet" type="text/css" href="../css/index.css" />
-	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="../css/tabs.css" />
 </head>
 <body>
         <header>
@@ -41,7 +41,6 @@
                             <li><a href="" id="link-color">World Wide Web</a></li>
                             <li><a href="" id="link-color">Internet</a></li>
                             <li><a href="" id="link-color">Hypertext Transfer Protocol</a></li>
-                            <li><a href="" id="link-color">Content Negotiation</a></li>
                         </ul>
                         <hr>
         
@@ -75,7 +74,7 @@
                             <h3>Internet</h3>
                             <ul>
                                 <li><a href="">History</a></li>
-                                <li><a href=""></a></li>
+                                <li><a href="">2</a></li>
                                 <li><a href="">3</a></li>
                             </ul>
                     </div>
@@ -83,10 +82,10 @@
                         <div class="topic-box">
                                 <h3>Hypertext Transfer Protocol</h3>
                                 <ul>
-                                    <li><a href="">HTTP Protocol Versions </a></li>
-                                    <li><a href="">HTTP Fundamentals</a></li>
-                                    <li><a href="">HTTP Request Message</a></li>
-                                    <li><a href="">HTTP Respone Message</a></li>
+                                        <li><a href="versions.html">HTTP Protocol Versions </a></li>
+                                        <li><a href="fundamentals.html">HTTP Fundamentals</a></li>
+                                        <li><a href="reqMessage.html">HTTP Request Message</a></li>
+                                        <li><a href="resMessage.html">HTTP Respone Message</a></li>
                                 </ul>
                         </div>
         
@@ -96,77 +95,92 @@
 
                     <h3>Unifrom Resource Locator</h3>
                     <hr>
+                    <br>
+
                         <p>
                             URL contains unique name and it is also a unique content on the web. It can contain an html document, css document, videos, audio or even images, etc.
                         </p>
+                    <br>
                     
                         <p>
                                 A URL has different parts:
-                                <nav>
-                                    <ul>
-                                        <li>Protocol</a></li>
-                                        <li>Domain Name</a></li>
-                                        <li>Port</li>
-                                        <li>Path of the file</li>
-                                        <li>Parameters</li>
-                                        <li>Anchor</li>
-                                    </ul>
-                                </nav>
-                            </p>
-                            <div id="Protocol">
-                                <h3>Protocol</h3>
-                                <p>
-                                    The protocol tells what kind of protocol must the browser use. It can be the secured version of HTTP which is HTTPS or other protocols like ftp and others.
-                    
-                                    <img src="../images/Protocol.png" alt="protocol">
-                                </p>
-                            </div>
-                    
-                            <div id="Domain_Name">
-                                <h3>Domain Name</h3>
-                                <p>
-                                    The Domain name is the address in which a web server is located. You can also use the IP address of a web server to locate a website in the web.
+                        </p>
+
+                            <br>
+                            <div class="tabs">
+                                    <div class="tab">
+                                        <input name="checkbox-tabs-group" type="radio" id="checkbox1" class="checkboxtab" checked>
+                                        <label for="checkbox1" class ="labels">Protocol</label>
+                                        <div class="content">
+                                                <p>
+                                                    The protocol tells what kind of protocol must the browser use. It can be the secured version of HTTP which is HTTPS or other protocols like ftp and others.
+                                        
+                                                     <img src="../images/Protocol.png" alt="protocol">
+                                                </p>
+                                        </div>
+                                    </div>
                                     
-                                    <img src="../images/Domain.png" alt="Domain_Name">
-                                </p>
-                            </div>
-                    
-                            <div id="Port">
-                                <h3>Port</h3>
-                                <p>
-                                    A port is used to access a resource on a web server. It is like a gateway where you can know where to find a certain resource.
-                    
-                                    <img src="../images/Port.png" alt="Port">
-                                </p>
-                            </div>
-                    
-                            <div id="Path">
-                                <h3>Path of the File</h3>
-                                <p>
-                                    This path is where you locate contents of a web server just like in windows explorer where path can be directories and inside the directory are sub directories. This can be used to point to a specific resource in a web server.
-                                    <br>
-                    
-                                    <img src="../images/Path.png" alt="Path">
-                                </p>
-                            </div>
-                    
-                            <div id="Parameters">
-                                <h3>Parameters</h3>
-                                <p>
-                                    This values are parameters that are given to a web server where these parameters can do other thing before it can deliver a resource to a user.
-                    
-                                    <img src="../images/Param.png" alt="Param">
-                                </p>
-                            </div>
-                    
-                            <div id="Anchor">
-                                <h3>Anchor</h3>
-                                <p>
-                                    An anchor represents a bookmark in a resource on a webpage. This serves as a linked to a location that is bookmarked in a resource. When a bookmark is selected in a webpage it will scroll through the webpage that contains the anchor. Another example is a video where you can click or point to a certain point of the video or audio.
-                    
-                                    <img src="../images/Anchor.png" alt="Anchor">
-                                </p>
-                            </div>
+                                    <div class="tab">
+                                        <input name="checkbox-tabs-group" type="radio" id="checkbox2" class="checkboxtab">
+                                        <label for="checkbox2" class ="labels">Domain Name</label>
+                                        <div class="content">
+                                                <p>
+                                                        The Domain name is the address in which a web server is located. You can also use the IP address of a web server to locate a website in the web.
+                                                        
+                                                        <img src="../images/Domain.png" alt="Domain_Name">
+                                                    </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tab">
+                                        <input name="checkbox-tabs-group" type="radio" id="checkbox3" class="checkboxtab">
+                                        <label for="checkbox3" class ="labels">Port</label>
+                                        <div class="content">
+                                                <p>
+                                                        A port is used to access a resource on a web server. It is like a gateway where you can know where to find a certain resource.
+                                        
+                                                        <img src="../images/Port.png" alt="Port">
+                                                    </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab">
+                                            <input name="checkbox-tabs-group" type="radio" id="checkbox4" class="checkboxtab" >
+                                            <label for="checkbox4" class ="labels">Path </label>
+                                            <div class="content">
+                                                    <p>
+                                                            This path is where you locate contents of a web server just like in windows explorer where path can be directories and inside the directory are sub directories. This can be used to point to a specific resource in a web server.
+                                                        
+                                            
+                                                            <img src="../images/Path.png" alt="Path">
+                                                        </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tab">
+                                            <input name="checkbox-tabs-group" type="radio" id="checkbox5" class="checkboxtab">
+                                            <label for="checkbox5" class ="labels" >Parameter</label>
+                                            <div class="content">
+                                                    <p>
+                                                            This values are parameters that are given to a web server where these parameters can do other thing before it can deliver a resource to a user.
+                                            
+                                                            <img src="../images/Param.png" alt="Param">
+                                                        </p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="tab">
+                                            <input name="checkbox-tabs-group" type="radio" id="checkbox6" class="checkboxtab">
+                                            <label for="checkbox6" class ="labels">Anchor</label>
+                                            <div class="content">
+                                                    <p>
+                                                            An anchor represents a bookmark in a resource on a webpage. This serves as a linked to a location that is bookmarked in a resource. When a bookmark is selected in a webpage it will scroll through the webpage that contains the anchor. Another example is a video where you can click or point to a certain point of the video or audio.
+                                            
+                                                            <img src="../images/Anchor.png" alt="Anchor">
+                                                        </p>
+                                            </div>
+                                        </div>
+                                </div>
                </section>
 </body>
 </html>
