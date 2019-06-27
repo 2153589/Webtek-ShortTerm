@@ -11,7 +11,7 @@ header {
 	/*background-image: linear-gradient(90deg, black 32%, #1fc8db 50%, black 68%);*/
 	background-color: #35424a;
 	border-bottom: #e8491d 3px solid;
-	position: fixed;
+	/*position: fixed;*/
 }
 
 #first-sec {
