@@ -68,7 +68,6 @@ header .active a{
 
 header a:hover{
   color: #cccccc;
-  font-weight: bold;
 }
 .highlighted{
   color:#e8491d;
