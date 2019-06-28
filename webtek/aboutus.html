@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		html {
+			box-sizing: border-box;
+		}
+
+		*, *:before, *:after {
+			box-sizing: inherit;
+		}
+
+		.column {
+			float: left;
+			width: 33.3%;
+			margin-bottom: 16px;
+			padding: 0 8px;
+		}
+
+		@media screen and (max-width: 650px) {
+			.column {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		.container {
+			padding: 0 16px;
+		}
+
+		.container::after, .row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.title {
+			color: grey;
+		}
+
+		.button {
+			border: none;
+			outline: 0;
+			display: inline-block;
+			padding: 8px;
+			color: white;
+			background-color: #000;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;
+		}
+
+
+		.AboutUs {
+			padding-top:30px;
+			padding-bottom:30px;
+			margin-bottom:30px;
+			color:inherit;
+			background-color:#eee;
+			font-family: Impact, Charcoal, sans-serif;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="AboutUs">
+		<center><h1>About Us</h1></center>     
+		<center><p>We are all in the same boat, we need to work together to get to where we need to be.</p></center>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<img src="img/mike.jpg" alt="Mike" style="width:100%">
+				<div class="container">
+					<h2>Michael Jericho Dariano</h2>
+					<p>michaeldariano1998@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="img/clarence.jpg" alt="Clarence" style="width:100%">
+				<div class="container">
+					<h2>Clarence Juanata</h2>
+					<p>crencej@gmail.com</p>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="card">
+				<img src="img/grae.jpg" alt="Graeham" style="width:100%">
+				<div class="container">
+					<h2>Graeham Solis</h2>
+					<p>gsolis@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="img/kaye.jpg" alt="Kaye" style="width:100%">
+				<div class="container">
+					<h2>Marianne Kaye Cariño</h2>
+					<p>kdagang@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="img/bon.jpg" alt="Yvonne" style="width:100%">
+				<div class="container">
+					<h2>Ynonne Manuel</h2>
+					<p>vnnmanuel@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="img/rach.jpg" alt="Rach" style="width:100%">
+				<div class="container">
+					<h2>Rachelle Ann Muyargas</h2>
+					<p>rachmuyargas@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="img/camille.jpg" alt="Camille	" style="width:100%">
+				<div class="container">
+					<h2>JM Camille Poyaoan</h2>
+					<p>poyaoanjmcamille@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
