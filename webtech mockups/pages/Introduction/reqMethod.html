@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../css/intro.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/tabs.css"/>
+    <title>Document</title>
+</head>
+<body>
+    	<!-- Header -->
+	<header>
+            <div class="container">
+                <div id="title">
+                    <h1> <span class="highlighted">Web Systems</span> and Technology</h1>
+                </div>
+                <nav>
+                    <ul>	
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#open-modal">Topics</a></li>
+                        <li><a href="">About Us</a></li>		
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+        <!-- End of header -->
+        <!-- Content for TOPICS navigation in modal view-->
+            <div id="open-modal" class="modal-window">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+                    
+                    <h1>Topics</h1>
+    
+                    <h1>Introduction</h1>
+                    <ul>
+                        <li><a href="" id="link-color">World Wide Web</a></li>
+                        <li><a href="" id="link-color">Internet</a></li>
+                        <li><a href="" id="link-color">Hypertext Transfer Protocol</a></li>
+                        <li><a href="" id="link-color">Content Negotiation</a></li>
+                    </ul>
+                    <hr>
+    
+                    <h1>Front-End Development</h1>
+                    <ul>
+                        <li><a href="">Hypertext Markup Language</a></li>
+                        <li><a href="">Cascading Style Sheet</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                    <hr>
+                    <h1>Back-End Development</h1>
+                    <a href="" class="link-color"> - Not Yet Available</a>
+    
+                </div>
+            </div>
+            
+            <!--Side navigation for other topics-->
+        
+            <section id="side-nav">
+                <h1>Introduction</h1>
+                <div class="topic-box">
+                    <h3>World Wide Web</h3>
+                    <ul>
+                        <li class="active"><a href="">History</a></li>
+                        <li><a href="../Introduction/url.html   ">Unifrom Resource Locator</a></li>
+                    </ul>
+                </div>
+    
+                <div class="topic-box">
+                        <h3>Internet</h3>
+                        <ul>
+                            <li><a href="">History</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                        </ul>
+                </div>
+    
+                    <div class="topic-box">
+                            <h3>Hypertext Transfer Protocol</h3>
+                            <ul>
+                                <li><a href="versions.html">HTTP Protocol Versions </a></li>
+                                <li><a href="fundamentals.html">HTTP Fundamentals</a></li>
+                                <li><a href="reqMessage.html">HTTP Request Message</a></li>
+                                <li class="active"><a href="resMessage.html">HTTP Respone Message</a></li>
+                            </ul>
+                    </div>
+    
+            </section>
+
+            <section id="contents">
+                <h3>HTTP Request Method</h3> 
+                <hr>
+                <div class="tabs">
+                    <div class="tab">
+                        <input name="checkbox-tabs-group" type="radio" id="checkbox1" class="checkboxtab" checked>
+                        <label for="checkbox1" class ="labels">Standart Method</label>
+                            <div class="content">
+                                <table>
+                                    <tr>
+                                        <td>GET</td>
+                                        <td> Used to request from the server the retrieval of the resource id by the request uri; the retrieved response is returned in the message body of the response as an entity.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>HEAD</td>
+                                        <td>Identical to get, except that the entity is not included in the response. Also used to retrieve meta info about the entity implied by the request without transferring the entity itself. Like get, it must be supported by all general - pupose servers.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>POST</td>
+                                        <td>Used to request the server accept data entities enclosing in the message body for processing by the response identified by the request uri. Typically used in submitting html form data.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>PUT</td>
+                                        <td>Request the server to store the enclosed entity in the message under the specified request URI</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>DELETE</td>
+                                        <td>Used to request the server to delete the resource identified by the request uri</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>OPTIONS</td>
+                                        <td>Used to request from the server information about the communication options available for the response identified by the required uri.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>TRACE</td>
+                                        <td> Used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>CONNECT</td>
+                                        <td>Reserved for the tunneling proxy servers</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            <div class="tab">
+                                    <input name="checkbox-tabs-group" type="radio" id="checkbox2" class="checkboxtab" >
+                                    <label for="checkbox2" class ="labels"> Method Properties</label>
+                                        <div class="content">
+                                        </div>
+                            </div> 
+                    </div>
+                </div>                
+            </section>
+</body>
+</html>
