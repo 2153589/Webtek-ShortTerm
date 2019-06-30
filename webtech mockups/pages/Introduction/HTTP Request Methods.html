@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../css/intro.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <title>Document</title>
+</head>
+<body>
+    	<!-- Header -->
+	<header>
+            <div class="container">
+                <div id="title">
+                    <h1> <span class="highlighted">Web Systems</span> and Technology</h1>
+                </div>
+                <nav>
+                    <ul>	
+                        <li class="active"><a href="">Home</a></li>
+                        <li><a href="#open-modal">Topics</a></li>
+                        <li><a href="">About Us</a></li>		
+                    </ul>
+                </nav>
+                
+            </div>
+        </header>
+        <!-- End of header -->	
+    
+        <!-- Content for TOPICS navigation in modal view-->
+            <div id="open-modal" class="modal-window">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+                    
+                    <h1>Topics</h1>
+    
+                    <h1>Introduction</h1>
+                    <ul>
+                        <li><a href="" id="link-color">World Wide Web</a></li>
+                        <li><a href="" id="link-color">Internet</a></li>
+                        <li><a href="" id="link-color">Hypertext Transfer Protocol</a></li>
+                        <li><a href="" id="link-color">Content Negotiation</a></li>
+                    </ul>
+                    <hr>
+    
+                    <h1>Front-End Development</h1>
+                    <ul>
+                        <li><a href="">Hypertext Markup Language</a></li>
+                        <li><a href="">Cascading Style Sheet</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                    <hr>
+                    <h1>Back-End Development</h1>
+                    <a href="" class="link-color"> - Not Yet Available</a>
+    
+                </div>
+            </div>
+
+            <section id="side-nav">
+                    <h1>Front-End Development</h1>
+                    <div class="topic-box">
+                        <h3>Hypertext Markup Language</h3>
+                        <ul>
+                            <li class="active"><a href="pages/Front-End/HTML.html">History</a></li>
+                            <li><a href="../Front-End/Elements.html  ">HTML Elements</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="topic-box">
+                            <h3>Cascading Style Sheets</h3>
+                            <ul>
+                                <li><a href="CSS.html">History</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                            </ul>
+                    </div>
+        
+                        <div class="topic-box">
+                                <h3>Hypertext Transfer Protocol</h3>
+                                <ul>
+                                    <li><a href="versions.html">HTTP Protocol Versions </a></li>
+                                    <li><a href="fundamentals.html">HTTP Fundamentals</a></li>
+                                    <li><a href="reqMessage.html">HTTP Request Message</a></li>
+                                    <li><a href="resMessage.html">HTTP Respone Message</a></li>
+                                    <li><a href="reqMethod.html">HTTP Request Methods</a></li>
+                                </ul>
+                        </div>
+        
+                </section>
+
+                <section id="contents">
+                    <p>
+                        <ul>HTTP Standard Request Methods</ul>
+                        <li>HTTP defines 8 standard methods, namely, GET, HEAD, POST, PUT, DELETE, OPTIONS, TRACE, and
+                            CONNECT, with GET and HEAD being required to be supported by HTTP-compliant servers </li>
+                    </br>
+    
+                        <li>the behavior of the HTTP standard request methods can be characterized as follows:</li>   
+                    </br>
+                        <li>safe: client does not request, and does not expect, any state change on the origin server as
+                            a result of applying the method to a target resource; i.e., the method’s effect is essentially
+                            read-only</li>
+                        <li>GET, HEAD, OPTIONS, and TRACE are safe methods</li>
+                    </br>
+                        <li>idempotent: intended effect on the server of multiple identical requests with the method is
+                            the same as the effect of a single such request</li>
+                        <li>GET, HEAD, OPTIONS, TRACE, PUT, and DELETE are idempotent methods</li>
+                    </br>
+                        <li>cacheable: indicates that the response to a method is allowed to be stored for future reuse</li>
+                        <li>GET, HEAD, and POST are cacheable methods</li>
+                    
+                    </p>
+               </section>
+    
+</body>
+</html>
