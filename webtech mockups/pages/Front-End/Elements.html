@@ -57,39 +57,272 @@
                 </div>
     
                 <section id="side-nav">
-                        <h1>Front-End Development</h1>
-                        <div class="topic-box">
-                            <h3>Hypertext Markup Language</h3>
-                            <ul>
-                                <li><a href="HTML.html">History</a></li>
-                                <li class="active"><a href="Elements.html  ">HTML Elements</a></li>
-                            </ul>
-                        </div>
+                    <h1>Front-End Development</h1>
+                    <div class="topic-box">
+                        <h3>Hypertext Markup Language</h3>
+                        <ul>
+                            <li><a href="HTML.html">History</a></li>
+                            <li class="active"><a href="Elements.html  ">HTML Elements</a></li>
+                        </ul>
+                    </div>
             
-                        <div class="topic-box">
-                                <h3>Cascading Style Sheets</h3>
-                                <ul>
-                                    <li><a href="">History</a></li>
-                                    <li><a href="">2</a></li>
-                                    <li><a href="">3</a></li>
-                                </ul>
-                        </div>
+                    <div class="topic-box">
+                        <h3>Cascading Style Sheets</h3>
+                        <ul>
+                            <li><a href="">History</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                        </ul>
+                    </div>
             
-                            <div class="topic-box">
-                                    <h3>Hypertext Transfer Protocol</h3>
-                                    <ul>
-                                        <li><a href="versions.html">HTTP Protocol Versions </a></li>
-                                        <li><a href="fundamentals.html">HTTP Fundamentals</a></li>
-                                        <li><a href="reqMessage.html">HTTP Request Message</a></li>
-                                        <li><a href="resMessage.html">HTTP Respone Message</a></li>
-                                        <li><a href="reqMethod.html">HTTP Request Methods</a></li>
-                                    </ul>
-                            </div>
+                    <!--<div class="topic-box">
+						<h3>Hypertext Transfer Protocol</h3>
+						<ul>
+							<li><a href="versions.html">HTTP Protocol Versions </a></li>
+							<li><a href="fundamentals.html">HTTP Fundamentals</a></li>
+                            <li><a href="reqMessage.html">HTTP Request Message</a></li>
+                            <li><a href="resMessage.html">HTTP Respone Message</a></li>
+                            <li><a href="reqMethod.html">HTTP Request Methods</a></li>
+                        </ul>
+                    </div>-->
             
-                    </section>
-                    <section id="contents">
-                             <p>
-                           <ul> HEAD</ul> <br/>
+                </section>
+                <section id="contents">
+						
+					<table id="head">
+						<tr>
+							<th>HEAD</th>
+							<th>description</th>
+							<th>Example</th>
+						</tr>
+						<tr>
+							<td id='th'>title</td>
+							<td id='td2'><p></td>
+							<td id='td'>&lt;title&gt; &lt;&#47;title&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'>base</td>
+							<td id='td2'>The base URL to use for all relative URLs that are inside the document. Only one element is present in a document</td>
+							<td id='td'>&lt;base &#47;&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'>link</td>
+							<td id='td2'>Relation between the current document and external data or resource, use for relational framework for navigation.</td>
+							<td id='td'>&lt;link &#47;&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'>meta</td>
+							<td id='td2'>Represent metada that cannot represent by other Html meta-related elements.</td>
+							<td id='td'>&lt;meta &#47;&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'>style</td>
+							<td id='td2'></td>
+							<td id='td'>&lt;style&gt; &lt;&#47;style&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'>script</td>
+							<td id='td2'></td>
+							<td id='td'>&lt;script&gt; &lt;&#47;script&gt;</td>
+						</tr>
+					</table>
+					<br>
+					
+					<table id="body">
+						<tr>
+							<th>BODY</th>
+							<th id='td1'>HTML Tag Example</th>
+							<th></th>
+						</tr>
+						<tr>
+							<td id='th'>Grouping Elements</th>
+							<td id='td1'>&lt;div&gt; &lt;&#47;div&gt;</td>
+							<td id='td'>&lt;span&gt; &lt;&#47;span&gt;</td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Headings</td>
+							<td id='td1'>&lt;h1&gt; &lt;&#47;h1&gt;</td>
+							<td id='td'>&lt;h4&gt; &lt;&#47;h4&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'></td>
+							<td id='td1'>&lt;h2&gt; &lt;&#47;h2&gt;</td>
+							<td id='td'>&lt;h5&gt; &lt;&#47;h5&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'></td>
+							<td id='td1'>&lt;h3&gt; &lt;&#47;h3&gt;</td>
+							<td id='td'>&lt;h6&gt; &lt;&#47;h6&gt;</td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Paragraphs</th>
+							<td id='td1'>&lt;p&gt; &lt;&#47;p&gt;</td>
+							<td id='td'><td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Line Breaks</th>
+							<td id='td1'>&lt;br&gt;</td>
+							<td id='td'></td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Horizontal Rules</th>
+							<td id='td1'>&lt;hr&gt;</td>
+							<td id='td'></td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Lists</th>
+							<td id='td1'>&lt;ul&gt; &lt;&#47;ul&gt;</td>
+							<td id='td'>&lt;dl&gt; &lt;&#47;dl&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'></th>
+							<td id='td1'>&lt;ol&gt; &lt;&#47;ol&gt;</td>
+							<td id='td'>&lt;dt&gt; &lt;&#47;dt&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'></th>
+							<td id='td1'>&lt;li&gt; &lt;&#47;li&gt;</td>
+							<td id='td'></td>
+						</tr>
+						<tr>
+							<td id='th'>Tables</th>
+							<td id='td1'>&lt;table&gt; &lt;&#47;table&gt;</td>
+							<td id='td'>&lt;td&gt; &lt;&#47;td&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'></th>
+							<td id='td1'>&lt;th&gt; &lt;&#47;th&gt;</td>
+							<td id='td'>&lt;th&gt; &lt;&#47;th&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'></th>
+							<td id='td1'>&lt;tr&gt; &lt;&#47;tr&gt;</td>
+							<td id='td'></td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Phrase Elements</th>
+							<td id='td1'>&lt;em&gt; &lt;&#47;em&gt;</td>
+							<td id='td'>&lt;code&gt; &lt;&#47;code&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'></th>
+							<td id='td1'>&lt;strong&gt; &lt;&#47;strong&gt;</td>
+							<td id='td'>&lt;kbd&gt; &lt;&#47;kbd&gt;</td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Quotations</th>
+							<td id='td1'>&lt;blockquote&gt; &lt;&#47;blockquote&gt;</td>
+							<td id='td'>&lt;q&gt; &lt;&#47;q&gt;</td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Subscripts</th>
+							<td id='td1'>&lt;sub&gt; &lt;&#47;sub&gt;</td>
+							<td id='td'></td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Superscripts</th>
+							<td id='td1'>&lt;sup&gt; &lt;&#47;sup&gt;</td>
+							<td id='td'></td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Preformatted Texts</th>
+							<td id='td1'>&lt;pre&gt; &lt;&#47;pre&gt;</td>
+							<td id='td'></td>
+						</tr>
+						<tr>
+							<td id='th'>Font Styles and Alignments</th>
+							<td id='td1'>&lt;tt&gt; &lt;&#47;tt&gt;</td>
+							<td id='td'>&lt;big&gt; &lt;&#47;big&gt;</td>
+						</tr>
+						<tr>
+							<td id='th'></th>
+							<td id='td1'>&lt;i&gt; &lt;&#47;i&gt;</td>
+							<td id='td'>&lt;small&gt; &lt;&#47;small&gt;</td>
+						</tr>
+						
+						<tr>
+							<td id='th'></th>
+							<td id='td1'>&lt;b&gt; &lt;&#47;b&gt;</td>
+							<td id='td'>&lt;strike&gt; &lt;&#47;strike&gt;</td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Document changes</th>
+							<td id='td1'>&lt;ins&gt; &lt;&#47;ins&gt;</td>
+							<td id='td'>&lt;del&gt; &lt;&#47;del&gt;</td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Anchor</th>
+							<td id='td1'>&lt;a&gt; &lt;&#47;a&gt;</td>
+							<td id='td'></td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Objects</th>
+							<td id='td1'>&lt;object&gt; &lt;&#47;object&gt;</td>
+							<td id='td'></td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Images</th>
+							<td id='td1'>&lt;img &gt;</td>
+							<td id='td'></td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Applets</th>
+							<td id='td1'>&lt;param &gt;</td>
+							<td id='td'></td>
+						</tr>
+						
+						<tr>
+							<td id='th'>Miscellaneous</th>
+							<td id='td1'>&lt;address&gt; &lt;&#47;address&gt;</td>
+							<td id='td'>&lt;bdo&gt; &lt;&#47;bdo&gt;</td>
+						</tr>
+						
+												<tr>
+							<td id='th'>frames</th>
+							<td id='td1'></td>
+							<td id='td'></td>
+						</tr>
+						
+												<tr>
+							<td id='th'>noframes</th>
+							<td id='td1'></td>
+							<td id='td'></td>
+						</tr>
+						
+												<tr>
+							<td id='th'>iframe</th>
+							<td id='td1'></td>
+							<td id='td'></td>
+						</tr>
+						
+												<tr>
+							<td id='th'>Frameset (for frameset DTD)</th>
+							<td id='td1'></td>
+							<td id='td'></td>
+						</tr>
+						
+					</table>
+
+
+<!--
+						<p>
+							<ul> HEAD</ul> 
+							<br/>
                                 <li>Title, base, link, meta, style, script.</li><br/>
                             BODY<br/>
                         <li>Grouping elements (div, span)</li><br/>
@@ -111,7 +344,9 @@
                         <li>Frameset (for frameset DTD)</li><br/>
                         </p>
                     </ul>
+-->
                 </section>
+				<br>
 
 </body>
 </html>

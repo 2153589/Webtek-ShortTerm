@@ -76,3 +76,71 @@
 #Domain_Name, #Anchor, #Port, #Path, #Parameters{
   padding-top: 15px;
 }
+
+
+/* table for head */
+#head {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+#head td, #head th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#head tr:nth-child(even){background-color: #f2f2f2;}
+#head th:first-child{color: #e8491d; width: 21%;}
+
+#head tr:hover {background-color: #ddd;}
+
+#head th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #35424a;
+  color: white;
+}
+
+/* table for body */
+#body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#body td, #body th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#body tr:nth-child(even){background-color: #f2f2f2;}
+#body th:first-child{color: #e8491d; width: 20%;}
+
+#body tr:hover {background-color: #ddd;}
+
+#body th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #35424a;
+  color: white;
+}
+
+#th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: gray;
+	color: white;
+}
+
+tr #td1 {
+	width: 35%;
+}
+
+tr #td2 {
+	width: 60%;
+}
+
