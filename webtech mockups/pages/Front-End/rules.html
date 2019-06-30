@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/intro.css" />
     <link rel="stylesheet" type="text/css" href="../../css/index.css" />
     <link rel="stylesheet" type="text/css" href="../../css/tabs.css" />
+    <link rel="stylesheet" href="../../css/table.css">
     <title>Document</title>
 </head>
 <body>
@@ -107,37 +108,37 @@
                                 <div class="content">
                      <table>
                          <tr>
-                             <td>Universal Selector</td>
+                             <td class="keyword">Universal Selector</td>
                              <td><span class="colored">*</span>{<br/>
                              } <br/></td>
                          </tr>
 
                          <tr>
-                             <td>Type Selector</td>
+                             <td class="keyword">Type Selector</td>
                              <td><span class="colored">p</span>{ <br>
                             }</td>
                          </tr>
 
                          <tr>
-                             <td>Grouped</td>
+                             <td class="keyword">Grouped</td>
                              <td><span class="colored"> h1,h2,h3</span> {
                                  <br> }</td>
                          </tr>
 
                          <tr>
-                             <td>ID Selector</td>
+                             <td class="keyword">ID Selector</td>
                              <td><span class="colored">#nav</span> { <br>
                              }</td>
                          </tr>
 
                          <tr>
-                             <td>Class Selector</td>
+                             <td class="keyword">Class Selector</td>
                              <td><span class="colored">.hide</span>{ <br>
                              } </td>
                          </tr>
 
                          <tr>
-                             <td>Attribute Selector</td>
+                             <td class="keyword" >Attribute Selector</td>
                              <td><span class="colored">div(class=note)</span>{ <br>
                              }</td>
                          </tr>
@@ -150,25 +151,25 @@
                                 <div class="content">
                                     <table>
                                         <tr>
-                                            <td> Descendant Combinator</td>
+                                            <td class="keyword"> Descendant Combinator</td>
                                             <td><span class="colored">div.content em</span>{ <br>
                                             }</td>
                                         </tr>
 
                                         <tr>
-                                            <td>Child Combinator</td>
+                                            <td class="keyword">Child Combinator</td>
                                             <td><span class="colored">div.content > em</span>{ <br>
                                             }</td>
                                         </tr>
 
                                         <tr>
-                                            <td>Adjacent Sibling Combinator</td>
+                                            <td class="keyword">Adjacent Sibling Combinator</td>
                                             <td><span class="colored"> h1 + p </span>{ <br>
                                             }</td>
                                         </tr>
 
                                         <tr>
-                                            <td>General Sibling Combinator</td>
+                                            <td class="keyword">General Sibling Combinator</td>
                                             <td><span class="colored">h1 ~p </span>{ <br>
                                             }</td>
                                         </tr>
@@ -180,47 +181,68 @@
                                         <input name="checkbox-tabs-group" type="radio" id="checkbox3" class="checkboxtab">
                                         <label for="checkbox3" class ="labels">Psudeo Classes</label>
                                         <div class="content">
+                                            <table>
+                                                <tr>
+                                                    <td>&#8758;active</td>
+                                                    <td>&#8758;checked</td>
+                                                    <td>&#8758;disabled</td>
+                                                    <td>&#8758;empty</td>
+                                                    <td>&#8758;visited</td>
+                                                </tr>
 
+                                                <tr>
+                                                    <td>&#8758;enable</td>
+                                                    <td>&#8758;first-child</td>
+                                                    <td>&#8758;first-type-of</td>
+                                                    <td>&#8758;focus</td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;hover</td>
+                                                    <td>&#8758;in-range</td>
+                                                    <td>&#8758;invalid</td>
+                                                    <td>&#8758;last-type-of</td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;link</td>
+                                                    <td>&#8758;not(select)</td>
+                                                    <td>&#8758;nth-chlid(n)</td>
+                                                    <td>&#8758;nth-last-child(n)</td>
+                                                    <td></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>&#8758;nth-last-type-of(n)</td>
+                                                    <td>&#8758;nth-type-of(n)</td>
+                                                    <td>&#8758;only-of-type</td>
+                                                    <td>&#8758;only-child</td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;optional</td>
+                                                    <td>&#8758;out-of-range</td>
+                                                    <td>&#8758;read-only</td>
+                                                    <td>&#8758;read-write</td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;requried</td>
+                                                    <td>&#8758;root</td>
+                                                    <td>&#8758;target</td>
+                                                    <td>&#8758;valid</td>
+                                                    <td></td>
+                                                </tr>
+
+                                            </table>
                                         </div>
                                 </div>        
                      </div>
-                         
-
-                            Pseudo classes<br/><br/>
-                            First child pseudo class (:first-child)<br/>
-                            li:first-child{<br/>
-                            }<br/>
-                            Link pseudo class (:link, :visited)<br/>
-                            a:link, a:visited{<br/>
-                            }<br/>
-                            Dynamic pseudo class (:hover, :active, :focus)<br/>
-                            ul.menu > li{<br/>
-                            }<br/>
-                            ul.menu > li:hover{<br/><br/>
-                            }<br/>
-                            Combinators<br/>
-                            Descendant combinator<br/>
-                            Child combinator (>)<br/>
-                            Sibling combinator<br/>
-                            Adjacent sibling combinator (+)<br/>
-                            General sibling combinator (~)<br/>
-<br/>
-                    Declaration Block<br/>
-                            Properties<br/>
-                                Visual, aural. Paged, interactive<br/>
-                                Margins, borders, and padding<br/>
-                                Colors and background<br/>
-                                Fonts<br/>
-                                Text formatting<br/>
-                                List and tabled<br/>
-                                Positioning and dimensions<br/>
-                                miscellaneous<br/>
- <br/>
-                    CSS comments /* */</li> <br/>
-                        
-                    </p>
-                    </ul> 
-                </section>
+            </section>
     
 </body>
 </html>

@@ -1,0 +1,21 @@
+.colored{
+    color: #e8491d; 
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+table tr td{
+    border: 1px solid black;
+    padding:5px;
+}
+
+tr:nth-child(even){
+    background:#cccccc;;
+}
+
+.keyword{
+    font-size: 20px;
+}

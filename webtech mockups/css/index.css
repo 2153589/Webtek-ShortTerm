@@ -24,7 +24,7 @@ header{
   min-height: 70px;
   padding-top: 15px;
   border-bottom: #e8491d 3px solid;
-  /*position: fixed;
+  /*position: fixed;*/
   width:100%;
   
   /*overflow: hidden;*/
@@ -247,3 +247,6 @@ footer{
     color:#e8491d;
   }
 
+#contents{
+  padding-bottom: 90px;
+}
