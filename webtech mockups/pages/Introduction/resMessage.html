@@ -10,12 +10,14 @@
     <link rel="stylesheet" type="text/css" href="../../css/index.css" />
 	<link rel="stylesheet" type="text/css" href="../../css/tabs.css" />
 	<link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/table.css" />
 
 
-	
+
+
 </head>
-<body>
-	
+<body id='this'>
+
 	<!-- Header -->
 	<header>
 		<div class="container">
@@ -23,13 +25,13 @@
 				<h1> <span class="highlighted">Web Systems</span> and Technology</h1>
 			</div>
 			<nav>
-				<ul>	
-					<li><a href="../index.html">Home</a></li>
+				<ul>
+					<li><a href="../../index.html">Home</a></li>
 					<li><a href="#open-modal">Topics</a></li>
-					<li><a href="">About Us</a></li>		
+					<li><a href="">About Us</a></li>
 				</ul>
 			</nav>
-			
+
 		</div>
 	</header>
     <!-- End of header -->
@@ -37,7 +39,7 @@
 		<div id="open-modal" class="modal-window">
 			<div>
 				<a href="#modal-close" title="Close" class="modal-close"> &times;</a>
-				
+
 				<h1>Topics</h1>
 
 				<h1>Introduction</h1>
@@ -61,9 +63,9 @@
 
 			</div>
         </div>
-        
+
         <!--Side navigation for other topics-->
-    
+
         <section id="side-nav">
             <h1>Introduction</h1>
             <div class="topic-box">
@@ -89,16 +91,17 @@
                             <li><a href="versions.html">HTTP Protocol Versions </a></li>
                             <li><a href="fundamentals.html">HTTP Fundamentals</a></li>
                             <li><a href="reqMessage.html">HTTP Request Message</a></li>
-							<li class="active"><a href="resMessage.html">HTTP Respone Message</a></li>
-							<li><a href="reqMethod.html">HTTP Request Method </a></li>
+							              <li class="active"><a href="resMessage.html">HTTP Respone Message</a></li>
+														<li><a href="reqMethod.html">HTTP Request Method </a></li>
                         </ul>
                 </div>
 
-		</section>
+		    </section>
 
 		<section id="contents">
 			<h3>Status Codes</h3>
 			<hr>
+      <br>
 			<div class="tabs">
 				<div class="tab">
 					<input name="checkbox-tabs-group" type="radio" id="checkbox1" class="checkboxtab" checked>
@@ -115,7 +118,7 @@
 									<td>Switching Proctocol</td>
 								</tr>
 							</table>
-															
+
 						</div>
 				</div>
 
@@ -127,33 +130,32 @@
 									<tr>
 										<td>200</td>
 										<td>Ok</td>
-
-										<td>204</td>
-										<td>No Content</td>
-									</tr>
-	
-									<tr>
+                  </tr>
+                  <tr>
 										<td>201</td>
 										<td>Created</td>
-
-										<td>205</td>
-										<td>Reset COntent</td>
-									</tr>
-									
-									<tr>
+                  </tr>
+                  <tr>
 										<td>202</td>
 										<td>Accepted</td>
-
-										<td>206</td>
-										<td>Partial Content</td>
-									</tr>
-
-									<tr>
+                  </tr>
+                  <tr>
 										<td>203</td>
 										<td>Non-Authorized</td>
 									</tr>
+									<tr>
+										<td>204</td>
+										<td>No Content</td>
+									</tr>
+									<tr>
+										<td>205</td>
+										<td>Reset COntent</td>
+									</tr>
+									<tr>
+										<td>206</td>
+										<td>Partial Content</td>
+									</tr>
 								</table>
-																
 							</div>
 					</div>
 
@@ -165,31 +167,32 @@
 								<tr>
 									<td>300</td>
 									<td>Multipile Choices</td>
-
+                </tr>
+                <tr>
+									<td>301</td>
+									<td>Moved Permanently</td>
+                </tr>
+                <tr>
+									<td>302</td>
+									<td>Found</td>
+                </tr>
+                <tr>
+									<td>303</td>
+									<td>See Other</td>
+                </tr>
+                <tr>
 									<td>304</td>
 									<td>Not Modified</td>
 								</tr>
-
-								<tr>
-									<td>301</td>
-									<td>Moved Permanently</td>
-
+                <tr>
 									<td>305</td>
 									<td>Use Proxy</td>
 								</tr>
-
-								<tr>
-									<td>302</td>
-									<td>Found</td>
-
+                <tr>
 									<td>306</td>
 									<td>(unused)</td>
 								</tr>
-
-								<tr>
-									<td>303</td>
-									<td>See Other</td>
-
+                <tr>
 									<td>307</td>
 									<td>Temporary Redirect</td>
 								</tr>
@@ -201,77 +204,107 @@
 							<input name="checkbox-tabs-group" type="radio" id="checkbox4" class="checkboxtab" >
 							<label for="checkbox4" class ="labels">Client-Error (4xx)</label>
 							<div class="content">
-								<table class = "mssg2">
+								<table class = "mssg">
 									<tr>
 										<td>400</td>
 										<td>Bad Request</td>
 
-										<td>405</td>
-										<td>Method Not Allowed</td>
-
-										<td>410</td>
+                    <td>410</td>
 										<td>Gone</td>
-
-										<td>415</td>
-										<td>Unsupproted Media Type</td>
-									</tr>
-
-									<tr>
+                  </tr>
+                  <tr>
 										<td>401</td>
 										<td>Unauthorized</td>
 
-										<td>406</td>
-										<td>Not Acceptable</td>
-
-										<td>411</td>
+                    <td>411</td>
 										<td>Length Required</td>
-										
-										<td>416</td>
-										<td>Requested Range Not Satisfiable</td>
-
-									</tr>
-									
-									<tr>
+                  </tr>
+                  <tr>
 										<td>402</td>
 										<td>Payment Required</td>
 
-										<td>407</td>
-										<td>Proxy Authentication</td>
-
-										<td>412</td>
+                    <td>412</td>
 										<td>Precondition Failed</td>
-										
-										<td>417</td>
-										<td>Expectation Failed</td>
-
-									</tr>
-
-									<tr>
+                  </tr>
+                  <tr>
 										<td>403</td>
 										<td>Forbidden</td>
 
-										<td>408</td>
-										<td>Request Timeout</td>
-
-										<td>413</td>
+                    <td>413</td>
 										<td>Request Entity Too Large</td>
-
-										<td>426</td>
-										<td>Upgrade Required</td>
-
-									</tr>
-
-									<tr>
+                  </tr>
+                  <tr>
 										<td>404</td>
 										<td>Not Found</td>
 
+                    <td>414</td>
+										<td>Request URI Too Large</td>
+                  </tr>
+									<tr>
+										<td>405</td>
+										<td>Method Not Allowed</td>
+
+                    <td>415</td>
+										<td>Unsupproted Media Type</td>
+                  </tr>
+                  <tr>
+										<td>406</td>
+										<td>Not Acceptable</td>
+
+                    <td>416</td>
+										<td>Requested Range Not Satisfiable</td>
+                  </tr>
+                  <tr>
+										<td>407</td>
+										<td>Proxy Authentication</td>
+
+                    <td>417</td>
+										<td>Expectation Failed</td>
+                  </tr>
+                  <tr>
+										<td>408</td>
+										<td>Request Timeout</td>
+
+                    <td>426</td>
+										<td>Upgrade Required</td>
+                  </tr>
+                  <tr>
 										<td>409</td>
 										<td>Conflict</td>
+                  </tr>
+									<tr>
 
-										<td>414</td>
-										<td>Request URI Too Large</td>
+                  </tr>
+                  <tr>
+
+                  </tr>
+                  <tr>
+
+                  </tr>
+                  <tr>
+
+                  </tr>
+                  <tr>
 
 									</tr>
+									<tr>
+
+									</tr>
+									<tr>
+
+									</tr>
+									<tr>
+
+									</tr>
+									<tr>
+
+									</tr>
+
+
+
+
+
+
 								</table>
 							</div>
 					</div>
@@ -284,23 +317,24 @@
 									<tr>
 										<td>500</td>
 										<td>Internal Server Error</td>
-
+                  </tr>
+                  <tr>
+										<td>501</td>
+										<td>Note Implemented</td>
+                  </tr>
+                  <tr>
+										<td>502</td>
+										<td>Bad Gateway</td>
+                  </tr>
+									<tr>
 										<td>503</td>
 										<td>Service Unavailable</td>
 									</tr>
-
 									<tr>
-										<td>501</td>
-										<td>Note Implemented</td>
-
 										<td>504</td>
 										<td>Gateway Timeout</td>
 									</tr>
-
 									<tr>
-										<td>502</td>
-										<td>Bad Gateway</td>
-
 										<td>505</td>
 										<td>HTTP Version Not Supported</td>
 									</tr>
@@ -311,6 +345,6 @@
 
 			</div>
 		</section>
-		
+
 </body>
 </html>
