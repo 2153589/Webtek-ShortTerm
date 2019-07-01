@@ -4,6 +4,7 @@
     line-height: 2;
     margin-top: 20px;
 	margin-right: 40px;
+  text-shadow: 1px 0 blue;
 }
 
 .mssg2{
@@ -16,6 +17,16 @@
 .desc{
     font-size:1.2em;
     font-family: Times, "Times New Roman", serif;
+    text-align: left;
+
+}
+
+.indent{
+    font-size:1.2em;
+    font-family: Times, "Times New Roman", serif;
+    text-align: left;
+    text-indent: 5%;
+
 }
 
 .desc-1{
@@ -26,7 +37,7 @@
 }
 
    h1{
-  
+     color:rgb(7, 7, 7);
      text-align:center;
    }
    /*--------Accordion-------*/
@@ -98,3 +109,20 @@
      transition: 0.5s;
      font-family: Times, "Times New Roman", serif;     
    }
+
+   .expand {
+  display: none;
+}
+
+.expand:target {
+  display: block;
+}
+.title{
+  text-align: left;
+  text-decoration: underline;
+}
+
+
+a{
+  color: inherit;
+}
