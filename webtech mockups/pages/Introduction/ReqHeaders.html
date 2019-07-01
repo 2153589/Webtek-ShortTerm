@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="../../css/intro.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/index.css" />
+	<title>Request Header</title>
+
+	<style>
+		.btn {
+			border: none;
+			background-color: inherit;
+			padding: 14px 28px;
+			font-size: 16px;
+			cursor: pointer;
+			display: inline-block;
+		}
+
+		/* On mouse-over */
+		.HTTPheaders:hover {background: #eee;}
+		.HTTPheaders2 {color: orange;background-color: lightgray;}
+		.HTTPheaders {color: orange;}
+	</style>
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<div id="title">
+				<h1> <span class="highlighted">Web Systems</span> and Technology</h1>
+			</div>
+			<nav>
+				<ul>	
+					<li class="active"><a href="">Home</a></li>
+					<li><a href="#open-modal">Topics</a></li>
+					<li><a href="">About Us</a></li>		
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<!-- End of header -->	
+
+	<!-- Content for TOPICS navigation in modal view-->
+	<div id="open-modal" class="modal-window">
+		<div>
+			<a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+
+			<h1>Topics</h1>
+
+			<h1>Introduction</h1>
+			<ul>
+				<li><a href="" id="link-color">World Wide Web</a></li>
+				<li><a href="" id="link-color">Internet</a></li>
+				<li><a href="" id="link-color">Hypertext Transfer Protocol</a></li>
+				<li><a href="" id="link-color">Content Negotiation</a></li>
+			</ul>
+			<hr>
+
+			<h1>Front-End Development</h1>
+			<ul>
+				<li><a href="">Hypertext Markup Language</a></li>
+				<li><a href="">Cascading Style Sheet</a></li>
+				<li><a href="">JavaScript</a></li>
+			</ul>
+			<hr>
+			<h1>Back-End Development</h1>
+			<a href="" class="link-color"> - Not Yet Available</a>
+
+		</div>
+	</div>
+
+	<section id="side-nav">
+		<h1>Front-End Development</h1>
+		<div class="topic-box">
+			<h3>Hypertext Markup Language</h3>
+			<ul>
+				<li><a href="pages/Front-End/HTML.html">History</a></li>
+				<li><a href="../Front-End/Elements.html  ">HTML Elements</a></li>
+			</ul>
+		</div>
+
+		<div class="topic-box">
+			<h3>Cascading Style Sheets</h3>
+			<ul>
+				<li><a href="">History</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+			</ul>
+		</div>
+
+		<div class="topic-box">
+			<h3>Hypertext Transfer Protocol</h3>
+			<ul>
+				<li><a href="versions.html">HTTP Protocol Versions </a></li>
+				<li><a href="fundamentals.html">HTTP Fundamentals</a></li>
+				<li><a href="reqMessage.html">HTTP Request Message</a></li>
+				<li><a href="resMessage.html">HTTP Respone Message</a></li>
+				<li><a href="reqMethod.html">HTTP Request Methods</a></li>
+				<li class="active"><a href="HTTPMessageHeaders.html">HTTP Message Headers</a></li>
+			</ul>
+		</div>
+
+	</section>
+
+	<section id="contents">
+		<p>
+			HTTP header fields provide required information about the request or response, or about the object sent in the message body. There are four types of HTTP message headers:
+		</p>
+		<br>
+		<a href="GenHeaders.html"><button class="btn HTTPheaders">General Header Fields </button></a>
+		<a href="ReqHeaders.html"><button class="btn HTTPheaders2">Request Header Fields</button></a>
+		<a href="ResHeaders.html"><button class="btn HTTPheaders">Response Header Fields</button></a>
+		<a href="EntHeaders.html" ><button class="btn HTTPheaders">Entity Header Fields</button></a>
+
+		<br>
+		<br>
+
+		<div>
+			<h1>REQUEST HEADER: These header fields have applicability only for response messages.</h1>
+
+			<br>
+			<br>
+
+			<div style="float: left; width: 33%;">
+				<ul>
+					<li>Accept</li>
+					<li>accept-charset</li>
+					<li>accept-encoding</li>
+					<li>accept-language</li>
+					<li>Authorization</li>
+				</ul>
+			</div>
+			<div style="float: left; width: 33%;">
+				<ul>
+					<li>Cache-Control</li>
+					<li>Connection</li>
+					<li>Cookie</li>
+					<li>Content-Length</li>
+					<li>Content-Type</li>
+				</ul>
+			</div>
+			<div style="float: right; width: 30%;">
+				<ul>
+					<li>Date</li>
+					<li>Host</li>
+					<li>If-Modified-Since</li>
+					<li>If-Unmodified-Since</li>
+					<li>If-Match</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
