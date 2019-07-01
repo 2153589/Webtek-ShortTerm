@@ -15,7 +15,7 @@
 	background-color: #f4f4f4;
 	left: 0px;
 	width: 74rem;
-	height: 350px;
+	height: 650px;
 }
 
 .checkboxtab
@@ -41,8 +41,10 @@
 
 .labels{
 	font-size: 30px;
+	cursor: pointer;
 }
 
 .content{
-    padding-top: 20px;
+	padding-top: 20px;
+	background: 100px;
 }
