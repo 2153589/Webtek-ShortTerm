@@ -57,7 +57,7 @@
      padding: 0 20px;
      box-sizing: border-box;
      transition: 0.5s;
-     font-style: initial
+     font-style: initial;
    }
    
    .acc-container label {
@@ -73,7 +73,6 @@
      z-index: 100;
      font-style: initial;
      font-size: 1.6em;
-     font-color: red;
    }
    
    .acc-container input{
@@ -85,23 +84,20 @@
      font-family: 'FontAwesome';
      content: '\f067';
      font-weight: bolder;
-     float: right;
+     float: left;
    }
    
    .acc-container input:checked+label {
      background-color: rgba(255, 255, 255, 0.15);
-     font-style: initial;
-     font-family: fantasy;
+     font-style: oblique;
+     font-family: normal;
      font-size: 2em;
-     font-color: blue;
-
    }
    
    .acc-container input:checked+label:before {
      font-family: 'FontAwesome';
      content: '\f00d';
      transition: 0.5s;
-     
    }
    
    .acc-container input:checked~.acc-body {
@@ -110,8 +106,7 @@
      font-size: 16px;
      padding: 20px;
      transition: 0.5s;
-     font-family: Times, "Times New Roman", serif; 
-     font-color: red;    
+     font-family: Times, "Times New Roman", serif;     
    }
 
    .expand {
