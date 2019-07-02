@@ -2,7 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>About Us</title>
+	<link rel = "icon" type = "img/png" href = "images/Logo.png">
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
 	<style>
 		html {
 			box-sizing: border-box;
@@ -19,7 +25,6 @@
             width: 50%;
         } 
 		.column {
-<<<<<<< HEAD:webtek/aboutus.html
 			width: 300px;
 			margin-bottom: 16px;
 			margin-right: 20px;
@@ -28,18 +33,13 @@
 			width: 25.5%;
 			margin-bottom: 8px;
 			padding: 0 8px;
->>>>>>> 104a8ca7a7f9eb049ae10521b3b12faedb718441:webtech mockups/aboutus.html
 		}
 
-		@media screen and (max-width: 650px) {
-			.column {
-				width: 100%;
-				display: block;
-			}
-		}
+
         
 		.card {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 		}
 
 		.container {
@@ -56,17 +56,6 @@
 			color: grey;
 		}
 
-		.button {
-			border: none;
-			outline: 0;
-			display: inline-block;
-			padding: 8px;
-			color: white;
-			background-color: #000;
-			text-align: center;
-			cursor: pointer;
-			width: 100%;
-		}
 
 
 		.AboutUs {
@@ -83,6 +72,58 @@
 	</style>
 </head>
 <body>
+
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<div id="title">
+				<h1> <span class="highlighted">Web Systems</span> and Technology</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="#open-modal">Topics</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<!-- End of header -->
+
+	<!-- Content for TOPICS navigation in modal view-->
+	<div id="open-modal" class="modal-window">
+			<div>
+					<a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+
+					<h1>Topics</h1>
+
+					<h1>HTTP</h1>
+					<hr>
+					<ul>
+							<li><a href="pages/Introduction/intro.html" id="link-color">World Wide Web</a></li>
+							<li><a href="pages/Introduction/internetHistory.html" id="link-color">Internet</a></li>
+							<li><a href="pages/Introduction/HTTP Protocol Versions.html" id="link-color">Hypertext Transfer Protocol</a></li>
+					</ul>
+					<br>
+
+					<h1>HTML</h1>
+					<hr>
+					<ul>
+							<li><a href="pages/Front-End/HTML.html">Hypertext Markup Language</a></li>
+							<li><a href="pages/Front-End/Elements.html">HTML Elements</a></li>
+					</ul>
+					<br>
+					<h1>CSS</h1>
+					<hr>
+					<ul>
+						<li><a href="pages/Front-End/CSS.html">Cascading Style Sheet</a></li>
+						<li><a href="pages/Front-End/declaration.html">CSS Declaration</a></li>
+						<li><a href="pages/Front-End/rules.html">Style Rules</a></li>
+					</ul>
+			</div>
+	</div>
+	
 	<div class="AboutUs">  
         <center><h1>Team MikMik</h1></center> 
 		<center><p>We are all in the same boat, we need to work together to get to where we need to be.</p></center>
@@ -163,5 +204,9 @@
 		</div>
 	</div>
 
+		<footer>
+		<p>Web System and Technology, Copyright &copy; 2019</p>
+	</footer>
+	
 </body>
 </html>
