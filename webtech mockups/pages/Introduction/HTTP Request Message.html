@@ -17,49 +17,53 @@
                         <h1> <span class="highlighted">Web Systems</span> and Technology</h1>
                     </div>
                     <nav>
-                        <ul>	
+                        <ul>
                             <li><a href="../../index.html">Home</a></li>
                             <li><a href="#open-modal">Topics</a></li>
-                            <li><a href="">About Us</a></li>		
+                            <li><a href="">About Us</a></li>
                         </ul>
                     </nav>
-                    
+
                 </div>
             </header>
             <!-- End of header -->
             <!-- Content for TOPICS navigation in modal view-->
-                <div id="open-modal" class="modal-window">
-                    <div>
-                        <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
-                        
-                        <h1>Topics</h1>
-        
-                        <h1>Introduction</h1>
-                        <ul>
-                            <li><a href="" id="link-color">World Wide Web</a></li>
-                            <li><a href="" id="link-color">Internet</a></li>
-                            <li><a href="" id="link-color">Hypertext Transfer Protocol</a></li>
-                            <li><a href="" id="link-color">Content Negotiation</a></li>
-                        </ul>
-                        <hr>
-        
-                        <h1>Front-End Development</h1>
-                        <ul>
-                            <li><a href="">Hypertext Markup Language</a></li>
-                            <li><a href="">Cascading Style Sheet</a></li>
-                            <li><a href="">JavaScript</a></li>
-                        </ul>
-                        <hr>
-                        <h1>Back-End Development</h1>
-                        <a href="" class="link-color"> - Not Yet Available</a>
-        
-                    </div>
+            <div id="open-modal" class="modal-window">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+
+                    <h1>Topics</h1>
+
+                    <h1>HTTP</h1>
+                    <hr>
+                    <ul>
+                        <li><a href="../Introduction/intro.html" id="link-color">World Wide Web</a></li>
+                        <li><a href="../Introduction/internetHistory.html" id="link-color">Internet</a></li>
+                        <li><a href="../Introduction/HTTP Protocol Versions.html" id="link-color">Hypertext Transfer Protocol</a></li>
+                    </ul>
+                    <br>
+
+                    <h1>HTML</h1>
+                    <hr>
+                    <ul>
+                        <li><a href="../Front-End/HTML.html">Hypertext Markup Language</a></li>
+                        <li><a href="../Front-End/Elements.html">HTML Elements</a></li>
+                    </ul>
+                    <br>
+                    <h1>CSS</h1>
+                    <hr>
+                    <ul>
+                      <li><a href="../Front-End/CSS.html">Cascading Style Sheet</a></li>
+                      <li><a href="../Front-End/declaration.html">CSS Declaration</a></li>
+                      <li><a href="../Front-End/rules.html">Style Rules</a></li>
+                    </ul>
                 </div>
-                
+            </div>
+
                 <!--Side navigation for other topics-->
-            
+
                 <section id="side-nav">
-                    <h1>Introduction</h1>
+                    <h1></h1>
                     <div class="topic-box">
                         <h3>World Wide Web</h3>
                         <ul>
@@ -67,14 +71,14 @@
                             <li><a href="url.html">Unifrom Resource Locator</a></li>
                         </ul>
                     </div>
-        
+
                     <div class="topic-box">
                             <h3>Internet</h3>
                             <ul>
                                 <li><a href="internetHistory.html">History</a></li>
                             </ul>
                     </div>
-        
+
                         <div class="topic-box">
                                 <h3>Hypertext Transfer Protocol</h3>
                                 <ul>
@@ -86,7 +90,7 @@
                                     <li><a href="">HTTP Message Headers</a></li>
                                 </ul>
                         </div>
-                </section>        
+                </section>
 
                 <section id="contents">
                     <p>
@@ -95,14 +99,14 @@
                         <li>Method: indicates the operation being requested by the client;</li>
                         <li>Request URL: URL of the web resource to perform the operation on</li>
                         <li>HTTP Version: version of HTTP being used by the client</li>
-                    
+
                     </br>
                         <li>Message Headers: contains additional information about the request; each message
                             header is on a line by itself, and consists of a message header field, followed by a colon (:),
                             and then a message header value; in request messages, the types of message headers can
                             be general headers, request headers, or entity headers; starting with HTTP/1.1, at least one
                             message header is required (i.e., the Host header, indicating the web host to which the
-                            request is being sent, since there can be multiple web hosts being hosted in the server)</li>   
+                            request is being sent, since there can be multiple web hosts being hosted in the server)</li>
                     </br>
                         <li>Empty Line: CR/LF-terminated blank line by itself; this is required and serves to terminate
                             the list of message headers in the request message</li>
@@ -110,10 +114,10 @@
                         <li>(optional) Message Body: in request messages, this is typically used by the client to send
                             data up to the server for processing; this data may be user-supplied data in HTML forms, or
                             files to be uploaded to the server, e.g.</li>
-                    
-                        
+
+
                     </p>
                </section>
-    
+
 </body>
 </html>

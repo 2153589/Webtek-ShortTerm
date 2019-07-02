@@ -26,43 +26,47 @@
                     <h1> <span class="highlighted">Web Systems</span> and Technology</h1>
                 </div>
                 <nav>
-                    <ul>	
+                    <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="#open-modal">Topics</a></li>
-                        <li><a href="">About Us</a></li>		
+                        <li><a href="">About Us</a></li>
                     </ul>
                 </nav>
-                
+
             </div>
         </header>
-        <!-- End of header -->	
-    
+        <!-- End of header -->
+
         <!-- Content for TOPICS navigation in modal view-->
-            <div id="open-modal" class="modal-window">
+        <div id="open-modal" class="modal-window">
                 <div>
                     <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
-                    
+
                     <h1>Topics</h1>
-    
-                    <h1>Introduction</h1>
-                    <ul>
-                        <li><a href="" id="link-color">World Wide Web</a></li>
-                        <li><a href="" id="link-color">Internet</a></li>
-                        <li><a href="" id="link-color">Hypertext Transfer Protocol</a></li>
-                        <li><a href="" id="link-color">Content Negotiation</a></li>
-                    </ul>
+
+                    <h1>HTTP</h1>
                     <hr>
-    
-                    <h1>Front-End Development</h1>
                     <ul>
-                        <li><a href="">Hypertext Markup Language</a></li>
-                        <li><a href="">Cascading Style Sheet</a></li>
-                        <li><a href="">JavaScript</a></li>
+                        <li><a href="../Introduction/intro.html" id="link-color">World Wide Web</a></li>
+                        <li><a href="../Introduction/internetHistory.html" id="link-color">Internet</a></li>
+                        <li><a href="../Introduction/HTTP Protocol Versions.html" id="link-color">Hypertext Transfer Protocol</a></li>
                     </ul>
+                    <br>
+
+                    <h1>HTML</h1>
                     <hr>
-                    <h1>Back-End Development</h1>
-                    <a href="" class="link-color"> - Not Yet Available</a>
-    
+                    <ul>
+                        <li><a href="../Front-End/HTML.html">Hypertext Markup Language</a></li>
+                        <li><a href="../Front-End/Elements.html">HTML Elements</a></li>
+                    </ul>
+                    <br>
+                    <h1>CSS</h1>
+                    <hr>
+                    <ul>
+                      <li><a href="../Front-End/CSS.html">Cascading Style Sheet</a></li>
+                      <li><a href="../Front-End/declaration.html">CSS Declaration</a></li>
+                      <li><a href="../Front-End/rules.html">Style Rules</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -71,11 +75,11 @@
                     <div class="topic-box">
                         <h3>Hypertext Markup Language</h3>
                         <ul>
-                            <li class="active"><a href="pages/Front-End/HTML.html">History</a></li>
+                            <li><a href="pages/Front-End/HTML.html">History</a></li>
                             <li><a href="../Front-End/Elements.html  ">HTML Elements</a></li>
                         </ul>
                     </div>
-        
+
                     <div class="topic-box">
                             <h3>Cascading Style Sheets</h3>
                             <ul>
@@ -84,21 +88,44 @@
                                 <li><a href="">3</a></li>
                             </ul>
                     </div>
-        
+
                         <div class="topic-box">
                                 <h3>Hypertext Transfer Protocol</h3>
                                 <ul>
                                     <li><a href="versions.html">HTTP Protocol Versions </a></li>
                                     <li><a href="fundamentals.html">HTTP Fundamentals</a></li>
                                     <li><a href="reqMessage.html">HTTP Request Message</a></li>
-                                    <li><a href="resMessage.html">HTTP Respone Message</a></li>
+                                    <li class="active"><a href="resMessage.html">HTTP Respone Message</a></li>
                                     <li><a href="reqMethod.html">HTTP Request Methods</a></li>
                                 </ul>
                         </div>
-        
+
                 </section>
 
                 <section id="contents">
+<<<<<<< HEAD
+                    <p>
+                        <ul>HTTP Response Message</ul>
+                        <li>Status Line: CR/LF-terminated line containing 3 space-separated items, namely:</li>
+                        <li>HTTP Version: version of HTTP being used by the server</li>
+                        <li>Status Code: 3-digit integer code, indicating the result of the operation</li>
+                        <li>Reason Phrase: human-readable description of the operation result indicated by the status code</li>
+                    </br>
+
+                        <li>Message Headers: contains additional information about the response (same format as the
+                            message headers in the request message); in response messages, the types of message
+                            headers can be general headers, response headers, or entity headers</li>
+                    </br>
+                        <li>Empty Line: CR/LF-terminated blank line by itself; this is required and serves to terminate
+                            the list of message headers in the response message</li>
+                    </br>
+                        <li>(optional) Message Body: the message body in response messages typically contains the
+                            web resource being requested</li>
+
+                    </p>
+               </section>
+
+=======
                     <h3>HTTP Response Message</h3> 
                     <hr>
                     <div>
@@ -140,5 +167,6 @@
     </div>
 
 </section>    
+>>>>>>> 26d1629e507e804c749860e99d62c26171985a7f
 </body>
 </html>

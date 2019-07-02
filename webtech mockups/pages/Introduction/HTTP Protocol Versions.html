@@ -7,6 +7,7 @@
         <link rel = "icon" type = "img/png" href = "../../images/Logo.png">
         <link rel="stylesheet" type="text/css" href="../../css/intro.css" />
         <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
         <title>Document</title>
 </head>
 <body>
@@ -17,49 +18,53 @@
                         <h1> <span class="highlighted">Web Systems</span> and Technology</h1>
                     </div>
                     <nav>
-                        <ul>	
+                        <ul>
                             <li><a href="../../index.html">Home</a></li>
                             <li><a href="#open-modal">Topics</a></li>
-                            <li><a href="">About Us</a></li>		
+                            <li><a href="">About Us</a></li>
                         </ul>
                     </nav>
-                    
+
                 </div>
             </header>
             <!-- End of header -->
             <!-- Content for TOPICS navigation in modal view-->
-                <div id="open-modal" class="modal-window">
-                    <div>
-                        <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
-                        
-                        <h1>Topics</h1>
-        
-                        <h1>Introduction</h1>
-                        <ul>
-                            <li><a href="" id="link-color">World Wide Web</a></li>
-                            <li><a href="" id="link-color">Internet</a></li>
-                            <li><a href="" id="link-color">Hypertext Transfer Protocol</a></li>
-                            <li><a href="" id="link-color">Content Negotiation</a></li>
-                        </ul>
-                        <hr>
-        
-                        <h1>Front-End Development</h1>
-                        <ul>
-                            <li><a href="">Hypertext Markup Language</a></li>
-                            <li><a href="">Cascading Style Sheet</a></li>
-                            <li><a href="">JavaScript</a></li>
-                        </ul>
-                        <hr>
-                        <h1>Back-End Development</h1>
-                        <a href="" class="link-color"> - Not Yet Available</a>
-        
-                    </div>
+            <div id="open-modal" class="modal-window">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+
+                    <h1>Topics</h1>
+
+                    <h1>HTTP</h1>
+                    <hr>
+                    <ul>
+                        <li><a href="../Introduction/intro.html" id="link-color">World Wide Web</a></li>
+                        <li><a href="../Introduction/internetHistory.html" id="link-color">Internet</a></li>
+                        <li><a href="../Introduction/HTTP Protocol Versions.html" id="link-color">Hypertext Transfer Protocol</a></li>
+                    </ul>
+                    <br>
+
+                    <h1>HTML</h1>
+                    <hr>
+                    <ul>
+                        <li><a href="../Front-End/HTML.html">Hypertext Markup Language</a></li>
+                        <li><a href="../Front-End/Elements.html">HTML Elements</a></li>
+                    </ul>
+                    <br>
+                    <h1>CSS</h1>
+                    <hr>
+                    <ul>
+                      <li><a href="../Front-End/CSS.html">Cascading Style Sheet</a></li>
+                      <li><a href="../Front-End/declaration.html">CSS Declaration</a></li>
+                      <li><a href="../Front-End/rules.html">Style Rules</a></li>
+                    </ul>
                 </div>
-                
+            </div>
+
                 <!--Side navigation for other topics-->
-            
+
                 <section id="side-nav">
-                    <h1>Introduction</h1>
+                    <h1></h1>
                     <div class="topic-box">
                         <h3>World Wide Web</h3>
                         <ul>
@@ -67,14 +72,14 @@
                             <li><a href="url.html">Unifrom Resource Locator</a></li>
                         </ul>
                     </div>
-        
+
                     <div class="topic-box">
                             <h3>Internet</h3>
                             <ul>
                                 <li></li><a href="internetHistory.html">History</a></li>
                             </ul>
                     </div>
-        
+
                         <div class="topic-box">
                                 <h3>Hypertext Transfer Protocol</h3>
                                 <ul>
@@ -86,44 +91,77 @@
                                     <li><a href="">HTTP Message Headers</a></li>
                                 </ul>
                         </div>
-                </section>  
+                </section>
 
                         <section id="contents">
                                 <p>
-                                 <ul>HTTP 0.9: The One-Line Protocol</ul> <br/>  
+                                 <ul>HTTP 0.9: The One-Line Protocol</ul> <br/>
                                  In 1991, Berners-Lee outlined the motivation for the new protocol and listed several high-level design goals: file transfer functionality, ability to request an index search of a hypertext archive, format negotiation, and an ability to refer the client to another server. To prove the theory in action, a simple prototype was built, which implemented a small subset of the proposed functionality:
+                                <h3>HTTP Protocol Version</h3>
+                                <hr>
+
+                    <div class="acc-container">
+                    <div>
+                    <input type="radio" name="acc" id="acc1" checked>
+                    <label for="acc1">HTTP 0.9: The One-Line Protocol</label>
+                    <div class="acc-body">
+                             <p>-In 1991, Berners-Lee outlined the motivation for the new protocol and listed several high-level design goals: file transfer functionality, ability to request an index search of a hypertext archive, format negotiation, and an ability to refer the client to another server. To prove the theory in action, a simple prototype was built, which implemented a small subset of the proposed functionality:
                                 <li>Client request is a single ASCII character string.</li>
                                 <li>Client request is terminated by a carriage return (CRLF).</li>
                                 <li>Server response is an ASCII character stream.</li>
                                 <li>Server response is a hypertext markup language (HTML).</li>
                                 <li>Connection is terminated after the document transfer is complete.</li>
+                                    </p>
                                 </br>
-                
+
+                        </div>
+
+                         <div>
+                             <input type="radio" name="acc" id="acc2">
+                             <label for="acc2">HTTP/1.0: Building extensibility</label>
+                             <div class="acc-body">
                                 <p>
-                                <ul>HTTP/1.0: Building extensibility</ul>
                                 <li>Browser-friendly protocol</li>
                                 <li>Provided header fields including rich metadata about both request and response (HTTP version number, status code, content type)</li>
                                 <li>Response: not limited to hypertext (Content-Type header provided ability to transmit files other than plain HTML files — e.g. scripts, stylesheets, media)</li>
                                 <li>Methods supported: GET , HEAD , POST</li>
                                 <li>Connection nature: terminated immediately after the response</li>
-                                
+
                                 <p>
-                                    <ul>THTTP/1.1: he standardized protocol</ul>
+                                    <ul>HTTP/1.1: The standardized protocol</ul>
                                 <li>ntroduced critical performance optimizations and feature enhancements — persistent and pipelined connections, chunked transfers, compression/decompression, content negotiations, virtual hosting (a server with a single IP Address hosting multiple domains), faster response and great bandwidth savings by adding cache support.</li>
                                 <li>Methods supported: GET , HEAD , POST , PUT , DELETE , TRACE , OPTIONS</li>
-                
+
                                 <p>
                                     <ul>HTTP 2</ul>
                                     In 2015, Internet Engineering Task Force (IETF) release HTTP/2, the second major version of the most useful internet protocol, HTTP.
+                                    <li>Connection nature: terminated immediately after the response</li></p>
+                             </div>
+
+                             <div>
+                                 <input type="radio" name="acc" id="acc3">
+                                 <label for="acc3">HTTP/1.1: The standardized protocol</label>
+                                 <div class="acc-body">
+                                <p>
+                                <li>Introduced critical performance optimizations and feature enhancements — persistent and pipelined connections, chunked transfers, compression/decompression, content negotiations, virtual hosting (a server with a single IP Address hosting multiple domains), faster response and great bandwidth savings by adding cache support.</li>
+                                    <li>Methods supported: GET , HEAD , POST , PUT , DELETE , TRACE , OPTIONS</li></p></div>
+
+                              <div>
+                              <input type="radio" name="acc" id="acc4">
+                              <label for="acc4">HTTP 2</label>
+                              <div class="acc-body">
+                                <p>-In 2015, Internet Engineering Task Force (IETF) release HTTP/2, the second major version of the most useful internet protocol, HTTP.
                                     </br>
-                                    <ul>Main goals of developing HTTP/2 was:</ul>
+                                    <h2><ul>Main goals of developing HTTP/2 was:</ul></h2>
                                     <li>Page load speed improvements trough:</li>
                                     <li>Compression of request headers</li>
                                     <li>Binary protocol</li>
                                     <li>Request multiplexing over a single TCP connection</li>
-                                    
+
+                             <li>Request multiplexing over a single TCP connection</li>
                                 </p>
+                        </div>
                            </section>
-    
+
 </body>
 </html>
