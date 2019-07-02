@@ -1,9 +1,10 @@
 .mssg{
-  font-size:1.5em;
-  font-family: Courier, monospace;  
-  line-height: 2;
-  margin-top: 20px;
+    font-size:1em;
+    font-family: Courier, monospace;   
+    line-height: 2;
+    margin-top: 20px;
 	margin-right: 40px;
+  text-shadow: 1px 0 blue;
 }
 
 .mssg2{
@@ -83,13 +84,13 @@
      font-family: 'FontAwesome';
      content: '\f067';
      font-weight: bolder;
-     float: left;
+     float: right;
    }
    
    .acc-container input:checked+label {
      background-color: rgba(255, 255, 255, 0.15);
-     font-style: oblique;
-     font-family: normal;
+     font-style: initial;
+     font-family: fantasy;
      font-size: 2em;
    }
    
@@ -97,6 +98,7 @@
      font-family: 'FontAwesome';
      content: '\f00d';
      transition: 0.5s;
+     
    }
    
    .acc-container input:checked~.acc-body {
