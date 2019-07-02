@@ -57,7 +57,7 @@
      padding: 0 20px;
      box-sizing: border-box;
      transition: 0.5s;
-     font-style: initial;
+     font-style: initial
    }
    
    .acc-container label {
@@ -73,6 +73,7 @@
      z-index: 100;
      font-style: initial;
      font-size: 1.6em;
+     font-color: red;
    }
    
    .acc-container input{
@@ -92,6 +93,8 @@
      font-style: initial;
      font-family: fantasy;
      font-size: 2em;
+     font-color: blue;
+
    }
    
    .acc-container input:checked+label:before {
@@ -107,7 +110,8 @@
      font-size: 16px;
      padding: 20px;
      transition: 0.5s;
-     font-family: Times, "Times New Roman", serif;     
+     font-family: Times, "Times New Roman", serif; 
+     font-color: red;    
    }
 
    .expand {
