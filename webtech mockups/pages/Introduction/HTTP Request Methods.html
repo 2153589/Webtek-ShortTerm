@@ -7,6 +7,8 @@
     <link rel = "icon" type = "img/png" href = "../../images/Logo.png">
     <link rel="stylesheet" type="text/css" href="../../css/intro.css" />
     <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/tabs.css">
+    <link rel="stylesheet" type="text/css" href="../../css/table.css">
     <title>Document</title>
 </head>
 <body>
@@ -86,33 +88,84 @@
                                 <li><a href="HTTP Request Message.html">HTTP Request Message</a></li>
                                 <li><a href="HTTP Response Message.html">HTTP Respone Message</a></li>
                                 <li class="active"><a href="HTTP Request Methods.html">HTTP Request Methods</a></li>
-                                <li><a href="HTTPMessageHeaders.html">HTTP Message Headers</a></li>
+                                <li><a href="GenHeaders.html">HTTP Message Headers</a></li>
                             </ul>
                     </div>
             </section>
 
                 <section id="contents">
-                    <p>
-                        <ul>HTTP Standard Request Methods</ul>
-                        <li>HTTP defines 8 standard methods, namely, GET, HEAD, POST, PUT, DELETE, OPTIONS, TRACE, and
-                            CONNECT, with GET and HEAD being required to be supported by HTTP-compliant servers </li>
-                    </br>
-
-                        <li>the behavior of the HTTP standard request methods can be characterized as follows:</li>
-                    </br>
-                        <li>safe: client does not request, and does not expect, any state change on the origin server as
-                            a result of applying the method to a target resource; i.e., the method’s effect is essentially
-                            read-only</li>
-                        <li>GET, HEAD, OPTIONS, and TRACE are safe methods</li>
-                    </br>
-                        <li>idempotent: intended effect on the server of multiple identical requests with the method is
-                            the same as the effect of a single such request</li>
-                        <li>GET, HEAD, OPTIONS, TRACE, PUT, and DELETE are idempotent methods</li>
-                    </br>
-                        <li>cacheable: indicates that the response to a method is allowed to be stored for future reuse</li>
-                        <li>GET, HEAD, and POST are cacheable methods</li>
-
-                    </p>
+                        <h3>HTTP Request Method</h3>
+                        <hr>
+                        <div class="tabs">
+                            <div class="tab">
+                                <input name="checkbox-tabs-group" type="radio" id="checkbox2" class="checkboxtab" >
+                                <label for="checkbox2" class ="labels">Method Properties</label>
+                                <div class="content">
+                                    <h1 class="title">IDEMPOTENT METHODS</h1>
+                                    <br>
+                                    <p class="indent">Methods can also have the property of "idempotence" in that (aside from error or expiration issues) the side-effects of N > 0 identical requests is the same as for a single request. The methods GET, HEAD, PUT and DELETE share this property. Also, the methods OPTIONS and TRACE SHOULD NOT have side effects, and so are inherently idempotent.</p>
+                                    <p class="indent">However, it is possible that a sequence of several requests is non- idempotent, even if all of the methods executed in that sequence are idempotent. (A sequence is idempotent if a single execution of the entire sequence always yields a result that is not changed by a reexecution of all, or part, of that sequence.) For example, a sequence is non-idempotent if its result depends on a value that is later modified in the same sequence.</p>
+                    
+                                    <h1 class="title">SAFE METHODS</h1>
+                                    <p class="indent">Implementors should be aware that the software represents the user in their interactions over the Internet, and should be careful to allow the user to be aware of any actions they might take which may have an unexpected significance to themselves or others.</p>
+                                    <p class="indent">In particular, the convention has been established that the GET and HEAD methods SHOULD NOT have the significance of taking an action other than retrieval. These methods ought to be considered "safe". This allows user agents to represent other methods, such as POST, PUT and DELETE, in a special way, so that the user is made aware of the fact that a possibly unsafe action is being requested.</p>
+                    
+                    
+                                </div>
+                            </div>
+                               <div class="tab">
+                                    <input name="checkbox-tabs-group" type="radio" id="checkbox1" class="checkboxtab" checked>
+                                    <label for="checkbox1" class ="labels"> Standard Method</label>
+                                    <div class="content">
+                    
+                                            <table>
+                                                    <tr>
+                                                        <td class="mssg">GET</td>
+                                                        <td class = "desc"> Used to request from the server the retrieval of the resource id by the request uri; the retrieved response is returned in the message body of the response as an entity.</td>
+                                                    </tr>
+                    
+                                                    <tr>
+                                                        <td class="mssg">HEAD</td>
+                                                        <td class = "desc">Identical to get, except that the entity is not included in the response. Also used to retrieve meta info about the entity implied by the request without transferring the entity itself. Like get, it must be supported by all general - pupose servers.</td>
+                                                    </tr>
+                    
+                                                    <tr>
+                                                        <td class="mssg">POST</td>
+                                                        <td class = "desc">Used to request the server accept data entities enclosing in the message body for processing by the response identified by the request uri. Typically used in submitting html form data.</td>
+                                                    </tr>
+                    
+                                                    <tr>
+                                                        <td class="mssg">PUT</td>
+                                                        <td class = "desc">Request the server to store the enclosed entity in the message under the specified request URI</td>
+                                                    </tr>
+                    
+                                                    <tr>
+                                                        <td class="mssg">DELETE</td>
+                                                        <td class = "desc"> Used to request the server to delete the resource identified by the request uri</td>
+                                                    </tr>
+                    
+                                                    <tr>
+                                                        <td class="mssg">OPTIONS</td>
+                                                        <td class = "desc">Used to request from the server information about the communication options available for the response identified by the required uri.</td>
+                                                    </tr>
+                    
+                                                    <tr>
+                                                        <td class="mssg">TRACE</td>
+                                                        <td class = "desc"> Used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain</td>
+                                                    </tr>
+                    
+                                                    <tr>
+                                                        <td class="mssg">CONNECT</td>
+                                                        <td class = "desc">Reserved for the tunneling proxy servers</td>
+                                                    </tr>
+                                                    </table>
+                    
+                    
+                                    </div>
+                                </div>
+                    
+                    
+                        </div>
                </section>
 
 </body>
