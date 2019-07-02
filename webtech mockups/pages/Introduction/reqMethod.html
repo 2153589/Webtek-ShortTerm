@@ -4,92 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "icon" type = "img/png" href = "../../images/Logo.png">
     <link rel="stylesheet" type="text/css" href="../../css/intro.css" />
     <link rel="stylesheet" type="text/css" href="../../css/index.css" />
     <link rel="stylesheet" type="text/css" href="../../css/tabs.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../css/table.css">
+    <title>HTTP Request Method</title>
 </head>
 <body>
  <!-- Header -->
  <header>
-    <div class="container">
-        <div id="title">
-            <h1> <span class="highlighted">Web Systems</span> and Technology</h1>
+        <div class="container">
+            <div id="title">
+                <h1> <span class="highlighted">Web Systems</span> and Technology</h1>
+            </div>
+            <nav>
+                <ul>	
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#open-modal">Topics</a></li>
+                    <li><a href="">About Us</a></li>		
+                </ul>
+            </nav>
+            
         </div>
-        <nav>
-            <ul>	
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#open-modal">Topics</a></li>
-                <li><a href="">About Us</a></li>		
-            </ul>
-        </nav>
+    </header>
+    <!-- End of header -->
+    <!-- Content for TOPICS navigation in modal view-->
+        <div id="open-modal" class="modal-window">
+            <div>
+                <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+                
+                <h1>Topics</h1>
 
-    </div>
-</header>
-<!-- End of header -->
-<!-- Content for TOPICS navigation in modal view-->
-<div id="open-modal" class="modal-window">
-    <div>
-        <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+                <h1>Introduction</h1>
+                <ul>
+                    <li><a href="" id="link-color">World Wide Web</a></li>
+                    <li><a href="" id="link-color">Internet</a></li>
+                    <li><a href="" id="link-color">Hypertext Transfer Protocol</a></li>
+                    <li><a href="" id="link-color">Content Negotiation</a></li>
+                </ul>
+                <hr>
 
-        <h1>Topics</h1>
+                <h1>Front-End Development</h1>
+                <ul>
+                    <li><a href="">Hypertext Markup Language</a></li>
+                    <li><a href="">Cascading Style Sheet</a></li>
+                    <li><a href="">JavaScript</a></li>
+                </ul>
+                <hr>
+                <h1>Back-End Development</h1>
+                <a href="" class="link-color"> - Not Yet Available</a>
 
-        <h1>Introduction</h1>
-        <ul>
-            <li><a href="" id="link-color">World Wide Web</a></li>
-            <li><a href="" id="link-color">Internet</a></li>
-            <li><a href="" id="link-color">Hypertext Transfer Protocol</a></li>
-            <li><a href="" id="link-color">Content Negotiation</a></li>
-        </ul>
-        <hr>
-
-        <h1>Front-End Development</h1>
-        <ul>
-            <li><a href="">Hypertext Markup Language</a></li>
-            <li><a href="">Cascading Style Sheet</a></li>
-            <li><a href="">JavaScript</a></li>
-        </ul>
-        <hr>
-        <h1>Back-End Development</h1>
-        <a href="" class="link-color"> - Not Yet Available</a>
-
-    </div>
-</div>
-
-<!--Side navigation for other topics-->
-
-<section id="side-nav">
-    <h1>Introduction</h1>
-    <div class="topic-box">
-        <h3>World Wide Web</h3>
-        <ul>
-            <li class="active"><a href="">History</a></li>
-            <li><a href="../Introduction/url.html   ">Unifrom Resource Locator</a></li>
-        </ul>
-    </div>
+            </div>
+        </div>
+        
+        <!--Side navigation for other topics-->
     
-    <div class="topic-box">
-        <h3>Internet</h3>
-        <ul>
-            <li><a href="internetHistory.html">History</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-        </ul>
-    </div>
-    
-    <div class="topic-box">
-        <h3>Hypertext Transfer Protocol</h3>
-        <ul>
-            <li><a href="versions.html">HTTP Protocol Versions </a></li>
-            <li><a href="fundamentals.html">HTTP Fundamentals</a></li>
-            <li><a href="reqMessage.html">HTTP Request Message</a></li>
-            <li><a href="resMessage.html">HTTP Respone Message</a></li>
-            <li class="active"><a href="reqMethod.html">HTTP Request Methods</a></li>
-        </ul>
-    </div>
-    
-</section>
+        <section id="side-nav">
+            <h1>Introduction</h1>
+            <div class="topic-box">
+                <h3>World Wide Web</h3>
+                <ul>
+                    <li><a href="intro.html">History</a></li>
+                    <li><a href="url.html">Unifrom Resource Locator</a></li>
+                </ul>
+            </div>
+
+            <div class="topic-box">
+                    <h3>Internet</h3>
+                    <ul>
+                        <li><a href="internetHistory.html">History</a></li>
+                    </ul>
+            </div>
+
+                <div class="topic-box">
+                        <h3>Hypertext Transfer Protocol</h3>
+                        <ul>
+                            <li><a href="HTTP Protocol Versions.html">HTTP Protocol Versions </a></li>
+                            <li><a href="HTTP Fundamentals.html">HTTP Fundamentals</a></li>
+                            <li><a href="HTTP Request Message.html">HTTP Request Message</a></li>
+                            <li><a href="resMessage.html">HTTP Respone Message</a></li>
+                            <li class="active"><a href="reqMethod.html">HTTP Request Methods</a></li>
+                            <li><a href="GenHeaders.html">HTTP Message Headers</a></li>
+                        </ul>
+                </div>
+        </section>        
 
 <section id="contents">
     <h3>HTTP Request Method</h3> 
@@ -116,43 +116,47 @@
                 <label for="checkbox1" class ="labels"> Standard Method</label>
                 <div class="content">
 
+                        <table>
+                                <tr>
+                                    <td class="mssg">GET</td>
+                                    <td class = "desc"> Used to request from the server the retrieval of the resource id by the request uri; the retrieved response is returned in the message body of the response as an entity.</td>
+                                </tr>
 
-                    <ul class="mssg"><a href="#Expand1">GET</a></ul>
-                    <li class = "desc expand" id="Expand1"> <hr>Used to request from the server the retrieval of the resource id by the request uri; the retrieved response is returned in the message body of the response as an entity.</li>
+                                <tr>
+                                    <td class="mssg">HEAD</td>
+                                    <td class = "desc">Identical to get, except that the entity is not included in the response. Also used to retrieve meta info about the entity implied by the request without transferring the entity itself. Like get, it must be supported by all general - pupose servers.</td>
+                                </tr>
 
+                                <tr>
+                                    <td class="mssg">POST</td>
+                                    <td class = "desc">Used to request the server accept data entities enclosing in the message body for processing by the response identified by the request uri. Typically used in submitting html form data.</td>
+                                </tr>
 
-                    <ul class="mssg"><a href="#Expand2">HEAD</a></ul>
-                    <li class = "desc expand" id="Expand2"><hr>Identical to get, except that the entity is not included in the response. Also used to retrieve meta info about the entity implied by the request without transferring the entity itself. Like get, it must be supported by all general - pupose servers.</li>
+                                <tr>
+                                    <td class="mssg">PUT</td>
+                                    <td class = "desc">Request the server to store the enclosed entity in the message under the specified request URI</td>
+                                </tr>
 
+                                <tr>
+                                    <td class="mssg">DELETE</td>
+                                    <td class = "desc"> Used to request the server to delete the resource identified by the request uri</td>
+                                </tr>
 
+                                <tr>
+                                    <td class="mssg">OPTIONS</td>
+                                    <td class = "desc">Used to request from the server information about the communication options available for the response identified by the required uri.</td>
+                                </tr>
 
-                    <ul class="mssg"><a href="#Expand3">POST</a></ul>
-                    <li class = "desc expand" id="Expand3"><hr>Used to request the server accept data entities enclosing in the message body for processing by the response identified by the request uri. Typically used in submitting html form data.</li>
+                                <tr>
+                                    <td class="mssg">TRACE</td>
+                                    <td class = "desc"> Used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain</td>
+                                </tr>
 
-
-
-                    <ul class="mssg"><a href="#Expand4">PUT</a></ul>
-                    <li class = "desc expand" id="Expand4"><hr>Request the server to store the enclosed entity in the message under the specified request URI</li>
-
-
-
-                    <ul class="mssg"><a href="#Expand5">DELETE</a></ul>
-                    <li class = "desc expand" id="Expand5"> <hr>Used to request the server to delete the resource identified by the request uri</li>
-
-
-
-                    <ul class="mssg"><a href="#Expand6">OPTIONS</a></ul>
-                    <li class = "desc expand" id="Expand6"><hr>Used to request from the server information about the communication options available for the response identified by the required uri.</li>
-
-
-
-                    <ul class="mssg"><a href="#Expand7">TRACE</a></ul>
-                    <li class = "desc expand" id="Expand7"><hr> Used to request the server to echo back to the client the received request. Typically used for testing/diagnostics if the request/response chain</li>
-
-
-
-                    <ul class="mssg"><a href="#Expand8">CONNECT</a></ul>
-                    <li class = "desc expand" id="Expand8"><hr>Reserved for the tunneling proxy servers</li>
+                                <tr>
+                                    <td class="mssg">CONNECT</td>
+                                    <td class = "desc">Reserved for the tunneling proxy servers</td>
+                                </tr>
+                                </table>
 
                     
                 </div>
