@@ -23,6 +23,10 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="intro.css" />
+  <link rel="stylesheet" type="text/css" href="tabs.css" />
+  <link rel="stylesheet" type="text/css" href="fonts.css" />
+
 </head>
 
 <body id="page-top">
@@ -121,45 +125,36 @@
           <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
       </div>
+      <h2> World Wide Web </h2>
       <div class="row">
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#www">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-          </a>
+          <a class="portfolio-link" data-toggle="modal" href="#wwwhistory">
+
+
           <div class="portfolio-caption">
-            <h4>World Wide Web</h4>
+            <h4>History</h4>
             <p class="text-muted">Illustration</p>
           </div>
+          </a>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#internet">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-          </a>
+          <a class="portfolio-link" data-toggle="modal" href="#url">
+
           <div class="portfolio-caption">
-            <h4>Interet</h4>
+            <h4>Uniform Resource Locator</h4>
             <p class="text-muted">Graphic Design</p>
           </div>
+          </a>
         </div>
+        <h2> Internet </h2>
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#http">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-          </a>
+
           <div class="portfolio-caption">
             <h4>HTTP</h4>
             <p class="text-muted">Identity</p>
           </div>
+          </a>
         </div>
       </div>
     </div>
@@ -217,7 +212,7 @@
         </div>
       </div>
     </section>
-  
+
       <!-- Portfolio Grid -->
   <section class="bg-light page-section" id="backend">
     <div class="container">
@@ -662,32 +657,79 @@
 
   <!-- Portfolio Modals -->
 
-  <!-- Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal WWW History -->
+  <div class="portfolio-modal modal fade" id="wwwhistory" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
-            <div class="rl"></div>
+            <div class="rl">
+            </div>
           </div>
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Threads</li>
-                  <li>Category: Illustration</li>
-                </ul>
+
+           <h3>History</h3>
+           <hr>
+           <br>
+           <div class="acc-container">
+              <div>
+                <input type="radio" name="acc" id="acc1">
+                <label for="acc1" style = "font-size: 2em; color: blue;">1980s</label><hr>
+                <div class="acc-body">
+                  <p>- Tim berners lee a british computer scientist who circulates his informational management proposal at the european organization CERN, laying the foundation for the World Wide Web. </p>
+                </div>
+              </div>
+
+              <div>
+                <input type="radio" name="acc" id="acc2">
+                <label for="acc2" style = "font-size: 2em; color: blue;">1990s</label><hr>
+                <div class="acc-body">
+                  <p>- In 1993 Mosaic, the browser credited with popularizing the web was developed by a team led by Marc Andreesen at the University of Illinois. Mosaic was also the basis for the commercial browser in 1994.</p>
+                  <p>- In 1994 China gets the first internet connection but it filters content. </p>
+                  <p>- "David and Jerry's Guide to the World Wide Web" was also launched the forerunner to Yahoo and Amazon.com.  </p>
+                  <p>- In 1995, Microsoft released Internet Explorer, which eventually replace Netscape.  </p>
+                  <p>- eBay an online auction site was also launched. </p>
+                  <p>- In 1996, Nokia first launch a mobile phone with internet connectivity in Finland. </p>
+                  <p>- In 1998, Google started leading search engine.   </p>
+                </div>
+              </div>
+
+
+
+              <div>
+                <input type="radio" name="acc" id="acc3">
+              <label for="acc3" style = "font-size: 2em; color: blue;">2000s</label><hr>
+                <div class="acc-body">
+                  <p>- In 2000, the ILOVEYOU internet virus, infects millions of computers around the world. </p>
+                  <p>- In 2001, Napster was ordered to shut down by the US courts in ruling on online copyrights. </p>
+                  <p>- In 2007, Estonia conducts the first online parliamentary election.</p>
+                  <p>- In 2012, online commerce tops $1 trillion, according to private surveys. </p>
+                  <p>- Facebook reaches one billion members a social network. </p>
+                  <p>- In 2013, 2.7 billion or 40 percent of the world's population, people worldwide are connected to the internet.  </p>
+                </div>
+              </div>
+              <hr>
+              <h3>World Wide Web</h3>
+              <hr>
+              <br>
+              <p>A global information medium which users are capable to read and write via computer that is connected with the help of the Internet.</p>
+              <hr>
+              <h3>How Web Works</h3>
+              <hr>
+              <br>
+              <p>Web is a service that operates over the Internet, as e-mail does. Information system on the internet that allows documents and other web resources are identified by UNIFORM RESOURCE LOCATOR (URL), interlinked by hypertext links, and can be accessed via the internet.</p>
+
+
+              <hr>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
+                </div>
               </div>
             </div>
           </div>
@@ -696,8 +738,8 @@
     </div>
   </div>
 
-  <!-- Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal internet -->
+  <div class="portfolio-modal modal fade" id="url" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -710,15 +752,94 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Explore</li>
-                  <li>Category: Graphic Design</li>
-                </ul>
+                <h3>Unifrom Resource Locator</h3>
+                      <hr>
+                      <br>
+
+                          <p>
+                              URL contains unique name and it is also a unique content on the web. It can contain an html document, css document, videos, audio or even images, etc.
+                          </p>
+                      <br>
+
+                          <p>
+                                  A URL has different parts:
+                          </p>
+
+                              <br>
+
+                                      <div class="tab">
+                                          <input name="checkbox-tabs-group" type="radio" id="checkbox1" class="checkboxtab">
+                                          <label for="checkbox1" class ="labels">Protocol</label>
+
+                                                  <p>
+                                                      The protocol tells what kind of protocol must the browser use. It can be the secured version of HTTP which is HTTPS or other protocols like ftp and others.
+
+                                                       <img src="images/Protocol.png" alt="protocol">
+                                                  </p>
+
+                                      </div>
+
+                                      <div class="tab">
+                                          <input name="checkbox-tabs-group" type="radio" id="checkbox2" class="checkboxtab">
+                                          <label for="checkbox2" class ="labels">Domain Name</label>
+
+                                                  <p>
+                                                          The Domain name is the address in which a web server is located. You can also use the IP address of a web server to locate a website in the web.
+
+                                                          <img src="images/Domain.png" alt="Domain_Name">
+                                                      </p>
+
+                                      </div>
+
+                                      <div class="tab">
+                                          <input name="checkbox-tabs-group" type="radio" id="checkbox3" class="checkboxtab">
+                                          <label for="checkbox3" class ="labels">Port</label>
+
+                                                  <p>
+                                                          A port is used to access a resource on a web server. It is like a gateway where you can know where to find a certain resource.
+
+                                                          <img src="images/Port.png" alt="Port">
+                                                      </p>
+
+                                      </div>
+
+                                      <div class="tab">
+                                              <input name="checkbox-tabs-group" type="radio" id="checkbox4" class="checkboxtab" >
+                                              <label for="checkbox4" class ="labels">Path </label>
+
+                                                      <p>
+                                                              This path is where you locate contents of a web server just like in windows explorer where path can be directories and inside the directory are sub directories. This can be used to point to a specific resource in a web server.
+
+
+                                                              <img src="images/Path.png" alt="Path">
+                                                          </p>
+
+                                          </div>
+
+                                          <div class="tab">
+                                              <input name="checkbox-tabs-group" type="radio" id="checkbox5" class="checkboxtab">
+                                              <label for="checkbox5" class ="labels" >Parameter</label>
+
+                                                      <p>
+                                                              This values are parameters that are given to a web server where these parameters can do other thing before it can deliver a resource to a user.
+
+                                                              <img src="../../images/Param.png" alt="Param">
+                                                          </p>
+
+                                          </div>
+
+                                          <div class="tab">
+                                              <input name="checkbox-tabs-group" type="radio" id="checkbox6" class="checkboxtab">
+                                              <label for="checkbox6" class ="labels">Anchor</label>
+
+                                                      <p>
+                                                              An anchor represents a bookmark in a resource on a webpage. This serves as a linked to a location that is bookmarked in a resource. When a bookmark is selected in a webpage it will scroll through the webpage that contains the anchor. Another example is a video where you can click or point to a certain point of the video or audio.
+
+                                                              <img src="images/Anchor.png" alt="Anchor">
+                                                          </p>
+
+                                          </div>
+
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
@@ -731,7 +852,7 @@
   </div>
 
   <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="http" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
