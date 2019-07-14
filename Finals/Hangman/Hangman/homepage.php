@@ -1,154 +1,125 @@
-<!DOCTYPE html> <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Questions</title>
+  <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Clean responsive bootstrap website template">
   <meta name="author" content="">
   <!-- styles -->
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-  <link href="assets/css/docs.css" rel="stylesheet">
+  <!-- <link href="assets/css/docs.css" rel="stylesheet">
   <link href="assets/css/prettyPhoto.css" rel="stylesheet">
   <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
   <link href="assets/css/prettyPhoto.css" rel="stylesheet">
   <link href="assets/css/flexslider.css" rel="stylesheet">
-  <link href="assets/css/refineslide.css" rel="stylesheet">
+  <link href="assets/css/refineslide.css" rel="stylesheet"> -->
   <link href="assets/css/font-awesome.css" rel="stylesheet">
   <link href="assets/css/animate.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700" rel="stylesheet">
-  <link href="stylesheet" type="text/css" href="../../css/style.css" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700" rel="stylesheet"> -->
 
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/color/default.css" rel="stylesheet">
-    
 </head>
 
-<body>
-    <style>
-/*a{
-  float: right;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
-
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.next {
-  background-color: #44B8E7;
-  color: white;
-}
-        
-.previous {
-  background-color: #f1f1f1;
-  color: black;
-}
-
-
-.round {
-  border-radius: 50%;
-}*/
-#prevNext{
-  float: right;
-  display: inline;
-}
-
-#prevNext a{
-  padding: 5px;
-  background-color:#f1f1f1;
-}
-
-#ans{
-  border:1px solid black;
-}
-    </style>
-  <header>
+  <body>
+    <header>
     <!-- Navbar
       ================================================== -->
       <div class=" cbp-af-header">
-        <div class=" cbp-af-inner">
-          <div class="container">
-            <div class="row">
-
-              <div class="span4">
-                <!-- logo -->
-                <a class="logo" href="index.html">
-                  <h1>HANGMAN</h1>
-                  <!-- <img src="assets/img/logo.png" alt="" /> -->
+        <div class="container">
+          <div class="row">
+            <div class="span4">
+              <!-- logo -->
+              <a class="logo" href="index.html">
+                <div class="title">
+                  <h1 style="text-align:center;">HANGMAN</h1>
                 </a>
                 <!-- end logo -->
               </div>
-
-              <div class="span8">
-                <!-- top menu -->
-
-                <!-- end menu -->
-              </div>
-
             </div>
+            <!-- end menu -->
           </div>
         </div>
-      </div>
-    </header>
+      </header>
   <!-- Subhead
     ================================================== -->
     <section id="subintro">
 
       <div class="container">
-        <div class="row">
-          <div class="span4">
-            <h3>EASY</h3>
-          </div>
-          <div class="span8">
-            <ul class="breadcrumb notop">
-              <li><a href="index.html">Home</a><span class="divider">/</span></li>
-              <li class="active">World Wide Web:</li>
-            </ul>
-          </div>
-        </div>
+
       </div>
 
     </section>
+
     <section id="maincontent">
       <div class="container">
         <div class="row">
-          <div class="span10">
-            <!-- start article 1 -->
-            <article class="blog-post">
-              <div class="post-image">
-              </div>
-              <div class="post-heading">
-                <h3 style="font-weight: bolder;">World Wide Web:</h3>
-              </div>
-              <div class="row">
-                <div class="span8">
-                  <p>It is a language used to mark up documents<p>
-                  <label for ="ans"> Your Answer </label>
-                  <input type="text" class="form-control" id="ans" name="ans" autofocus>
-              </div>
-            </article>
-         </div>
         </div>
-        <div id="prevNext">
-         <a href="#" class="previous">&laquo; Previous</a>
-         <a href="#" class="next">Next &raquo;</a>
+        <div class="row">
+          <ul class="portfolio-area da-thumbs">
+            <li class="portfolio-item" data-id="id-0" data-type="web">
+              <div class="span4">
+                <div class="thumbnail">
+                  <div class="image-wrapp">
+                    <img src="assets/img/easy.jpg" alt="Portfolio name" title="" />
+                    <article class="da-animate da-slideFromRight">
+                     <a href="easy.php">
+                       <i class="icon-bg-light icon-link icon-circled icon-2x"></i>
+                     </a>
+                   </article>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="portfolio-item" data-id="id-0" data-type="brand">
+              <div class="span4">
+                <div class="thumbnail">
+                  <div class="image-wrapp">
+                    <img src="assets/img/medium.jpg" alt="Portfolio name" title="" />
+                    <article class="da-animate da-slideFromRight">
+                     <a href="medium.html">
+                       <i class="icon-bg-light icon-link icon-circled icon-2x"></i>
+                     </a>
+                   </article>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio-item" data-id="id-0" data-type="web">
+              <div class="span4">
+                <div class="thumbnail">
+                  <div class="image-wrapp">
+                    <img src="assets/img/hard.jpg" alt="Portfolio name" title="" />
+                    <article class="da-animate da-slideFromRight">
+                     <a href="hard.html">
+                       <i class="icon-bg-light icon-link icon-circled icon-2x"></i>
+                     </a>
+                   </article>
+                 </div>
+               </div>
+             </div>
+           </li>
+
+
+
+
+         </ul>
+
        </div>
-          
-      </div>
-    </section>
-      <!-- end article 1 -->
-      <br>
-      <br>
+
+     </div>
+   </section>
+   <br>
+   <br>
+   <br>
+   <br>
   <!-- Footer
    ================================================== -->
-
    <footer class="footer">
     <div class="container">
       <div class="row">
@@ -167,6 +138,8 @@ a:hover {
         </div>
       </div>
     </footer>
+
+
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/modernizr.js"></script>
     <script src="assets/js/jquery.easing.1.3.js"></script>
@@ -188,3 +161,4 @@ a:hover {
   </body>
 
   </html>
+

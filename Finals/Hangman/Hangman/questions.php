@@ -1,4 +1,17 @@
-<!DOCTYPE html> <html lang="en">
+<?php
+ include('includes/config.php');
+
+ $sql = $conn->query("SELECT * FROM questions WHERE  id = '4' ");
+
+ if($sql){
+    $row = mysqli_fetch_array($sql);
+ }
+
+?>
+
+<!DOCTYPE html>
+
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -125,11 +138,11 @@ a:hover {
               <div class="post-image">
               </div>
               <div class="post-heading">
-                <h3 style="font-weight: bolder;">World Wide Web:</h3>
+                <h3 style="font-weight: bolder;"><?php echo $row['category'];?>:</h3>
               </div>
               <div class="row">
                 <div class="span8">
-                  <p>It is a language used to mark up documents<p>
+                  <p><?php echo $row['text']; ?> <p>
                   <label for ="ans"> Your Answer </label>
                   <input type="text" class="form-control" id="ans" name="ans" autofocus>
               </div>
