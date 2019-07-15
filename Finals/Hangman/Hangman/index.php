@@ -1,90 +1,169 @@
 <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $db_name = "reviewer";
-        
-        $conn = new mysqli($servername, $username, $password, $db_name);
-        
-        if($conn->connect_error){
-            die("Connection to the database failed");
-        }else{
-            session_start();
-        }
-
-    $categ = $_POST['categ'];
-    $question = $_POST['descript'];
-    $answer = $_POST['ans'];
-    $level = $_POST['level'];
-
-    $sql = $conn->prepare("INSERT INTO questions (level,category,text,correct_answer) VALUES (?,?,?,?)");
-    $sql->bind_param("ssss",$level,$categ,$question,$answer);
-    if($sql->execute()){
-        echo "<script>
-            alert('DATA HAS BEEN INSERTED TO THE DATABASE');
-              </script>  ";
-    }else{
-        echo "<script>
-        alert('DI PUMASOK');
-          </script>";
-    }
-
+session_start();
 
 ?>
+
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Upload Dito</title>
-            <link rel = "icon" type = "img/png" href = "images/Logo.png">
-            <link rel="stylesheet" type="text/css" href="css/index.css" />
-            <link rel="stylesheet" type="text/css" href="" />
-            <link rel="stylesheet" type="text/css" href="" />
+<html lang="en">
 
-        </head>
-<body>
-    <h1>UPLOAD DITO</h1>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clean responsive bootstrap website template">
+  <meta name="author" content="">
+  <!-- styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- <link href="assets/css/docs.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="assets/css/flexslider.css" rel="stylesheet">
+  <link href="assets/css/refineslide.css" rel="stylesheet"> -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700" rel="stylesheet"> -->
 
-    <div class="categ">
-        <form action="index.php" method="post">
-            <h2>Category</h2>
-            <br>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/color/default.css" rel="stylesheet">
+</head>
 
-            <input type="radio" name="categ" id="www" value="World Wide Web">World Wide Web
-            <input type="radio" name="categ" id="http" value="HTTP"> HTTP
-            <input type="radio" name="categ" id="css" value="CSS"> CSS
-            <input type="radio" name="categ" id="internet" value="Internet"> Internet
-            <input type="radio" name="categ" id="html" value="HTML">HTML 
-            <input type="radio" name="categ" id="js" value="JavaScript">JavaScript
-            <input type="radio" name="categ" id="node" value="Node.js"> Node
-            <input type="radio" name="categ" id="php" value="PHP">PHP
-            <input type="radio" name="categ" id="jsp" value="Java Servelet">JSP
-            <input type="radio" name="categ" id="bts" value="Bootstrap"> Bootstrap
+  <body>
+    <header>
+    <!-- Navbar
+      ================================================== -->
+      <div class=" cbp-af-header">
+        <div class="container">
+          <div class="row">
+            <div class="span4">
+              <!-- logo -->
+              <a class="logo" href="index.html">
+                <div class="title">
+                  <h1 style="text-align:center;">HANGMAN</h1>
+                </a>
+                <!-- end logo -->
+              </div>
+            </div>
+            <!-- end menu -->
+          </div>
+        </div>
+      </header>
+  <!-- Subhead
+    ================================================== -->
+    <section id="subintro">
 
-            <br>
-            <br>
+      <div class="container">
 
-            <h2>LEVEL</h2>
+      </div>
 
-            <input type="radio" name="level" id="easy" value ="easy">easy
-            <input type="radio" name="level" id="medium" value ="medium">medium
-            <input type="radio" name="level" id="hard" value ="hard">hard
+    </section>
 
-            <br>
-            <br>
-            <label for="descript">Questions</label>
-            <input type="text" name="descript" id="descript" style = "height:100px; width:400px">
-            
-            <br>
-            <br>
+    <section id="maincontent">
+      <div class="container">
+        <div class="row">
+        </div>
+        <div class="row">
+            <form action="level.php" method = "get">
+          <ul class="portfolio-area da-thumbs">
+            <li class="portfolio-item" data-id="id-0" data-type="web">
+              <div class="span4">
+                <div class="thumbnail">
+                  <div class="image-wrapp">
+                    <img src="assets/img/easy.jpg" alt="Portfolio name" title="" />
+                    <article class="da-animate da-slideFromRight">
+                    <input type="submit" value = "easy" name="level">
+                       <i class="icon-bg-light icon-link icon-circled icon-2x"></i>
+                     </a>
+                   </article>
+                  </div>
+                </div>
 
-            <label for="ans">Correct answer</label>
-            <input type="text" name="ans" id="ans">
+              </div>
+            </li>
 
-            <input type="submit" value="SEND MO DITO">
-        </form>
-    </div>
-</body>
-</html>
+            <li class="portfolio-item" data-id="id-0" data-type="brand">
+              <div class="span4">
+                <div class="thumbnail">
+                  <div class="image-wrapp">
+                    <img src="assets/img/medium.jpg" alt="Portfolio name" title="" />
+                    <article class="da-animate da-slideFromRight">
+                    <input type="submit" value = "medium" name="level">
+                       <i class="icon-bg-light icon-link icon-circled icon-2x"></i>
+                     </a>
+                   </article>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio-item" data-id="id-0" data-type="web">
+              <div class="span4">
+                <div class="thumbnail">
+                  <div class="image-wrapp">
+                    <img src="assets/img/hard.jpg" alt="Portfolio name" title="" />
+                    <article class="da-animate da-slideFromRight">
+                     <input type="submit" value = "hard" name="level">
+                       <i class="icon-bg-light icon-link icon-circled icon-2x"></i>
+                     </a>
+                   </article>
+                 </div>
+               </div>
+             </div>
+           </li>
+
+
+
+
+         </ul>
+
+       </div>
+</form>
+     </div>
+   </section>
+   <br>
+   <br>
+   <br>
+   <br>
+  <!-- Footer
+   ================================================== -->
+   <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="span6">
+          <p>
+            &copy; Web Systems and Technologies - All right reserved
+          </p>
+        </div>
+        <div class="span6">
+          <div class="pull-right">
+            <div class="credits">
+              Designed by <font color="lightblue">Team Mikmik</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/portfolio/jquery.quicksand.js"></script>
+    <script src="assets/js/portfolio/setting.js"></script>
+    <script src="assets/js/hover/jquery-hover-effect.js"></script>
+    <script src="assets/js/jquery.flexslider.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/cbpAnimatedHeader.min.js"></script>
+    <script src="assets/js/jquery.refineslide.js"></script>
+    <script src="assets/js/jquery.ui.totop.js"></script>
+
+    <!-- Template Custom Javascript File -->
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+
+  </html>

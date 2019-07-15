@@ -1,17 +1,18 @@
 <?php
- include('includes/config.php');
+include('includes/config.php');
 
- $sql = $conn->query("SELECT * FROM questions WHERE  id = '4' ");
+$level = $_SESSION['level'];
+$num_question = $_GET['optradio'];
 
- if($sql){
+$sql = $conn->query("SELECT * FROM questions WHERE level = '$level' ORDER BY RAND() LIMIT $num_question");
+
+if($sql){
     $row = mysqli_fetch_array($sql);
- }
 
+}
 ?>
 
-<!DOCTYPE html>
-
-<html lang="en">
+<!DOCTYPE html> <html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -117,12 +118,12 @@ a:hover {
       <div class="container">
         <div class="row">
           <div class="span4">
-            <h3>EASY</h3>
+            <h3><?php echo strtoupper($level);?></h3>
           </div>
           <div class="span8">
             <ul class="breadcrumb notop">
               <li><a href="index.html">Home</a><span class="divider">/</span></li>
-              <li class="active">World Wide Web:</li>
+              <li class="active"><?php echo strtoupper($level);?>:</li>
             </ul>
           </div>
         </div>
@@ -135,6 +136,7 @@ a:hover {
           <div class="span10">
             <!-- start article 1 -->
             <article class="blog-post">
+                <form action="insert.php" method="post">
               <div class="post-image">
               </div>
               <div class="post-heading">
@@ -142,10 +144,14 @@ a:hover {
               </div>
               <div class="row">
                 <div class="span8">
-                  <p><?php echo $row['text']; ?> <p>
+                  <p>
+                      <?php echo $row['text'];
+                  $_SESSION['id'] = $row['id'];?><p>
                   <label for ="ans"> Your Answer </label>
                   <input type="text" class="form-control" id="ans" name="ans" autofocus>
+                  <input type="submit" value="Enter">
               </div>
+</form>
             </article>
          </div>
         </div>
@@ -201,3 +207,4 @@ a:hover {
   </body>
 
   </html>
+
