@@ -1,0 +1,41 @@
+.colored{
+    color: #e8491d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr td{
+    border: 1px solid black;
+    padding:5px;
+}
+
+tr td:first-child{
+    background:#cccccc;
+    text-align: center;
+    width: 20%;
+    font-weight: bold;
+}
+
+tr td:nth-child(3){
+    background:#cccccc;
+    text-align: center;
+    width: 20%;
+    font-weight: bold;
+}
+
+
+
+.mssg tr td {
+    font-size: 18px;
+}
+
+.labels {
+    font-size: 175%;
+}
+
+.labels:hover {
+    color: #35424a;
+}
