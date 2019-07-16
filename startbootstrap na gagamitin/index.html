@@ -23,6 +23,7 @@
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
 
+  <!-- old content css -->
   <link rel="stylesheet" type="text/css" href="intro.css" />
   <link rel="stylesheet" type="text/css" href="tabs.css" />
   <link rel="stylesheet" type="text/css" href="fonts.css" />
@@ -35,7 +36,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Web Systems and Technologies</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="letter-spacing: .1em;">Web Systems and Technologies</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -43,19 +44,19 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#topics">Topics</a>
+            <a class="nav-link js-scroll-trigger" href="#topics" style="letter-spacing: .5em;">Topics</a>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
+          </li>-->
+          <!--<li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team" style="letter-spacing: .5em;">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link portfolio-link" data-toggle="modal" href="#quizName" style="letter-spacing: .5em;">Quiz</a>
           </li>
         </ul>
       </div>
@@ -78,7 +79,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">TOPICS</h2>
+          <h2 class="section-heading text-uppercase" style="letter-spacing: .2em;">TOPICS</h2>
           <h3 class="section-subheading text-muted">Learn the basics of web systems and technologies.</h3>
         </div>
       </div>
@@ -91,7 +92,7 @@
             </span>
           </a>
           <h4 class="service-heading">Introduction</h4>
-          <p class="text-muted"></p>
+          <p class="text-muted">This course is designed to start you on a path toward future studies in web development and design, no matter how little experience or technical knowledge you currently have.</p>
         </div>
         <div class="col-md-4">
           <a class="nav-link js-scroll-trigger" href="#frontend">
@@ -101,7 +102,7 @@
             </span>
           </a>
           <h4 class="service-heading">Front-End Development</h4>
-          <p class="text-muted"></p>
+          <p class="text-muted">A front-end web developer is responsible for implementing visual and interactive elements that users engage with through their web browser when using a web application.</p>
         </div>
         <div class="col-md-4">
           <a class="nav-link js-scroll-trigger" href="#backend">
@@ -111,7 +112,7 @@
             </span>
           </a>
           <h4 class="service-heading">Back-End Development</h4>
-          <p class="text-muted"></p>
+          <p class="text-muted">A back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do.</p>
         </div>
       </div>
     </div>
@@ -122,8 +123,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Introduction</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase" style="letter-spacing: .2em;">Introduction</h2>
+          <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
       <h2 class="text-center text-muted"> World Wide Web </h2>
@@ -147,6 +148,7 @@
     </div>
 
     <br>
+    <br>
 
     <div class="container">
       <h2 class="text-center text-muted"> Internet </h2>
@@ -161,6 +163,8 @@
     </div>
 
     <br>
+    <br>
+
     <div class="container">
       <h2 class="text-center text-muted"> Hypertext Transfer protocol </h2>
       <hr>
@@ -187,6 +191,7 @@
           </a>
         </div>
       </div>
+      <br>
       <div class="row">
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#responsemessage">
@@ -213,13 +218,96 @@
     </div>
   </section>
 
+  <section class="page-section" id="frontend">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase" style="letter-spacing: .2em;">Front-End Development</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center text-muted">Hypertext Markup Language</h2>
+          <hr>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#htmlhistory">
+                <div class="portfolio-caption">
+                  <h4>HTML History</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#htmlelements">
+                <div class="portfolio-caption">
+                  <h4>HTML Elements</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <br>
+          <br>
+
+          <div class="container">
+          <h2 class="text-center text-muted">Cascading Stylesheet</h2>
+          <hr>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#csshistory">
+                <div class="portfolio-caption">
+                  <h4>CSS History</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#stylerules">
+                <div class="portfolio-caption">
+                  <h4>Style Rules</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+          <br>
+          <br>
+
+          <div class="container">
+          <h2 class="text-center text-muted">Javascript</h2>
+          <hr>
+          <!-- <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#">
+                <div class="portfolio-caption">
+                  <h4></h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#">
+                <div class="portfolio-caption">
+                  <h4></h4>
+                </div>
+              </a>
+            </div>
+          </div> -->
+          </div>
+
+  </section> -->
+
     <!-- Front-End Development -->
-    <section class="bg-light page-section" id="frontend">
+    <!--<section class="bg-light page-section" id="frontend">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase"> FRONT-END DEVELOPMENT</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted"></h3>
           </div>
         </div>
         <h2 class="text-center text-muted">Hypertext Markup Language</h2>
@@ -270,7 +358,7 @@
       <div class="container">
         <h2 class="text-center text-muted">Javascript</h2>
         <hr>
-        <!-- <div class="row">
+        //<div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#">
               <div class="portfolio-caption">
@@ -285,17 +373,17 @@
               </div>
             </a>
           </div>
-        </div> -->
+        </div>//
       </div>
-    </section>
+    </section>-->
 
     <!-- Back-End Development -->
     <section class="bg-light page-section" id="backend">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase"> BACK-END DEVELOPMENT</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase" style="letter-spacing: .2em;"> BACK-END DEVELOPMENT</h2>
+            <h3 class="section-subheading text-muted"></h3>
           </div>
         </div>
         <h2 class="text-center text-muted">PHP: Hypertext Preprocessor</h2>
@@ -319,6 +407,7 @@
       </div>
 
       <br>
+      <br>
 
       <div class="container">
         <h2 class="text-center text-muted">Node.js</h2>
@@ -341,6 +430,7 @@
         </div>-->
       </div>
 
+      <br>
       <br>
 
       <div class="container">
@@ -367,7 +457,7 @@
 
 
   <!-- About -->
-  <section class="page-section" id="about">
+  <!-- <section class="page-section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -445,39 +535,40 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
 
   <!-- Team -->
-  <section class="bg-light page-section" id="team">
+  <section class="page-section" id="team">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
+            <img class="mx-a rounded-circle" src="img/team/1.jpg" alt="">
             <h4>Michael Jericho Dariano</h4>
-            <p class="text-muted">Lead Designer</p>
+            <p class="text-muted">Project Manager</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
-              </li>
+              </li>-->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/jexmich008">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
@@ -485,23 +576,23 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
             <h4>Clarence Juanata</h4>
-            <p class="text-muted">Lead Marketer</p>
+            <p class="text-muted">Back-End Developer</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
-              </li>
+              </li>-->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/clarence.rence04">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
@@ -509,23 +600,23 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
             <h4>Graeham Solis</h4>
-            <p class="text-muted">Lead Developer</p>
+            <p class="text-muted">Front-End Developer</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
-              </li>
+              </li>-->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/graeham.solis">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
@@ -536,23 +627,23 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/4.jpg" alt="">
             <h4>Yvonne Manuel</h4>
-            <p class="text-muted">Lead Designer</p>
+            <p class="text-muted">Content Manager</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
+<!--              <li class="list-inline-item">
+                <a href="https://www.facebook.com/bonnnmanuel">
                   <i class="fab fa-twitter"></i>
                 </a>
-              </li>
+              </li>-->
               <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
@@ -560,23 +651,23 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/5.jpg" alt="">
             <h4>Rachelle Ann Muyargas</h4>
-            <p class="text-muted">Lead Marketer</p>
+            <p class="text-muted">Content Manager</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
-              </li>
+              </li>-->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/rannrm">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
@@ -584,23 +675,23 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/6.jpg" alt="">
             <h4>Marianne Kaye Cariño</h4>
-            <p class="text-muted">Lead Developer</p>
+            <p class="text-muted">Content Manager</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
-              </li>
+              </li>-->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/mariannekaye.yap">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
@@ -611,23 +702,23 @@
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/7.jpg" alt="">
             <h4>JM Camille Poyaoan</h4>
-            <p class="text-muted">Lead Designer</p>
+            <p class="text-muted">Database Manager</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
-              </li>
+              </li>-->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.facebook.com/camelionn">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+<!--              <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
@@ -635,14 +726,14 @@
 
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          <p class="large text-muted">Web System and Technology Short Term 2019</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Clients -->
-  <section class="py-5">
+  <!--<section class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-6">
@@ -667,10 +758,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <!-- Contact -->
-  <section class="page-section" id="contact">
+  <!--<section class="page-section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -712,14 +803,14 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
+    <div class="bg-light container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Team Mikmik 2019</span>
+          <span class="copyright">Copyright &copy; 9316A - Team Mikmik 2019</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
@@ -1058,11 +1149,13 @@
                     <label for="acc9">HTTP 0.9: The One-Line Protocol</label>
                             <div class="acc-body">
                               <p>In 1991, Berners-Lee outlined the motivation for the new protocol and listed several high-level design goals: file transfer functionality, ability to request an index search of a hypertext archive, format negotiation, and an ability to refer the client to another server. To prove the theory in action, a simple prototype was built, which implemented a small subset of the proposed functionality:
-                                <li>Client request is a single ASCII character string.</li>
-                                <li>Client request is terminated by a carriage return (CRLF).</li>
-                                <li>Server response is an ASCII character stream.</li>
-                                <li>Server response is a hypertext markup language (HTML).</li>
-                                <li>Connection is terminated after the document transfer is complete.</li>
+                                <ul>
+                                  <li>Client request is a single ASCII character string.</li>
+                                  <li>Client request is terminated by a carriage return (CRLF).</li>
+                                  <li>Server response is an ASCII character stream.</li>
+                                  <li>Server response is a hypertext markup language (HTML).</li>
+                                  <li>Connection is terminated after the document transfer is complete.</li>
+                                </ul>
                               </p>
                               </br>
                             </div>
@@ -1071,12 +1164,13 @@
                               <input type="radio" name="acc" id="acc10">
                               <label for="acc10">HTTP/1.0: Building extensibility</label>
                               <div class="acc-body">
-
-                                <li>Browser-friendly protocol</li>
-                                <li>Provided header fields including rich metadata about both request and response (HTTP version number, status code, content type)</li>
-                                <li>Response: not limited to hypertext (Content-Type header provided ability to transmit files other than plain HTML files — e.g. scripts, stylesheets, media)</li>
-                                <li>Methods supported: GET , HEAD , POST</li>
-                                <li>Connection nature: terminated immediately after the response</li>
+                                <ul>
+                                  <li>Browser-friendly protocol</li>
+                                  <li>Provided header fields including rich metadata about both request and response (HTTP version number, status code, content type)</li>
+                                  <li>Response: not limited to hypertext (Content-Type header provided ability to transmit files other than plain HTML files — e.g. scripts, stylesheets, media)</li>
+                                  <li>Methods supported: GET , HEAD , POST</li>
+                                  <li>Connection nature: terminated immediately after the response</li>
+                                </ul>
                               </div>
                             </div>
 
@@ -1084,9 +1178,10 @@
                                 <input type="radio" name="acc" id="acc11">
                                 <label for="acc11">HTTP/1.1: The standardized protocol</label>
                                  <div class="acc-body">
-
+                                  <ul>
                                     <li>Introduced critical performance optimizations and feature enhancements — persistent and pipelined connections, chunked transfers, compression/decompression, content negotiations, virtual hosting (a server with a single IP Address hosting multiple domains), faster response and great bandwidth savings by adding cache support.</li>
-                                    <li>Methods supported: GET , HEAD , POST , PUT , DELETE , TRACE , OPTIONS</li></p>
+                                    <li>Methods supported: GET , HEAD , POST , PUT , DELETE , TRACE , OPTIONS</li>
+                                  </ul>
                                   </div>
                               </div>
 
@@ -1096,10 +1191,12 @@
                               <div class="acc-body">
                                 <p> -In 2015, Internet Engineering Task Force (IETF) release HTTP/2, the second major version of the most useful internet protocol, HTTP.</p>
                                 <h3><ul>Main goals of developing HTTP/2 was:</ul></h3>
+                                <ul>
                                 <li>Page load speed improvements trough:</li>
                                 <li>Compression of request headers</li>
                                 <li>Binary protocol</li>
                                 <li>Request multiplexing over a single TCP connection</li>
+                              </ul>
                               </div>
                             </div>
                           </div>
@@ -1175,6 +1272,7 @@
 <hr>
 
 <p>
+  <ul>
     <li>Request Line: CR/LF-terminated line containing 3 space-separated items.</li>
     <li>Method: indicates the operation being requested by the client.</li>
     <li>Request URL: URL of the web resource to perform the operation on.</li>
@@ -1195,7 +1293,7 @@
         data up to the server for processing; this data may be user-supplied data in HTML forms, or
         files to be uploaded to the server, e.g.</li>
 
-
+      </ul>
 </p>
 
                 <br>
@@ -1235,7 +1333,7 @@
                        <li>HTTP Version: version of HTTP being used by the server</li>
                        <li>Status Code: 3-digit integer code, indicating the result of the operation</li>
                        <li>Reason Phrase: human-readable description of the operation result indicated by the status code</li>
-                       </ul>
+
                    </br>
 
                        <li>Message Headers: contains additional information about the response (same format as the
@@ -1247,7 +1345,7 @@
                    </br>
                        <li>(optional) Message Body: the message body in response messages typically contains the
                            web resource being requested</li>
-
+                         </ul>
                    </p>
 
                    <br>
@@ -2269,7 +2367,7 @@
   </div>
 
   <!-- Modal 0 -->
-  <div class="portfolio-modal modal fade" id="internethistory" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="quizName" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -2283,9 +2381,23 @@
               <div class="modal-body">
 
 
+                <div class="container-form">
+                  <form>
+                    <h2>Enter your name</h2>
+                    <div class="form-group">
+                      <input type="text" required="required"/>
+                      <label for="input" class="control-label"></label><i class="bar"></i>
+                    </div>
+
+                  </form>
+                  <div class="button-container">
+                    <button type="button" class="button"><span>Submit</span></button>
+                  </div>
+                </div>
+
                 <br>
                 <br>
-                <br>
+
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close</button>
@@ -2399,5 +2511,420 @@
   <script src="js/agency.min.js"></script>
 
 </body>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+body,
+input,
+select,
+textarea,
+body * {
+font-family: 'Roboto', sans-serif;
+box-sizing: border-box;
+}
+body::after, body::before,
+input::after,
+input::before,
+select::after,
+select::before,
+textarea::after,
+textarea::before,
+body *::after,
+body *::before {
+box-sizing: border-box;
+}
 
+body {
+background-image: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
+background-image: linear-gradient(top, #f2f2f2, #e6e6e6);
+}
+
+h1 {
+font-size: 2rem;
+text-align: center;
+margin: 0 0 2em;
+}
+
+.container-form {
+position: relative;
+max-width: 40rem;
+margin: 5rem auto;
+background: #fff;
+width: 100%;
+padding: 3rem 5rem 0;
+border-radius: 1px;
+}
+.container-form::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+-webkit-transform: scale(0.98);
+        transform: scale(0.98);
+-webkit-transition: -webkit-transform 0.28s ease-in-out;
+transition: -webkit-transform 0.28s ease-in-out;
+transition: transform 0.28s ease-in-out;
+transition: transform 0.28s ease-in-out, -webkit-transform 0.28s ease-in-out;
+z-index: -1;
+}
+.container-form:hover::before {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+
+.button-container {
+text-align: center;
+}
+
+fieldset {
+margin: 0 0 3rem;
+padding: 0;
+border: none;
+}
+
+.form-radio,
+.form-group {
+position: relative;
+margin-top: 2.25rem;
+margin-bottom: 2.25rem;
+}
+
+.form-inline > .form-group,
+.form-inline > .btn {
+display: inline-block;
+margin-bottom: 0;
+}
+
+.form-help {
+margin-top: 0.125rem;
+margin-left: 0.125rem;
+color: #b3b3b3;
+font-size: 0.8rem;
+}
+.checkbox .form-help, .form-radio .form-help, .form-group .form-help {
+position: absolute;
+width: 100%;
+}
+.checkbox .form-help {
+position: relative;
+margin-bottom: 1rem;
+}
+.form-radio .form-help {
+padding-top: 0.25rem;
+margin-top: -1rem;
+}
+
+.form-group input {
+height: 1.9rem;
+}
+.form-group textarea {
+resize: none;
+}
+.form-group select {
+width: 100%;
+font-size: 1rem;
+height: 1.6rem;
+padding: 0.125rem 0.125rem 0.0625rem;
+background: none;
+border: none;
+line-height: 1.6;
+box-shadow: none;
+}
+.form-group .control-label {
+position: absolute;
+top: 0.25rem;
+pointer-events: none;
+padding-left: 0.125rem;
+z-index: 1;
+color: #b3b3b3;
+font-size: 1rem;
+font-weight: normal;
+-webkit-transition: all 0.28s ease;
+transition: all 0.28s ease;
+}
+.form-group .bar {
+position: relative;
+border-bottom: 0.0625rem solid #999;
+display: block;
+}
+.form-group .bar::before {
+content: '';
+height: 0.125rem;
+width: 0;
+left: 50%;
+bottom: -0.0625rem;
+position: absolute;
+background: #337ab7;
+-webkit-transition: left 0.28s ease, width 0.28s ease;
+transition: left 0.28s ease, width 0.28s ease;
+z-index: 2;
+}
+.form-group input,
+.form-group textarea {
+display: block;
+background: none;
+padding: 0.125rem 0.125rem 0.0625rem;
+font-size: 1rem;
+border-width: 0;
+border-color: transparent;
+line-height: 1.9;
+width: 100%;
+color: transparent;
+-webkit-transition: all 0.28s ease;
+transition: all 0.28s ease;
+box-shadow: none;
+}
+.form-group input[type="file"] {
+line-height: 1;
+}
+.form-group input[type="file"] ~ .bar {
+display: none;
+}
+.form-group select,
+.form-group input:focus,
+.form-group input:valid,
+.form-group input.form-file,
+.form-group input.has-value,
+.form-group textarea:focus,
+.form-group textarea:valid,
+.form-group textarea.form-file,
+.form-group textarea.has-value {
+color: #333;
+}
+.form-group select ~ .control-label,
+.form-group input:focus ~ .control-label,
+.form-group input:valid ~ .control-label,
+.form-group input.form-file ~ .control-label,
+.form-group input.has-value ~ .control-label,
+.form-group textarea:focus ~ .control-label,
+.form-group textarea:valid ~ .control-label,
+.form-group textarea.form-file ~ .control-label,
+.form-group textarea.has-value ~ .control-label {
+font-size: 0.8rem;
+color: gray;
+top: -1rem;
+left: 0;
+}
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+outline: none;
+}
+.form-group select:focus ~ .control-label,
+.form-group input:focus ~ .control-label,
+.form-group textarea:focus ~ .control-label {
+color: #337ab7;
+}
+.form-group select:focus ~ .bar::before,
+.form-group input:focus ~ .bar::before,
+.form-group textarea:focus ~ .bar::before {
+width: 100%;
+left: 0;
+}
+
+.checkbox label,
+.form-radio label {
+position: relative;
+cursor: pointer;
+padding-left: 2rem;
+text-align: left;
+color: #333;
+display: block;
+}
+.checkbox input,
+.form-radio input {
+width: auto;
+opacity: 0.00000001;
+position: absolute;
+left: 0;
+}
+
+.radio {
+margin-bottom: 1rem;
+}
+.radio .helper {
+position: absolute;
+top: -0.25rem;
+left: -0.25rem;
+cursor: pointer;
+display: block;
+font-size: 1rem;
+-webkit-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+color: #999;
+}
+.radio .helper::before, .radio .helper::after {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+margin: 0.25rem;
+width: 1rem;
+height: 1rem;
+-webkit-transition: -webkit-transform 0.28s ease;
+transition: -webkit-transform 0.28s ease;
+transition: transform 0.28s ease;
+transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+border-radius: 50%;
+border: 0.125rem solid currentColor;
+}
+.radio .helper::after {
+-webkit-transform: scale(0);
+        transform: scale(0);
+background-color: #337ab7;
+border-color: #337ab7;
+}
+.radio label:hover .helper {
+color: #337ab7;
+}
+.radio input:checked ~ .helper::after {
+-webkit-transform: scale(0.5);
+        transform: scale(0.5);
+}
+.radio input:checked ~ .helper::before {
+color: #337ab7;
+}
+
+.checkbox {
+margin-top: 3rem;
+margin-bottom: 1rem;
+}
+.checkbox .helper {
+color: #999;
+position: absolute;
+top: 0;
+left: 0;
+width: 1rem;
+height: 1rem;
+z-index: 0;
+border: 0.125rem solid currentColor;
+border-radius: 0.0625rem;
+-webkit-transition: border-color 0.28s ease;
+transition: border-color 0.28s ease;
+}
+.checkbox .helper::before, .checkbox .helper::after {
+position: absolute;
+height: 0;
+width: 0.2rem;
+background-color: #337ab7;
+display: block;
+-webkit-transform-origin: left top;
+        transform-origin: left top;
+border-radius: 0.25rem;
+content: '';
+-webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+transition: opacity 0.28s ease, height 0s linear 0.28s;
+opacity: 0;
+}
+.checkbox .helper::before {
+top: 0.65rem;
+left: 0.38rem;
+-webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+box-shadow: 0 0 0 0.0625rem #fff;
+}
+.checkbox .helper::after {
+top: 0.3rem;
+left: 0;
+-webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+.checkbox label:hover .helper {
+color: #337ab7;
+}
+.checkbox input:checked ~ .helper {
+color: #337ab7;
+}
+.checkbox input:checked ~ .helper::after, .checkbox input:checked ~ .helper::before {
+opacity: 1;
+-webkit-transition: height 0.28s ease;
+transition: height 0.28s ease;
+}
+.checkbox input:checked ~ .helper::after {
+height: 0.5rem;
+}
+.checkbox input:checked ~ .helper::before {
+height: 1.2rem;
+-webkit-transition-delay: 0.28s;
+        transition-delay: 0.28s;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+margin-top: 1rem;
+}
+
+.has-error .legend.legend, .has-error.form-group .control-label.control-label {
+color: #d9534f;
+}
+.has-error.form-group .form-help,
+.has-error.form-group .helper, .has-error.checkbox .form-help,
+.has-error.checkbox .helper, .has-error.radio .form-help,
+.has-error.radio .helper, .has-error.form-radio .form-help,
+.has-error.form-radio .helper {
+color: #d9534f;
+}
+.has-error .bar::before {
+background: #d9534f;
+left: 0;
+width: 100%;
+}
+
+.button {
+position: relative;
+background: currentColor;
+border: 1px solid currentColor;
+font-size: 1.1rem;
+color: #4f93ce;
+margin: 3rem 0;
+padding: 0.75rem 3rem;
+cursor: pointer;
+-webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+overflow: hidden;
+box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.button span {
+color: #fff;
+position: relative;
+z-index: 1;
+}
+.button::before {
+content: '';
+position: absolute;
+background: #071017;
+border: 50vh solid #1d4567;
+width: 30vh;
+height: 30vh;
+border-radius: 50%;
+display: block;
+top: 50%;
+left: 50%;
+z-index: 0;
+opacity: 1;
+-webkit-transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(0);
+}
+.button:hover {
+color: #337ab7;
+box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.button:active::before, .button:focus::before {
+-webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+-webkit-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+opacity: 0;
+}
+.button:focus {
+outline: none;
+}
+
+</style>
 </html>
