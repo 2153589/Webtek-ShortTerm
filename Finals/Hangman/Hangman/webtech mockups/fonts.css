@@ -1,0 +1,128 @@
+.mssg{
+    font-size:1em;
+    font-family: Courier, monospace;   
+    line-height: 2;
+    margin-top: 20px;
+	margin-right: 40px;
+  text-shadow: 1px 0 blue;
+}
+
+.mssg2{
+    font-size:2em;
+    font-family: Courier, monospace;  
+    line-height: 1;  
+    margin-top: 20px;
+}
+
+.desc{
+    font-size:1.2em;
+    font-family: Times, "Times New Roman", serif;
+    text-align: left;
+
+}
+
+.indent{
+    font-size:1.2em;
+    font-family: Times, "Times New Roman", serif;
+    text-align: left;
+    text-indent: 5%;
+
+}
+
+.desc-1{
+    font-size:1.2em;
+    font-family: Times, "Times New Roman", serif;
+    padding-left:50px;
+    margin-bottom: 5px;
+}
+
+   h1{
+     color:rgb(7, 7, 7);
+     text-align:center;
+   }
+   /*--------Accordion-------*/
+   .acc-container {
+     width: 100%;
+     margin: auto;
+   
+   }
+   .acc-container .acc-body {
+     width: 98%;
+     width: calc(100% - 20px);
+     margin: 0 auto;
+     height: 0;
+     color: rgba(0, 0, 0, 0);;
+     background-color: rgba(255, 255, 255, 0.2);
+     line-height: 28px;
+     padding: 0 20px;
+     box-sizing: border-box;
+     transition: 0.5s;
+     font-style: initial;
+   }
+   
+   .acc-container label {
+     cursor: pointer;
+     background-color: rgba(255, 255, 255, 0.1);
+     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+     display: block;
+     padding: 15px;
+     width: 100%;
+     color: black;
+     font-weight: 400;
+     box-sizing: border-box;
+     z-index: 100;
+     font-style: initial;
+     font-size: 1.6em;
+   }
+   
+   .acc-container input{
+     display: none;
+     
+   }
+   
+   .acc-container label:before {
+     font-family: 'FontAwesome';
+     content: '\f067';
+     font-weight: bolder;
+     float: right;
+   }
+   
+   .acc-container input:checked+label {
+     background-color: rgba(255, 255, 255, 0.15);
+     font-style: initial;
+     font-family: fantasy;
+     font-size: 2em;
+   }
+   
+   .acc-container input:checked+label:before {
+     font-family: 'FontAwesome';
+     content: '\f00d';
+     transition: 0.5s;
+     
+   }
+   
+   .acc-container input:checked~.acc-body {
+     height: auto;
+     color: black;
+     font-size: 16px;
+     padding: 20px;
+     transition: 0.5s;
+     font-family: Times, "Times New Roman", serif;     
+   }
+
+   .expand {
+  display: none;
+}
+
+.expand:target {
+  display: block;
+}
+.title{
+  text-align: left;
+  text-decoration: underline;
+}
+
+
+a{
+  color: inherit;
+}

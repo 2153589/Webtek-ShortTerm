@@ -4,6 +4,9 @@ session_start();
 $level = $_GET['level'];
 $_SESSION['level'] = $level;
 
+$name =  $_SESSION['name'];
+$_SESSION['name'] = $name;  
+
 //echo strtoupper($level);
 ?>
 
@@ -68,7 +71,7 @@ $_SESSION['level'] = $level;
       <div class="container">
         <div class="row">
           <div class="span4">
-            <h3>ano <strong>pwede ilagay?</strong></h3>
+            <h3><?php echo $name; ?></h3>
           </div>
           <div class="span8">
             <ul class="breadcrumb notop">

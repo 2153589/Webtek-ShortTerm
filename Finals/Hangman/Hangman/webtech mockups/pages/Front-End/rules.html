@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../../css/intro.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/tabs.css" />
+    <link rel="stylesheet" href="../../css/table.css">
+    <title>CSS Style Rules</title>
+</head>
+<body>
+    	<!-- Header -->
+	<header>
+            <div class="container">
+                <div id="title">
+                    <h1> <span class="highlighted">Web Systems</span> and Technology</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="../../index.html">Home</a></li>
+                        <li><a href="#open-modal">Topics</a></li>
+                        <li><a href="../../aboutus.html">About Us</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <!-- End of header -->
+
+        <!-- Content for TOPICS navigation in modal view-->
+        <div id="open-modal" class="modal-window">
+            <div>
+                <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+
+                <h1>Topics</h1>
+
+                <h1>HTTP</h1>
+                <hr>
+                <ul>
+                    <li><a href="../Introduction/intro.html" id="link-color">World Wide Web</a></li>
+                    <li><a href="../Introduction/internetHistory.html" id="link-color">Internet</a></li>
+                    <li><a href="../Introduction/HTTP Protocol Versions.html" id="link-color">Hypertext Transfer Protocol</a></li>
+                </ul>
+                <br>
+
+                <h1>HTML</h1>
+                <hr>
+                <ul>
+                    <li><a href="HTML.html">Hypertext Markup Language</a></li>
+                    <li><a href="Elements.html">HTML Elements</a></li>
+                </ul>
+                <br>
+                <h1>CSS</h1>
+                <hr>
+                <ul>
+                  <li><a href="CSS.html">Cascading Style Sheet</a></li>
+                  <li><a href="rules.html">Style Rules</a></li>
+                </ul>
+            </div>
+        </div>
+
+            <section id="side-nav">
+                    <h1></h1>
+                    <div class="topic-box">
+                        <h3>Hypertext Markup Language</h3>
+                        <ul>
+                            <li><a href="HTML.html">History</a></li>
+                            <li><a href="../Front-End/Elements.html ">HTML Elements</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="topic-box">
+                            <h3>Cascading Style Sheets</h3>
+                            <ul>
+                                <li><a href="CSS.html">History</a></li>
+                                <li class="active"><a href="rules.html">Style Rules</a></li>
+                            </ul>
+                    </div>
+
+                        <div class="topic-box">
+                        </div>
+
+                </section>
+
+                <section id="contents">
+                    <h3>CSS Style Rules</h3>
+                    <hr>
+                    <p>
+
+          <ul>
+              <li> Selectors - determines which elements in the document tree are matched by the selector thus a set of CSS rules apply.</li> <br/>
+              <li>Selector syntax<br/>
+                    It is a chain of one or more sequences of simple selectors separated by combinators.<br/>
+                    It is a single sequence of simple selectors that match all the selectors in the sequence.<br/>
+                    Selector group</li> <br/>
+                    <div class="tabs">
+                            <div class="tab">
+                                <input name="checkbox-tabs-group" type="radio" id="checkbox1" class="checkboxtab" checked>
+                                <label for="checkbox1" class ="labels">Simple Selector</label>
+                                <div class="content">
+                     <table>
+                         <tr>
+                             <td class="keyword">Universal Selector</td>
+                             <td><span class="colored">*</span>{<br/>
+                             } <br/></td>
+                         </tr>
+
+                         <tr>
+                             <td class="keyword">Type Selector</td>
+                             <td><span class="colored">p</span>{ <br>
+                            }</td>
+                         </tr>
+
+                         <tr>
+                             <td class="keyword">Grouped</td>
+                             <td><span class="colored"> h1,h2,h3</span> {
+                                 <br> }</td>
+                         </tr>
+
+                         <tr>
+                             <td class="keyword">ID Selector</td>
+                             <td><span class="colored">#nav</span> { <br>
+                             }</td>
+                         </tr>
+
+                         <tr>
+                             <td class="keyword">Class Selector</td>
+                             <td><span class="colored">.hide</span>{ <br>
+                             } </td>
+                         </tr>
+
+                         <tr>
+                             <td class="keyword" >Attribute Selector</td>
+                             <td><span class="colored">div(class=note)</span>{ <br>
+                             }</td>
+                         </tr>
+                     </table>
+                     </div>
+
+                            <div class="tab">
+                                <input name="checkbox-tabs-group" type="radio" id="checkbox2" class="checkboxtab" >
+                                <label for="checkbox2" class ="labels">Combinators</label>
+                                <div class="content">
+                                    <table>
+                                        <tr>
+                                            <td class="keyword"> Descendant Combinator</td>
+                                            <td><span class="colored">div.content em</span>{ <br>
+                                            }</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="keyword">Child Combinator</td>
+                                            <td><span class="colored">div.content > em</span>{ <br>
+                                            }</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="keyword">Adjacent Sibling Combinator</td>
+                                            <td><span class="colored"> h1 + p </span>{ <br>
+                                            }</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="keyword">General Sibling Combinator</td>
+                                            <td><span class="colored">h1 ~p </span>{ <br>
+                                            }</td>
+                                        </tr>
+
+                                    </table>
+                                 </div>
+
+                                 <div class="tab">
+                                        <input name="checkbox-tabs-group" type="radio" id="checkbox3" class="checkboxtab">
+                                        <label for="checkbox3" class ="labels">Psudeo Classes</label>
+                                        <div class="content">
+                                            <table>
+                                                <tr>
+                                                    <td>&#8758;active</td>
+                                                    <td>&#8758;checked</td>
+                                                    <td>&#8758;disabled</td>
+                                                    <td>&#8758;empty</td>
+                                                    <td>&#8758;visited</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;enable</td>
+                                                    <td>&#8758;first-child</td>
+                                                    <td>&#8758;first-type-of</td>
+                                                    <td>&#8758;focus</td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;hover</td>
+                                                    <td>&#8758;in-range</td>
+                                                    <td>&#8758;invalid</td>
+                                                    <td>&#8758;last-type-of</td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;link</td>
+                                                    <td>&#8758;not(select)</td>
+                                                    <td>&#8758;nth-chlid(n)</td>
+                                                    <td>&#8758;nth-last-child(n)</td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;nth-last-type-of(n)</td>
+                                                    <td>&#8758;nth-type-of(n)</td>
+                                                    <td>&#8758;only-of-type</td>
+                                                    <td>&#8758;only-child</td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;optional</td>
+                                                    <td>&#8758;out-of-range</td>
+                                                    <td>&#8758;read-only</td>
+                                                    <td>&#8758;read-write</td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>&#8758;requried</td>
+                                                    <td>&#8758;root</td>
+                                                    <td>&#8758;target</td>
+                                                    <td>&#8758;valid</td>
+                                                    <td></td>
+                                                </tr>
+
+                                            </table>
+                                        </div>
+                                </div>
+                     </div>
+            </section>
+
+</body>
+</html>

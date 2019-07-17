@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Web System and Technology</title>
+	<link rel = "icon" type = "img/png" href = "images/Logo.png">
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="" />
+	<link rel="stylesheet" type="text/css" href="" />
+    
+    <style> 
+    input[type=text] {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     border: 1px solid #555;
+     outline: none;
+}
+
+    input[type=text]:focus {
+    background-color: lightblue;
+}
+</style>
+
+</head>
+<body>
+
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<div id="title">
+				<h1> <span class="highlighted">Web Systems</span> and Technology</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="#open-modal">Topics</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#quiz-modal">Take Quiz</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<!-- End of header -->
+    
+    
+        <!-- Content for Take Quiz navigation in modal view-->
+    <div id="quiz-modal" class="modal-window">
+			<div>
+					<a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+
+					<h1>INPUT NAME</h1>
+                    <form action=../index.php method="POST">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" value="">
+                    <br><br>
+                    <input type="submit" value="Submit">
+                    </form> 
+
+			</div>
+	</div>
+    
+
+	<!-- Content for TOPICS navigation in modal view-->
+	<div id="open-modal" class="modal-window">
+			<div>
+					<a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+
+					<h1>Topics</h1>
+
+					<h1>HTTP</h1>
+					<hr>
+					<ul>
+							<li><a href="pages/Introduction/intro.html" id="link-color">World Wide Web</a></li>
+							<li><a href="pages/Introduction/internetHistory.html" id="link-color">Internet</a></li>
+							<li><a href="pages/Introduction/HTTP Protocol Versions.html" id="link-color">Hypertext Transfer Protocol</a></li>
+					</ul>
+					<br>
+
+					<h1>HTML</h1>
+					<hr>
+					<ul>
+							<li><a href="pages/Front-End/HTML.html">Hypertext Markup Language</a></li>
+							<li><a href="pages/Front-End/Elements.html">HTML Elements</a></li>
+					</ul>
+					<br>
+					<h1>CSS</h1>
+					<hr>
+					<ul>
+						<li><a href="pages/Front-End/CSS.html">Cascading Style Sheet</a></li>
+						<li><a href="pages/Front-End/declaration.html">CSS Declaration</a></li>
+						<li><a href="pages/Front-End/rules.html">Style Rules</a></li>
+					</ul>
+			</div>
+	</div>
+
+
+	<!-- Title and intro -->
+
+	<section id ="showcase">
+		<div class="container">
+			<div id = "slider">
+				<figure>
+					<img src = "images/slide7.jpg">
+					<img src = "images/slide5.jpg">
+					<img src = "images/slide2.jpg">
+					<img src = "images/slide4.jpg">
+					<img src = "images/slide3.jpg">
+					<img src = "images/slide6.jpg">
+				</figure>
+			</div>
+		</div>
+	</section>
+
+			<section id="main-topics">
+				<div class="container">
+					<div class="box">
+						<h3>HTTP</h3>
+						<p>
+						</p>
+						<div class="learn-more"><a href="pages/Introduction/intro.html">Learn More</a></div>
+					</div>
+			<div class="box">
+				<h3>HTML</h3>
+				<p>
+				</p>
+				<div class="learn-more"><a href="pages/Front-End/HTML.html">Learn More</a></div>
+			</div>
+
+			<div class="box">
+				<h3>CSS</h3>
+				<p>
+				</p>
+				<div class="learn-more"><a href="pages/Front-End/CSS.html">Learn More</a> </div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>
+			Team MikMik, Copyright &copy; 2019</p>
+	</footer>
+
+</body>
+</html>

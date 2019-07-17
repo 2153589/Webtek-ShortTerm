@@ -4,7 +4,8 @@ include('includes/config.php');
 $level = $_SESSION['level'];
 $num_question = $_GET['optradio'];
 
-$sql = $conn->query("SELECT * FROM questions WHERE level = '$level' ORDER BY RAND() LIMIT $num_question");
+
+$sql = $conn->query("SELECT * FROM questions WHERE level = '$level' ORDER BY RAND() LIMIT $num_question ");
 
 if($sql){
     $row = mysqli_fetch_array($sql);
@@ -123,7 +124,7 @@ a:hover {
           <div class="span8">
             <ul class="breadcrumb notop">
               <li><a href="index.html">Home</a><span class="divider">/</span></li>
-              <li class="active"><?php echo strtoupper($level);?>:</li>
+              <li class="active" id="timer">  </li>
             </ul>
           </div>
         </div>
@@ -157,7 +158,8 @@ a:hover {
         </div>
         <div id="prevNext">
          <a href="#" class="previous">&laquo; Previous</a>
-         <a href="#" class="next">Next &raquo;</a>
+         <a href="question.php?optradio=<?php echo $num_question;?>" class="next">Next &raquo;</a>
+         <a href="review.php" class="next">Stop Quiz</a>
        </div>
           
       </div>
@@ -203,7 +205,33 @@ a:hover {
 
     <!-- Template Custom Javascript File -->
     <script src="assets/js/custom.js"></script>
-
+    <?php
+    if($level == 'medium'){
+    echo '<script>
+      var timeleft = 30;
+      var downloadTimer = setInterval(function(){
+      document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
+      timeleft -= 1;
+      if(timeleft <= 0){
+      clearInterval(downloadTimer);
+      window.location.replace("question.php");
+    }
+}, 1000);
+    </script>';
+  }else if($level == 'hard'){
+      echo '<script>
+      var timeleft = 15;
+      var downloadTimer = setInterval(function(){
+      document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
+      timeleft -= 1;
+      if(timeleft <= 0){
+      clearInterval(downloadTimer);
+      window.location.replace("question.php");
+    }
+}, 1000);
+    </script>';
+    }
+  ?>
   </body>
 
   </html>

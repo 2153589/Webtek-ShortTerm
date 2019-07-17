@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "icon" type = "img/png" href = "../../images/Logo.png">
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="../../css/intro.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/table.css" />
+
+
+        <title>Document</title>
+</head>
+<body>
+    	<!-- Header -->
+	<header>
+            <div class="container">
+                <div id="title">
+                    <h1> <span class="highlighted">Web Systems</span> and Technology</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="../../index.html">Home</a></li>
+                        <li><a href="#open-modal">Topics</a></li>
+                        <li><a href="../../aboutus.html">About Us</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <!-- End of header -->
+
+        <!-- Content for TOPICS navigation in modal view-->
+        <div id="open-modal" class="modal-window">
+                <div>
+                    <a href="#modal-close" title="Close" class="modal-close"> &times;</a>
+
+                    <h1>Topics</h1>
+
+                    <h1>HTTP</h1>
+                    <hr>
+                    <ul>
+                        <li><a href="../Introduction/intro.html" id="link-color">World Wide Web</a></li>
+                        <li><a href="../Introduction/internetHistory.html" id="link-color">Internet</a></li>
+                        <li><a href="../Introduction/HTTP Protocol Versions.html" id="link-color">Hypertext Transfer Protocol</a></li>
+                    </ul>
+                    <br>
+
+                    <h1>HTML</h1>
+                    <hr>
+                    <ul>
+                        <li><a href="../Front-End/HTML.html">Hypertext Markup Language</a></li>
+                        <li><a href="../Front-End/Elements.html">HTML Elements</a></li>
+                    </ul>
+                    <br>
+                    <h1>CSS</h1>
+                    <hr>
+                    <ul>
+                      <li><a href="../Front-End/CSS.html">Cascading Style Sheet</a></li>
+                      <li><a href="../Front-End/declaration.html">CSS Declaration</a></li>
+                      <li><a href="../Front-End/rules.html">Style Rules</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section id="side-nav">
+                    <h1></h1>
+                    <div class="topic-box">
+                        <h3>World Wide Web</h3>
+                        <ul>
+                            <li><a href="intro.html">History</a></li>
+                            <li><a href="url.html">Unifrom Resource Locator</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="topic-box">
+                            <h3>Internet</h3>
+                            <ul>
+                                <li><a href="internetHistory.html">History</a></li>
+                            </ul>
+                    </div>
+
+                        <div class="topic-box">
+                                <h3>Hypertext Transfer Protocol</h3>
+                                <ul>
+                                    <li><a href="HTTP Protocol Versions.html">HTTP Protocol Versions </a></li>
+                                    <li><a href="HTTP Fundamentals.html">HTTP Fundamentals</a></li>
+                                    <li><a href="HTTP Request Message.html">HTTP Request Message</a></li>
+                                    <li class="active"><a href="HTTP Response Message.html">HTTP Respone Message</a></li>
+                                    <li><a href="HTTP Request Methods.html">HTTP Request Methods</a></li>
+                                    <li><a href="GenHeaders.html">HTTP Message Headers</a></li>
+                                </ul>
+                        </div>
+                </section>
+
+                <section id="contents">
+                    <h3>HTTP Response Message
+                    </h3>
+                    <hr>
+                    <p>
+                        <ul>
+                        <li>Status Line: CR/LF-terminated line containing 3 space-separated items, namely:</li>
+                        <li>HTTP Version: version of HTTP being used by the server</li>
+                        <li>Status Code: 3-digit integer code, indicating the result of the operation</li>
+                        <li>Reason Phrase: human-readable description of the operation result indicated by the status code</li>
+                        </ul>
+                    </br>
+
+                        <li>Message Headers: contains additional information about the response (same format as the
+                            message headers in the request message); in response messages, the types of message
+                            headers can be general headers, response headers, or entity headers</li>
+                    </br>
+                        <li>Empty Line: CR/LF-terminated blank line by itself; this is required and serves to terminate
+                            the list of message headers in the response message</li>
+                    </br>
+                        <li>(optional) Message Body: the message body in response messages typically contains the
+                            web resource being requested</li>
+
+                    </p>
+
+
+                    <h3>Status Codes</h3>
+                    <hr>
+                      <br>
+                    <div class="tabs">
+                        <div class="tab">
+                            <input name="checkbox-tabs-group" type="radio" id="checkbox1" class="checkboxtab" checked>
+                            <label for="checkbox1" class ="labels">Information (1xx)</label>
+                                <div class="content">
+                                    <table class = "mssg">
+                                        <tr>
+                                            <td>100</td>
+                                            <td>Continue</td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>101</td>
+                                            <td>Switching Proctocol</td>
+                                        </tr>
+                                    </table>
+        
+                                </div>
+                        </div>
+        
+                        <div class="tab">
+                                <input name="checkbox-tabs-group" type="radio" id="checkbox2" class="checkboxtab" >
+                                <label for="checkbox2" class ="labels">Status (2xx)</label>
+                                    <div class="content">
+                                        <table class = "mssg">
+                                            <tr>
+                                                <td>200</td>
+                                                <td>Ok</td>
+                          </tr>
+                          <tr>
+                                                <td>201</td>
+                                                <td>Created</td>
+                          </tr>
+                          <tr>
+                                                <td>202</td>
+                                                <td>Accepted</td>
+                          </tr>
+                          <tr>
+                                                <td>203</td>
+                                                <td>Non-Authorized</td>
+                                            </tr>
+                                            <tr>
+                                                <td>204</td>
+                                                <td>No Content</td>
+                                            </tr>
+                                            <tr>
+                                                <td>205</td>
+                                                <td>Reset COntent</td>
+                                            </tr>
+                                            <tr>
+                                                <td>206</td>
+                                                <td>Partial Content</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>
+        
+                            <div class="tab">
+                                    <input name="checkbox-tabs-group" type="radio" id="checkbox3" class="checkboxtab" >
+                                    <label for="checkbox3" class ="labels">Redirect (3xx)</label>
+                                <div class="content">
+                                    <table class = "mssg">
+                                        <tr>
+                                            <td>300</td>
+                                            <td>Multipile Choices</td>
+                                        </tr>
+                        <tr>
+                                            <td>301</td>
+                                            <td>Moved Permanently</td>
+                        </tr>
+                        <tr>
+                                            <td>302</td>
+                                            <td>Found</td>
+                        </tr>
+                        <tr>
+                                            <td>303</td>
+                                            <td>See Other</td>
+                        </tr>
+                        <tr>
+                                            <td>304</td>
+                                            <td>Not Modified</td>
+                                        </tr>
+                        <tr>
+                                            <td>305</td>
+                                            <td>Use Proxy</td>
+                                        </tr>
+                        <tr>
+                                            <td>306</td>
+                                            <td>(unused)</td>
+                                        </tr>
+                        <tr>
+                                            <td>307</td>
+                                            <td>Temporary Redirect</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+        
+                            <div class="tab">
+                                    <input name="checkbox-tabs-group" type="radio" id="checkbox4" class="checkboxtab" >
+                                    <label for="checkbox4" class ="labels">Client-Error (4xx)</label>
+                                    <div class="content">
+                                        <table class = "mssg">
+                                            <tr>
+                                                <td>400</td>
+                                                <td>Bad Request</td>
+        
+                            <td>410</td>
+                                                <td>Gone</td>
+                          </tr>
+                          <tr>
+                                                <td>401</td>
+                                                <td>Unauthorized</td>
+        
+                            <td>411</td>
+                                                <td>Length Required</td>
+                          </tr>
+                          <tr>
+                                                <td>402</td>
+                                                <td>Payment Required</td>
+        
+                            <td>412</td>
+                                                <td>Precondition Failed</td>
+                          </tr>
+                          <tr>
+                                                <td>403</td>
+                                                <td>Forbidden</td>
+        
+                            <td>413</td>
+                                                <td>Request Entity Too Large</td>
+                          </tr>
+                          <tr>
+                                                <td>404</td>
+                                                <td>Not Found</td>
+        
+                            <td>414</td>
+                                                <td>Request URI Too Large</td>
+                          </tr>
+                                            <tr>
+                                                <td>405</td>
+                                                <td>Method Not Allowed</td>
+        
+                            <td>415</td>
+                                                <td>Unsupproted Media Type</td>
+                          </tr>
+                          <tr>
+                                                <td>406</td>
+                                                <td>Not Acceptable</td>
+        
+                            <td>416</td>
+                                                <td>Requested Range Not Satisfiable</td>
+                          </tr>
+                          <tr>
+                                                <td>407</td>
+                                                <td>Proxy Authentication</td>
+        
+                            <td>417</td>
+                                                <td>Expectation Failed</td>
+                          </tr>
+                          <tr>
+                                                <td>408</td>
+                                                <td>Request Timeout</td>
+        
+                            <td>426</td>
+                                                <td>Upgrade Required</td>
+                          </tr>
+                          <tr>
+                                                <td>409</td>
+                                                <td>Conflict</td>
+                          </tr>
+                                        </table>
+                                    </div>
+                            </div>
+        
+                            <div class="tab">
+                                    <input name="checkbox-tabs-group" type="radio" id="checkbox5" class="checkboxtab" >
+                                    <label for="checkbox5" class ="labels">Server-Error (5xx)</label>
+                                    <div class="content">
+                                        <table class = "mssg">
+                                            <tr>
+                                                <td>500</td>
+                                                <td>Internal Server Error</td>
+                          </tr>
+                          <tr>
+                                                <td>501</td>
+                                                <td>Note Implemented</td>
+                          </tr>
+                          <tr>
+                                                <td>502</td>
+                                                <td>Bad Gateway</td>
+                          </tr>
+                                            <tr>
+                                                <td>503</td>
+                                                <td>Service Unavailable</td>
+                                            </tr>
+                                            <tr>
+                                                <td>504</td>
+                                                <td>Gateway Timeout</td>
+                                            </tr>
+                                            <tr>
+                                                <td>505</td>
+                                                <td>HTTP Version Not Supported</td>
+                                            </tr>
+        
+                                        </table>
+                                    </div>
+                            </div>
+        
+                    </div>
+               </section>
+
+</body>
+</html>

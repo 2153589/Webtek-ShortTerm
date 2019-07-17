@@ -1,0 +1,50 @@
+.tabs
+{
+	position: absolute;
+	clear: both;
+}
+
+.tabs .tab
+{
+	float: left;
+}
+
+.tabs .tab .content
+{
+	position: absolute;
+	background-color: #f4f4f4;
+	left: 0px;
+	width: 74rem;
+	height: 650px;
+}
+
+.checkboxtab
+{
+	display: none;
+}
+
+.tab label
+{
+	margin-right: 10px;
+	
+}
+
+.checkboxtab:checked ~ label
+{
+	color: #e8491d;
+}
+
+.checkboxtab:checked ~ .content
+{
+	z-index: 1;
+}
+
+.labels{
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.content{
+	padding-top: 20px;
+	background: 100px;
+}

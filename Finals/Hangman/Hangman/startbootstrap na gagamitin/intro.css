@@ -1,0 +1,146 @@
+* {
+	margin-top:0;
+	margin-bottom:0;
+	text-decoration: none;
+}
+
+#side-nav{
+  height: auto;
+  background:#35424a;
+  width: 260px;
+ /* position:fixed;*/
+  display: block;
+  float: left;
+}
+
+#side-nav h1{
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 23px;
+}
+
+#side-nav h3{
+  margin-top: 10px;
+  font-size: 20px;
+  color:#cccccc;
+  border-bottom: 2px solid #e8491d;
+  padding-top: 20px;
+}
+
+#side-nav a{
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+#side-nav a:hover{
+  color: #e8491d;
+}
+
+#side-nav li{
+  padding:10px;
+  font-size: 19px;
+  list-style: none;
+}
+
+#side-nav .active a{
+  color: #e8491d;
+}
+#contents {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  margin-right: 30px;
+  padding: 0px 5px;
+  margin-top: 60px;
+}
+
+#contents img{
+  height: 150px;
+  width: 600px;
+  margin-top: 20px;
+  display: block;
+}
+
+#contents p{
+  font-size: 22px;
+  padding-bottom: 50px;
+}
+
+#contents li{
+  font-size: 20px;
+  margin-left: 35px;
+}
+
+#contents h3{
+  font-size: 25px;
+}
+
+#Domain_Name, #Anchor, #Port, #Path, #Parameters{
+  padding-top: 15px;
+}
+
+
+/* table for head */
+#head {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+#head td, #head th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#head tr:nth-child(even){background-color: #f2f2f2;}
+#head th:first-child{color: #e8491d; width: 21%;}
+
+#head tr:hover {background-color: #ddd;}
+
+#head th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #35424a;
+  color: white;
+}
+
+/* table for body */
+#body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#body td, #body th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#body tr:nth-child(even){background-color: #f2f2f2;}
+#body th:first-child{color: #e8491d; width: 20%;}
+
+#body tr:hover {background-color: #ddd;}
+
+#body th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #35424a;
+  color: white;
+}
+
+#th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: gray;
+	color: white;
+}
+
+tr #td1 {
+	width: 35%;
+}
+
+tr #td2 {
+	width: 60%;
+}
+
