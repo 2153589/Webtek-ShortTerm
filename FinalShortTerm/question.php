@@ -4,6 +4,7 @@ include('includes/config.php');
 $level = $_SESSION['level'];
 $num_question = $_GET['optradio'];
 
+$_SESSION['num'] = $num_question;
 
 $sql = $conn->query("SELECT * FROM questions WHERE level = '$level' ORDER BY RAND() LIMIT $num_question ");
 
@@ -215,7 +216,7 @@ a:hover {
       if(timeleft <= 0){
       clearInterval(downloadTimer);
       window.location.replace("question.php");
-    }
+    }1
 }, 1000);
     </script>';
   }else if($level == 'hard'){
